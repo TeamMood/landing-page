@@ -1,0 +1,19 @@
+home.title=Suivez le bien être de votre équipe. Facilement.
+
+home.staytuned=Restez informé, nous lançons le service bientôt.
+home.emailsample=votre@email.com
+home.signup=Envoyer
+
+home.supereasy.title=Super simple
+home.supereasy.1=Inscrivez-vous en deux clics, créez une équipe, ajouter les emails des membres de l''équipe et c''est terminé.
+home.supereasy.2=Les membres de l''équipe reçoivent un email chaque jour, pas besoin de compte pour eux.
+
+home.anonymous.title=Anonyme
+home.anonymous.1=Pas de suivi individuel, mais un suivi au niveau de l'équipe entière.
+
+home.transparency.title=Transparence
+home.transparency.1=Les résultats sont visibles par l'ensemble des membres de l'équipes, ils ne sont pas réservés aux responsables d'équipes.
+
+home.agile.title=Issue de l'Agilité
+home.agile.1=Inspiré de la pratique du 
+home.agile.2=niko-niko.
