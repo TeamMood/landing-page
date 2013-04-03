@@ -1,5 +1,5 @@
 var launchPage = {
-	url: 'submit.html',
+	url: 'https://docs.google.com/forms/d/1vChMxuVCzNCLqPTusirUwrnAdRzBCFvVcmqqUxa5zuA/formResponse',
 	sent: false,
 	formBgWidth: 120
 }
@@ -30,7 +30,7 @@ $(document).ready( function() {
 	  			}
 	  		);
 			// POST email address
-			$.post(launchPage.url, { email: $('#email').val() },
+			$.post(launchPage.url, { "entry.1": $('#input-email').val() },
 				function(data) {
 					if(data.match(/class='success'/)){
 						$('#input-email').attr('disabled', true);

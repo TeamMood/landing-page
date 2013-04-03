@@ -37,9 +37,9 @@
             <section id="signup-sect"> 
                 <p>@Messages("home.staytuned")</p> 
                 <div class="flex-container">
-                    <form class='fancy-form'>
+                    <form class='fancy-form' method="POST" target="_self">
                         <div class="controls controls-row hide-me">
-                          <input  id="input-email" class="span5" type="text" name="email" value="@Messages("home.emailsample")" placeholder="@Messages("home.emailsample")">
+                          <input  id="input-email" class="span5" type="text" name="entry.1" value="@Messages("home.emailsample")" placeholder="@Messages("home.emailsample")">
                           <button id="submit-email" class="span2 btn btn-fancy" type="submit">@Messages("home.signup")</button>
                         </div>                        
                         <div id="resp" class="center-child"></div> <!-- Response message -->
