@@ -1,5 +1,4 @@
 var launchPage = {
-	url: 'https://docs.google.com/forms/d/1vChMxuVCzNCLqPTusirUwrnAdRzBCFvVcmqqUxa5zuA/formResponse',
 	sent: false,
 	formBgWidth: 120
 }
@@ -25,25 +24,13 @@ $(document).ready( function() {
 		$('#submit-email').attr('disabled', true);
 		if($('#input-email').val().match(/^\S+@\S+\.\S+$/) && launchPage.sent !== true && $('#input-email').val() != 'your@email.com' ) {
 			// Animate background
-			$('.fancy-form').animate({backgroundPositionX: launchPage.formBgWidth}, 2000, function() {
+			$('.fancy-form').animate({backgroundPositionX: launchPage.formBgWidth}, 1500, function() {
 	    		 $(this).css('background-position-x', '0');
+	    		// POST email address
+	 			$('.fancy-form').submit();
 	  			}
 	  		);
-			// POST email address
-			$.post(launchPage.url, { "entry.1": $('#input-email').val() },
-				function(data) {
-					if(data.match(/class='success'/)){
-						$('#input-email').attr('disabled', true);
-						$('#resp').html(data);
-						$('#resp').animate({ opacity: 'toggle' }, 'slow');
-						$('.hide-me').animate({ opacity: 0 }, 'slow');
-						launchPage.sent = true;
-					} else {
-						$('#submit-email').attr('disabled', false);
-						$('#error').html(data);
-						$('#error').slideDown();
-					}
-			});				
+			
 		} else if(launchPage.sent == true) {
 		
 		} else {
