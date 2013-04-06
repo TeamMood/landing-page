@@ -17,3 +17,9 @@ home.transparency.1=Les résultats sont visibles par l''ensemble des membres de 
 home.agile.title=Issue de l''Agilité
 home.agile.1=Inspiré de la pratique du 
 home.agile.2=niko-niko.
+
+thankyou.thanks=Un grand merci pour l''intérêt que vous nous portez
+thankyou.keepupdated=Nous vous tiendrons informés de notre progression
+thankyou.feedback=Nous serions également très heureux de recevoir des suggestions ou des questions de votre part. N''hésitez pas à
+thankyou.contact=nous contacter
+thankyou.share=Et n''oublier pas de partager cette bonne nouvelle avec vos amis, ça nous ferait vraiment plaisir
