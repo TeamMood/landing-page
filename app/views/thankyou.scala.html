@@ -1,0 +1,44 @@
+@(implicit lang: play.api.i18n.Lang) 
+
+@main {
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<section id="signup-sect"> 
+		<h3>Big thanks for your interest !</h3>
+		<p>We'll keep you updated about our progress.</p> 
+		<p>We'd also be happy to receive any question or suggestion you may have. Don't hesitate to <a href="mailto:hello@@teammood.com">contact us</a>.</p>
+	    <p>And don't forget to share the happiness with friends, it'll mean the world to us !
+	    </p>
+	    <div class="row">
+		<ul class="icons">
+	   		<li class="like-button">
+			    <a href="https://twitter.com/share" class="twitter-share-button" data-via="teammood">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</li>
+			<li class="like-button">
+				<div class="g-plusone" data-size="medium"></div>
+				
+				<!-- Place this tag after the last +1 button tag. -->
+				<script type="text/javascript">
+				  (function() {
+				    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				    po.src = 'https://apis.google.com/js/plusone.js';
+				    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+				  })();
+				</script>
+			</li>
+			<li class="like-button">
+				<div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+			</li>
+		</ul>
+		</div>
+	</section>
+}

@@ -206,6 +206,11 @@ p {
   float: left;
 }
 
+.like-button {
+  margin-right: 20px;
+  display: inline;
+}
+
 .share-button i {
   color: #999;
   font-size: 26px;

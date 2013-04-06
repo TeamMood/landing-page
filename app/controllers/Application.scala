@@ -30,7 +30,7 @@ object Application extends Controller {
 
         save(email, ip, locale, browser)
 
-        Ok(email)
+        Ok(views.html.thankyou(Lang.preferred(request.acceptLanguages)(Play.current)))
       }
   }
 
