@@ -7,7 +7,7 @@ home.emailsample=votre@email.com
 home.signup=Envoyer
 
 home.supereasy.title=Super simple
-home.supereasy.1=Inscrivez-vous en <span class="text-info">deux clics</span>, créez une équipe, ajouter les emails des membres de l''équipe et c''est terminé.
+home.supereasy.1=Inscrivez-vous en <span class="text-info">deux clics</span>, créez une équipe, ajoutez les emails des membres de l''équipe et c''est terminé.
 home.supereasy.2=Les membres de l''équipe reçoivent un email chaque jour, <span class="text-info">pas besoin de compte pour eux</span>.
 
 home.anonymous.title=Anonyme
@@ -24,4 +24,4 @@ thankyou.thanks=<span class="text-info">Un grand merci</span> pour l''intérêt 
 thankyou.keepupdated=Nous vous tiendrons informés de notre <span class="text-info">progression</span>
 thankyou.feedback=Nous serions également <span class="text-info">très heureux</span> de recevoir des suggestions ou des questions de votre part. N''hésitez pas à
 thankyou.contact=nous contacter
-thankyou.share=Et n''oublier pas de <span class="text-info">partager cette bonne nouvelle</span> avec vos amis, ça nous ferait vraiment plaisir
+thankyou.share=Et n''oubliez pas de <span class="text-info">partager cette bonne nouvelle</span> avec vos amis, ça nous ferait vraiment plaisir
