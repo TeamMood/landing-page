@@ -2,7 +2,7 @@
 
 @main {
 	<section id="signup-sect"> 
-	    <p>@Messages("home.staytuned")</p> 
+	    <p>@Html(Messages("home.staytuned")).</p> 
 	    <div class="flex-container">
 	        <form class='fancy-form' action="@routes.Application.signup()" method="POST" target="_self">
 	            <div class="controls controls-row hide-me">
@@ -31,16 +31,16 @@
 	<section id="info" class="row">
 	    <div class="span3">
 	        <h3>@Messages("home.supereasy.title")</h3>
-	        <p>@Messages("home.supereasy.1")</p>
-	        <p>@Messages("home.supereasy.2")</p>
+	        <p>@Html(Messages("home.supereasy.1"))</p>
+	        <p>@Html(Messages("home.supereasy.2"))</p>
 	    </div>
 	    <div class="span3">
 	        <h3>@Messages("home.anonymous.title")</h3>
-	        <p>@Messages("home.anonymous.1")</p>
+	        <p>@Html(Messages("home.anonymous.1"))</p>
 	   </div>
 	    <div class="span3">
 	        <h3>@Messages("home.transparency.title")</h3>
-	        <p>@Messages("home.transparency.1")</p>
+	        <p>@Html(Messages("home.transparency.1"))</p>
 	    </div>
 	    <div class="span3">
 	        <h3>@Messages("home.agile.title")</h3>

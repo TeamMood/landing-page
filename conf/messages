@@ -1,25 +1,25 @@
-home.title=Track the well-being of your team. Easily.
+home.title=Track the <span class="text-info">well-being</span> of your team. Easily.
 
-home.staytuned=Stay tuned, we''ll be launching soon.
+home.staytuned=Stay tuned, we''ll be launching <span class="text-info">soon</span>
 home.emailsample=your@email.com
 home.signup=Sign up
 
 home.supereasy.title=Super easy
-home.supereasy.1=Register in two clicks, create a team, add people''s emails and you''re done.
-home.supereasy.2=Team members will receive a daily email, no accounts needed for them.
+home.supereasy.1=Register in <span class="text-info">two clicks</span>, create a team, add people''s emails and you''re done.
+home.supereasy.2=Team members will receive a daily email, <span class="text-info">no accounts</span> needed for them.
 
 home.anonymous.title=Anonymous
-home.anonymous.1=Do not track individuals, but follow the mood at the team level.
+home.anonymous.1=Do not track individuals, but follow the mood at the <span class="text-info">team level</span>.
 
 home.transparency.title=Transparency
-home.transparency.1=The metrics are available to everyone on the team, not only to the managers.
+home.transparency.1=The metrics are available to <span class="text-info">everyone</span> on the team, not only to the managers.
 
 home.agile.title=Agile powered
 home.agile.1=Based on the 
 home.agile.2=niko-niko practice.
 
-thankyou.thanks=Big thanks for your interest
-thankyou.keepupdated=We''ll keep you updated about our progress
-thankyou.feedback=We''d also be happy to receive any question or suggestion you may have. Don''t hesitate to
+thankyou.thanks=<span class="text-info">Big thanks</span> for your interest
+thankyou.keepupdated=We''ll keep you updated about our <span class="text-info">progress</span>
+thankyou.feedback=We''d also be <span class="text-info">happy</span> to receive any question or suggestion you may have. Don''t hesitate to
 thankyou.contact=contact us
-thankyou.share=And don''t forget to share the happiness with friends, it''ll mean the world to us
+thankyou.share=And don''t forget to <span class="text-info">share the happiness</span> with friends, it''ll mean the world to us

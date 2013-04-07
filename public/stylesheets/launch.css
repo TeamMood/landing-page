@@ -12,6 +12,10 @@ body {
   background-position: 50% 50%;
 }
 
+.text-info {
+	color: #1abc9c;
+}
+
 p {
   font-size: 13px;
   color: #666;
