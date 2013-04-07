@@ -16,6 +16,14 @@ body {
 	color: #1abc9c;
 }
 
+a {
+	color: #1abc9c;
+}
+
+a:hover {
+	color: #2e4856;
+}
+
 p {
   font-size: 13px;
   color: #666;

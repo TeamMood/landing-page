@@ -1,3 +1,5 @@
+title=Track the well-being of your team.
+
 home.title=Track the <span class="text-info">well-being</span> of your team. Easily.
 
 home.staytuned=Stay tuned, we''ll be launching <span class="text-info">soon</span>
@@ -16,7 +18,7 @@ home.transparency.1=The metrics are available to <span class="text-info">everyon
 
 home.agile.title=Agile powered
 home.agile.1=Based on the 
-home.agile.2=niko-niko practice.
+home.agile.2=niko-niko practice
 
 thankyou.thanks=<span class="text-info">Big thanks</span> for your interest
 thankyou.keepupdated=We''ll keep you updated about our <span class="text-info">progress</span>

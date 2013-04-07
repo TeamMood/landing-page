@@ -6,13 +6,8 @@ $(document).ready( function() {
 	$('#input-email').bind({
 		focus: function(){
 			$('#error').slideUp();
-			if($(this).val() == 'your@email.com') {
+			if($(this).val() == 'your@email.com' || $(this).val() == 'votre@email.com') {
 				$(this).val('');
-			}
-		},
-		blur: function() {
-			if($(this).val() == '') {
-				$(this).val('your@email.com');
 			}
 		}
 	});
@@ -24,7 +19,7 @@ $(document).ready( function() {
 		$('#submit-email').attr('disabled', true);
 		if($('#input-email').val().match(/^\S+@\S+\.\S+$/) && launchPage.sent !== true && $('#input-email').val() != 'your@email.com' ) {
 			// Animate background
-			$('.fancy-form').animate({backgroundPositionX: launchPage.formBgWidth}, 1500, function() {
+			$('.fancy-form').animate({"background-position": launchPage.formBgWidth}, 1500, function() {
 	    		 $(this).css('background-position-x', '0');
 	    		// POST email address
 	 			$('.fancy-form').submit();

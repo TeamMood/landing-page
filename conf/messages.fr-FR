@@ -1,3 +1,5 @@
+title=Suivez le bien être de votre équipe.
+
 home.title=Suivez le <span class="text-info">bien être</span> de votre équipe. Facilement.
 
 home.staytuned=Restez informé, nous lançons le service <span class="text-info">bientôt</span>
@@ -14,9 +16,9 @@ home.anonymous.1=Pas de suivi individuel, mais un suivi <span class="text-info">
 home.transparency.title=Transparence
 home.transparency.1=Les résultats sont visibles par <span class="text-info">l''ensemble des membres de l''équipes</span>, ils ne sont pas réservés aux responsables d''équipes.
 
-home.agile.title=Issue de l''Agilité
+home.agile.title=Issu de l''Agilité
 home.agile.1=Inspiré de la pratique du 
-home.agile.2=niko-niko.
+home.agile.2=niko-niko
 
 thankyou.thanks=<span class="text-info">Un grand merci</span> pour l''intérêt que vous nous portez
 thankyou.keepupdated=Nous vous tiendrons informés de notre <span class="text-info">progression</span>
