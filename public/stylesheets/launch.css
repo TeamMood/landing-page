@@ -89,7 +89,7 @@ p {
           border-radius: 8px;
 }
 
-.fancy-form input[type="text"] {
+.fancy-form input[type="email"] {
   font: 99% sans-serif;
   font-size: 23px;
   color: #333;
