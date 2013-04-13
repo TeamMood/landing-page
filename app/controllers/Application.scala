@@ -6,6 +6,7 @@ import play.api.i18n.Lang
 import play.api.i18n.MessagesPlugin
 import play.api.i18n.Messages
 import play.api.data.Forms._
+import play.api.data.validation.Constraints._
 import play.api.data._
 import play.api.libs.ws.WS
 
@@ -21,16 +22,20 @@ object Application extends Controller {
   def signup = Action {
     implicit request =>
       {
-        val emailForm = Form("input-email" -> text)
-        val email = emailForm.bindFromRequest.get
+        val emailForm = Form("input-email" -> email.verifying(nonEmpty))
+        emailForm.bindFromRequest.fold(
+          errors => Redirect(routes.Application.index),
+          email => {
 
-        val ip = request.headers.get("x-forwarded-for").getOrElse(request.remoteAddress)
-        val locale = request.headers.get("Accept-Language")
-        val browser = request.headers.get("User-Agent")
+            val ip = request.headers.get("x-forwarded-for").getOrElse(request.remoteAddress)
+            val locale = request.headers.get("Accept-Language")
+            val browser = request.headers.get("User-Agent")
 
-        save(email, ip, locale, browser)
+            save(email, ip, locale, browser)
 
-        Ok(views.html.thankyou(Lang.preferred(request.acceptLanguages)(Play.current)))
+            Ok(views.html.thankyou(Lang.preferred(request.acceptLanguages)(Play.current)))
+          })
+
       }
   }
 
