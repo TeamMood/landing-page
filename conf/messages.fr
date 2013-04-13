@@ -12,13 +12,16 @@ home.supereasy.2=Les membres de l''équipe reçoivent un email chaque jour, <spa
 
 home.anonymous.title=Anonyme
 home.anonymous.1=Pas de suivi individuel, mais un suivi <span class="text-info">au niveau de l''équipe</span> entière.
+home.anonymous.2=L''anonymat permet également aux personnes de ne pas se sentir jugées et d''être plus <span class="text-info">sincères</span>.
 
 home.transparency.title=Transparence
-home.transparency.1=Les résultats sont visibles par <span class="text-info">l''ensemble des membres de l''équipes</span>, ils ne sont pas réservés aux responsables d''équipes.
+home.transparency.1=Les résultats sont visibles par <span class="text-info">l''ensemble des membres de l''équipes</span>, ils ne sont pas réservés aux seuls responsables d''équipes.
+home.transparency.2=C''est un outil <span class="text-info">pour l'équipe</span> afin de lui permettre de s''améliorer continuellement.
 
 home.agile.title=Issu de l''Agilité
 home.agile.1=Inspiré de la pratique du 
 home.agile.2=niko-niko
+home.agile.3=A la fin de la journée, chaque membre de l''équipe indique s''il a le sentiment d''avoir passé <span class="text-info">une bonne</span> ou <span class="text-info">une mauvaise</span> journée.
 
 thankyou.thanks=<span class="text-info">Un grand merci</span> pour l''intérêt que vous nous portez
 thankyou.keepupdated=Nous vous tiendrons informés de notre <span class="text-info">progression</span>
