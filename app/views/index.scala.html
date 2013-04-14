@@ -27,7 +27,7 @@
 	        </div>
 	    </div>
 	</section>
-	
+	@defining(lang.language) { language =>
 	<section id="info" class="row">
 	    <div class="span3">
 	        <h3>@Messages("home.agile.title")</h3>
@@ -38,12 +38,10 @@
 	        <h3>@Messages("home.supereasy.title")</h3>
 	        <p>@Html(Messages("home.supereasy.1"))</p>
 	        <p>@Html(Messages("home.supereasy.2"))</p>
-	        @defining(lang.language) { language =>
-	        	@if(language == "fr"){
-	        <p><img src="@routes.Assets.at("images/mail-fr.png")" class="img-polaroid"></p>
-	        	}else{
-	        <p><img src="@routes.Assets.at("images/mail-en.png")" class="img-polaroid"></p>
-	        	}
+	        @if(language == "fr"){
+	        <p><img src="@routes.Assets.at("images/mail-fr.png")" class="img-polaroid img-rounded"></p>
+	        }else{
+	        <p><img src="@routes.Assets.at("images/mail-en.png")" class="img-polaroid img-rounded"></p>
 	        }
 	    </div>
 	    <div class="span3">
@@ -55,6 +53,12 @@
 	        <h3>@Messages("home.transparency.title")</h3>
 	        <p>@Html(Messages("home.transparency.1"))</p>
 	        <p>@Html(Messages("home.transparency.2"))</p>
+	        @if(language == "fr"){
+	        <p><img src="@routes.Assets.at("images/icons-fr.png")" class="img-polaroid img-rounded"></p>
+	        }else{
+	        <p><img src="@routes.Assets.at("images/icons-en.png")" class="img-polaroid img-rounded"></p>
+	        }
 	    </div>
 	</section>
+	}
 }
