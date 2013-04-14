@@ -38,6 +38,13 @@
 	        <h3>@Messages("home.supereasy.title")</h3>
 	        <p>@Html(Messages("home.supereasy.1"))</p>
 	        <p>@Html(Messages("home.supereasy.2"))</p>
+	        @defining(lang.language) { language =>
+	        	@if(language == "fr"){
+	        <p><img src="@routes.Assets.at("images/mail-fr.png")" class="img-polaroid"></p>
+	        	}else{
+	        <p><img src="@routes.Assets.at("images/mail-en.png")" class="img-polaroid"></p>
+	        	}
+	        }
 	    </div>
 	    <div class="span3">
 	        <h3>@Messages("home.anonymous.title")</h3>
