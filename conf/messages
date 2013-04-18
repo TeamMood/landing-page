@@ -11,17 +11,13 @@ home.supereasy.1=Register in <span class="text-info">two clicks</span>, create a
 home.supereasy.2=Team members will receive a daily email, <span class="text-info">no accounts</span> needed for them.
 
 home.anonymous.title=Anonymous
-home.anonymous.1=Do not track individuals, but follow the mood at the <span class="text-info">team level</span>.
-home.anonymous.2=It also allows people to be more <span class="text-info">sincere</span> about their feelings.
-
-home.transparency.title=Transparency
-home.transparency.1=The metrics are available to <span class="text-info">everyone</span> on the team, not only to the managers.
-home.transparency.2=These analytics are a <span class="text-info">tool for the team</span> for continuous improvement.
+home.anonymous.1=Do not track individuals, but follow the mood at the <span class="text-info">team level</span>. It also allows people to be more <span class="text-info">sincere</span> about their feelings.
+home.anonymous.2=The metrics are available to <span class="text-info">everyone</span> on the team, not only to the managers.
 
 home.agile.title=Agile powered
 home.agile.1=Based on the 
 home.agile.2=niko-niko practice
-home.agile.3=At the end of the day, each team member tells if he has the feeling of having <span class="text-info">a good</span> or <span class="text-info">a bad</span> day.
+home.agile.3=At the end of the day, each team member tells if he has the feeling of having <span class="text-info">a good</span> or <span class="text-info">a bad</span> day. These analytics are a <span class="text-info">tool for the team</span> for continuous improvement.
 
 thankyou.thanks=<span class="text-info">Big thanks</span> for your interest
 thankyou.keepupdated=We''ll keep you updated about our <span class="text-info">progress</span>
