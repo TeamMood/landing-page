@@ -2,7 +2,7 @@ title=Suivez le bien être de votre équipe.
 
 home.title=Suivez le <span class="text-info">bien être</span> de votre équipe. Facilement.
 
-home.staytuned=Restez informé, nous lançons le service <span class="text-info">bientôt</span>
+home.staytuned=Le betatest est <span class="text-info">lancé !</span>. Laissez nous votre email pour être sur la liste d''attente.<br>Sinon, <a href="mailto:hello@teammood.com">laissez nous un message</a> pour nous expliquer pourquoi vous voulez l''utiliser de suite !
 home.emailsample=votre@email.com
 home.signup=Envoyer
 
