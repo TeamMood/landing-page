@@ -2,73 +2,88 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>TeamMood - @Html(Messages("title"))</title>
-        <link rel="icon" href="@routes.Assets.at("images/logo-16px.png")" sizes="16x16" type="image/png">
-		<link rel="icon" href="@routes.Assets.at("images/logo-64px.png")" sizes="64x64" type="image/png">
-		<link rel="icon" href="@routes.Assets.at("images/logo-128px.png")" sizes="128x128" type="image/png">
-        <meta name="description" content="Track the well-being of your team, easily.">
-        <meta name="viewport" content="width=device-width">
-        
-        <meta name="keywords" content="niko-niko calendar, niko niko, nikoniko, niko-niko, mood, team, happiness, humeur, métrique">
-        <meta name="description" content="@Messages("title")">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>TeamMood - @Html(Messages("title"))</title>
+    <link rel="icon" href="@routes.Assets.at(" images
+    /logo-16px.png")" sizes="16x16" type="image/png">
+    <link rel="icon" href="@routes.Assets.at(" images
+    /logo-64px.png")" sizes="64x64" type="image/png">
+    <link rel="icon" href="@routes.Assets.at(" images
+    /logo-128px.png")" sizes="128x128" type="image/png">
+    <meta name="description" content="Track the well-being of your team, easily.">
+    <meta name="viewport" content="width=device-width">
 
-		<meta charset="utf-8">
+    <meta name="keywords"
+          content="niko-niko calendar, niko niko, nikoniko, niko-niko, mood, team, happiness, humeur, métrique">
+    <meta name="description" content="@Messages(" title
+    ")">
 
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-        <style>
-            body {
-                padding-top: 60px;
-                padding-bottom: 40px;
-            }
-        </style>
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
-        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/launch.css")">
+    <meta charset="utf-8">
 
-        <!--[if lt IE 9]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <div class="container">
-            <header class="launch-head">
-                <h1>TeamMood</h1>
-                <h2>@Html(Messages("home.title"))</h2> 
-            </header>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="@routes.Assets.at(" stylesheets
+    /launch.css")">
 
-			@content
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <header class="launch-head">
+        <h1>TeamMood</h1>
 
-            <footer id="pagefooter">
-            	<div class="row">
-	            	<div class="span3">Made with <i class="icon-heart text-info"></i> in Toulouse, France</div>
-	                <div class="pull-right">©2013 <span class="text-info">TeamMood</span></div>
-                </div>
-            </footer>
-        </div> <!-- /container -->
+        <h2>@Html(Messages("home.title"))</h2>
+    </header>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')</script>
+    @content
 
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-        <script src="@routes.Assets.at("javascripts/launch.js")"></script>
-        
-        @if(play.Play.isProd){
-        <script type="text/javascript">
+    <footer id="pagefooter">
+        <div class="row">
+            <div class="span3">Made with <i class="icon-heart text-info"></i> in Toulouse, France</div>
+            <div class="pull-right">©2013-2014 <span class="text-info">TeamMood</span></div>
+        </div>
+    </footer>
+</div>
+<!-- /container -->
 
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-39772075-1']);
-		  _gaq.push(['_trackPageview']);
-		
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		
-		</script>
-		}
-    </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')</script>
+
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+<script src="@routes.Assets.at(" javascripts
+/launch.js")"></script>
+
+@
+if (play.Play.isProd) {
+<
+    script
+    type = "text/javascript" >
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39772075-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+}
+</body>
 </html>
