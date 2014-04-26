@@ -47,6 +47,9 @@ object Application extends Controller {
     var apiKey = "6bf455be4daddb948b4c1a494a9f6f47-us4"
     var listId = "f0513fb469"
 
+    val language = locale.get.take(2)
+    println(language)
+
     val json: JsValue = Json.obj(
       "apikey" -> apiKey,
       "id" -> listId,
@@ -55,15 +58,14 @@ object Application extends Controller {
       ),
       "merge_vars" -> Json.obj(
         "optin_ip" -> ip,
-        "mc_language" -> locale.get.take(2)
+        "mc_language" -> language
       ),
       "double_optin" -> false,
       "send_welcome" -> false
     )
 
     WS.url(url).post(json).map {
-      response => println("status = " + response.status)
-        println("body = " + response.body)
+      response => Logger.info("Saving to Mailchimp status= %d, body = %s".format(response.status, response.body))
     }
 
   }
