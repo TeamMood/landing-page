@@ -58,7 +58,8 @@ object Application extends Controller {
       ),
       "merge_vars" -> Json.obj(
         "optin_ip" -> ip,
-        "mc_language" -> language
+        "mc_language" -> language,
+      "EARLYADOPT" -> "No"
       ),
       "double_optin" -> false,
       "send_welcome" -> false
