@@ -1,5 +1,5 @@
 import sbt._
-import Keys._
+import sbt.Keys._
 import play.Project._
 
 object ApplicationBuild extends Build {
@@ -14,8 +14,11 @@ object ApplicationBuild extends Build {
 
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
-     resolvers += Resolver.url("Autoping repository", url("http://ndeverge.github.com/autoping-play2-plugin/snapshots/"))(Resolver.ivyStylePatterns)
+     resolvers += Resolver.url("Autoping repository", url("http://ndeverge.github.com/autoping-play2-plugin/snapshots/"))(Resolver.ivyStylePatterns),
 
+       javacOptions ++= Seq("-source", "1.7", "-target", "1.7"),
+
+       scalacOptions += "-target:jvm-1.7"
   )
 
 }
