@@ -34,4 +34,32 @@ $(document).ready( function() {
 			$('#error').slideDown();
 		}
 	});
+
+	var items = ["entreprise", "groupe", "équipe"],
+		$text = $( '.alternate_fr' ),
+		delay = 2; //seconds
+
+	if ($( '.alternate_en' )) {
+		items = ["company", "group", "team"];
+		$text = $( '.alternate_en' );
+	}
+
+	function loop ( delay ) {
+		$.each( items, function ( i, elm ){
+			$text.delay(delay*1E3).fadeOut();
+			$text.queue(function(){
+				$text.html( items[i] );
+				$text.dequeue();
+			});
+			$text.fadeIn();
+			$text.queue(function(){
+				if(i == items.length-1){
+					loop(delay);
+				}
+				$text.dequeue();
+			});
+		});
+	}
+
+	loop(delay);
 });
