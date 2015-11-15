@@ -1,11 +1,11 @@
 teammood.controller('AccountCtrl', function($scope, $window, $http, $httpParamSerializer) {
     'use strict';
 
-    var on_success = function() {
-        $window.location = '/thankyou';
+    var on_success = function(lang) {
+        $window.location = '/' + lang + '/thankyou';
     };
 
-    $scope.create_account = function(email) {
+    $scope.create_account = function(email, lang) {
 
         var language = navigator.language;
         var user_agent = navigator.userAgent;
@@ -22,9 +22,9 @@ teammood.controller('AccountCtrl', function($scope, $window, $http, $httpParamSe
               'Content-Type': 'application/x-www-form-urlencoded'
           }
         }).then(function successCallback(response) {
-            on_success();
+            on_success(lang);
         }, function errorCallback(error) {
-            on_success()
+            on_success(lang)
         });
 
     };
