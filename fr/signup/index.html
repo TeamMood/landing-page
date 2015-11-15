@@ -1,0 +1,47 @@
+---
+layout: form
+lang: fr
+---
+<div class="dashboard-body" ng-controller="AccountCtrl">
+    <div class="container">
+        <div class="">
+            <div class="container">
+                <div class="login-container">
+                    <div class="logo orange center">
+                        <div class="fa fa-smile-o"></div>
+                        TeamMood
+                    </div>
+                    <br>
+                    <div class="board-box">
+                        <h2>Demande d'accès</h2>
+                        <form name="account_form" class="simple_form new_user" accept-charset="UTF-8">
+                            <div class="form-group">
+                                <label for="email-field">
+                                    Adresse email
+                                </label>
+                                <input ng-model="email" autofocus="autofocus" class="form-control input-lg" placeholder="you@domain.com" required="required" type="email" value="" autocomplete="off">
+                            </div>
+                            <p class="light-grey">
+                                En demandant un compte, vous acceptez les
+                                <a href="/terms-of-service">conditions générales</a> de TeamMood.
+                            </p>
+                            <br>
+                            <button class="btn-lg light-orange-btn" ng-disabled="account_form.$invalid" type="submit" ng-click="create_account(email, '{{page.lang}}')">Je veux un compte</button>
+                        </form>
+                    </div>
+                    <div class="grey">
+                        Vous avez déjà un compte ?
+                        <a href="https://app.teammood.com/app#/login">Connexion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-cookies.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-sanitize.min.js"></script>
+
+<script src="/js/app.js"></script>
+<script src="/js/account.js"></script>
