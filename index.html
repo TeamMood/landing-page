@@ -4,10 +4,14 @@
     <script type="text/javascript">
         var language = navigator.language;
 
+        var base = "http:" + window.location.href.substring(window.location.protocol.length);
+        if (window.location.protocol == "https:")
+            base = "https:" + window.location.href.substring(window.location.protocol.length);
+
         if (language.toLowerCase().indexOf('fr') != -1) {
-            window.location.href = '/fr';
+            window.location.href = base + '/fr';
         } else {
-            window.location.href = '/en';
+            window.location.href = base + '/en';
         }
 
     </script>
