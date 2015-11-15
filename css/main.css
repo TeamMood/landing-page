@@ -2957,6 +2957,10 @@ body.registrations.edit section.invoices article .download-links {
     margin-top: 60px
 }
 
+.visitors.homepage .front-header img {
+    margin-top: 140px
+}
+
 .visitors.pricing .front-header .subtitle {
     margin-bottom: 80px
 }
