@@ -1,7 +1,7 @@
 ---
 layout: form
 ---
-<div class="dashboard-body">
+<div class="dashboard-body" ng-controller="AccountCtrl">
     <div class="container">
         <div class="">
             <div class="container">
@@ -13,19 +13,19 @@ layout: form
                     <br>
                     <div class="board-box">
                         <h2>Ask for an account</h2>
-                        <form id="signup_form" class="simple_form new_user" action="/users" accept-charset="UTF-8" method="post">
+                        <form name="account_form" class="simple_form new_user" accept-charset="UTF-8">
                             <div class="form-group">
                                 <label for="email-field">
                                     Email address
                                 </label>
-                                <input autofocus="autofocus" class="form-control input-lg" id="email-field" name="user[email]" placeholder="you@domain.com" required="required" type="email" value="" autocomplete="off" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
+                                <input ng-model="email" autofocus="autofocus" class="form-control input-lg" placeholder="you@domain.com" required="required" type="email" value="" autocomplete="off">
                             </div>
                             <p class="light-grey">
                                 By asking for an account, you accept TeamMood's
                                 <a href="/terms-of-service">terms of service.</a>
                             </p>
                             <br>
-                            <button class="btn-lg light-orange-btn" type="submit">I Want An Account</button>
+                            <button class="btn-lg light-orange-btn" ng-disabled="account_form.$invalid" type="submit" ng-click="create_account(email)">I Want An Account</button>
                         </form>
                     </div>
                     <div class="grey">
@@ -37,3 +37,10 @@ layout: form
         </div>
     </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-cookies.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-sanitize.min.js"></script>
+
+<script src="/js/app.js"></script>
+<script src="/js/account.js"></script>
