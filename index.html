@@ -7,7 +7,7 @@
         var base = "http:" + window.location.href.substring(window.location.protocol.length);
         if (window.location.protocol == "https:")
             base = "https:" + window.location.href.substring(window.location.protocol.length);
-
+alert(base);
         if (language.toLowerCase().indexOf('fr') != -1) {
             window.location.href = base + '/fr';
         } else {
