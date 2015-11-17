@@ -16,3 +16,6 @@ twitter_username: teammood
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-sitemap
