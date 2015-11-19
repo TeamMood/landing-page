@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 
+    <head>
+        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+        <meta name="keywords" content="niko-niko calendar, niko niko, nikoniko, niko-niko, mood, team, happiness, humeur, métrique, mood meter, mood tracker">
+    </head>
+
     <script type="text/javascript">
         var language = navigator.language;
 

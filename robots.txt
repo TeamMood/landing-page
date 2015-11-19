@@ -1,6 +1,7 @@
 User-Agent: *
-Disallow: 
+Disallow:
 Disallow: /security
 Disallow: /terms-of-service/
 Disallow: /privacy-policy/
-
+Allow: /en
+Allow: /fr
