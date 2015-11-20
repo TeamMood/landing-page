@@ -2,7 +2,7 @@
 layout: default
 lang: fr
 ---
-<div class="front-header homepage-header">
+<div class="front-header homepage-header" ng-controller="DemoCtrl">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -14,16 +14,13 @@ lang: fr
             <div class="col-md-6">
                 <form id="homepage-form">
                     <input autocomplete="off" autofocus="autofocus" class="input-lg homepage-input"
-                    id="domain-field" placeholder="youremail@yourdomain.com" required="required" type="text">
+                    id="domain-field" placeholder="email@domaine.com" required="required" type="email"
+                    ng-model="email" ng-keyup="$event.keyCode == 13 && on_email_entered(email, '{{page.lang}}')">
                     <br><br>
-                    <div class="grey search-message"></div>
 
                     <div class="grey before-search-message">
                         <img src="/images/arrow-search.png">
-                        <div class="search-explanation">
-                            <p><strong class="orange">Essayez en remplissant votre email.</strong></p>
-                            <p>Vous recevrez un exempel d'email vous demandant comment se passe votre journée.</p>
-                            <p>Et ensuite, vous accéderez à une démo avec des exemples de données.</p>
+                        <div class="search-explanation" ng-bind-html="message.{{page.lang}}">
                         </div>
                     </div>
                     <p class="grey search-pattern"></p>
@@ -33,3 +30,10 @@ lang: fr
         </div>
     </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-cookies.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-sanitize.min.js"></script>
+
+<script src="/js/app.js"></script>
+<script src="/js/demo.js"></script>

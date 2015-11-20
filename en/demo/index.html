@@ -16,14 +16,10 @@ lang: en
                     <input autocomplete="off" autofocus="autofocus" class="input-lg homepage-input"
                     id="domain-field" placeholder="email@yourdomain.com" required="required" type="text">
                     <br><br>
-                    <div class="grey search-message"></div>
 
                     <div class="grey before-search-message">
                         <img src="/images/arrow-search.png">
-                        <div class="search-explanation">
-                            <p><strong class="orange">Try it by filling out your email.</strong></p>
-                            <p>You'll receive a sample email to know how you are doing.</p>
-                            <p>And then, you'll access a demo filled with sample data.</p>
+                        <div class="search-explanation" ng-bind-html="message.{{page.lang}}">
                         </div>
                     </div>
                     <p class="grey search-pattern"></p>
