@@ -2565,6 +2565,7 @@ body.registrations.edit section.invoices article .download-links {
 
 .content-page,.visitors.about section.office article,.visitors.about section.team,.visitors.about section.press article {
     margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 17px;
     color: #666
 }
