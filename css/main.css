@@ -3381,3 +3381,8 @@ body.registrations.edit section.invoices article .download-links {
         padding: 50px 0
     }
 }
+
+.vcenter {
+    display: flex;
+    align-items: center;
+}
