@@ -3,5 +3,7 @@ Disallow:
 Disallow: /security
 Disallow: /terms-of-service/
 Disallow: /privacy-policy/
+Disallow: /en/thankyou
+Disallow: /fr/thankyou
 Allow: /en
 Allow: /fr
