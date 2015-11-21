@@ -2,7 +2,7 @@ teammood.controller('DemoCtrl', function($scope, $http) {
     'use strict';
 
     $scope.message = {
-        fr: '<p><strong class="orange">Essayez en remplissant votre email.</strong></p>' +
+        fr: '<p><strong class="orange">Saisissez votre email et validez avez la touche "Entrée".</strong></p>' +
             '<p>Vous recevrez un exemple d\'email vous demandant comment se passe votre journée.</p>' +
             '<p>Et ensuite, vous accéderez à une démo avec des exemples de données.</p>',
         en: '<p><strong class="orange">Try it by filling out your email.</strong></p>' +
