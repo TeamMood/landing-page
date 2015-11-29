@@ -19,7 +19,7 @@ teammood.controller('DemoCtrl', function($scope, $http) {
 
         $http({
           method: 'POST',
-          url: 'http://localhost:9000/api/demo',
+          url: 'https://app.teammood.com/api/demo',
           data: {
               email: email,
               lang: lang
