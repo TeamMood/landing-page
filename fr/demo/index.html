@@ -95,9 +95,9 @@
                     <li class="nav-link">
                         <a href="/fr/pricing">Tarifs</a>
                     </li>
-                    <!--li class="nav-link">
+                    <li class="nav-link">
                         <a href="/fr/demo">Démo</a>
-                    </li-->
+                    </li>
                     <li class="nav-link">
                         <a href="/fr/features">Fonctionnalités</a>
                     </li>
@@ -108,7 +108,7 @@
 </div>
 
 
-    <div class="front-header homepage-header">
+    <div class="front-header homepage-header" ng-controller="DemoCtrl">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -120,16 +120,13 @@
             <div class="col-md-6">
                 <form id="homepage-form">
                     <input autocomplete="off" autofocus="autofocus" class="input-lg homepage-input"
-                    id="domain-field" placeholder="youremail@yourdomain.com" required="required" type="text">
+                    id="domain-field" placeholder="email@domaine.com" required="required" type="email"
+                    ng-model="email" ng-keyup="$event.keyCode == 13 && on_email_entered(email, 'fr')">
                     <br><br>
-                    <div class="grey search-message"></div>
 
                     <div class="grey before-search-message">
                         <img src="/images/arrow-search.png">
-                        <div class="search-explanation">
-                            <p><strong class="orange">Essayez en remplissant votre email.</strong></p>
-                            <p>Vous recevrez un exempel d'email vous demandant comment se passe votre journée.</p>
-                            <p>Et ensuite, vous accéderez à une démo avec des exemples de données.</p>
+                        <div class="search-explanation" ng-bind-html="message.fr">
                         </div>
                     </div>
                     <p class="grey search-pattern"></p>
@@ -139,6 +136,13 @@
         </div>
     </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-cookies.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-sanitize.min.js"></script>
+
+<script src="/js/app.js"></script>
+<script src="/js/demo.js"></script>
 
 
     <footer>
@@ -167,22 +171,19 @@
             <div class="col-md-4">
                 <div class="row">
                     <div class="col-md-6">
-                        <h3>Product</h3>
+                        <h3>Produit</h3>
                         <p>
                             <a href="/fr/features">Fonctionnalités</a>
                         </p>
-                        <!--p>
+                        <p>
                             <a href="/fr/demo">Démo</a>
-                        </p-->
+                        </p>
                         <p>
                             <a href="/fr/pricing">Tarifs</a>
                         </p>
-                        <!--p>
-                            <a href="/fr/faq">FAQ</a>
-                        </p-->
                     </div>
                     <div class="col-md-6">
-                        <h3>En savoir plus</h3>
+                        <h3>À propos</h3>
                         <p>
                             <a href="mailto:hello@teammood.com">Nous contacter</a>
                         </p>

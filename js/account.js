@@ -15,6 +15,7 @@ teammood.controller('AccountCtrl', function($scope, $window, $http, $httpParamSe
           url: 'https://docs.google.com/forms/d/1vChMxuVCzNCLqPTusirUwrnAdRzBCFvVcmqqUxa5zuA/formResponse',
           data: $httpParamSerializer({
               'entry.1': email,
+              'entry.1924653994': 'signup',
               'entry.535205848': language,
               'entry.192311241': user_agent
           }),
