@@ -13,7 +13,7 @@ lang: en
                     </div>
                     <br>
                     <div class="board-box">
-                        <h2>Ask for an account</h2>
+                        <h2>Ask for a private beta access</h2>
                         <form name="account_form" class="simple_form new_user" accept-charset="UTF-8">
                             <div class="form-group">
                                 <label for="email-field">
@@ -21,12 +21,15 @@ lang: en
                                 </label>
                                 <input ng-model="email" autofocus="autofocus" class="form-control input-lg" placeholder="you@domain.com" required="required" type="email" value="" autocomplete="off">
                             </div>
+                            <p>We'll get back to you quickly.</p>
                             <p class="light-grey">
-                                By asking for an account, you accept TeamMood's
-                                <a href="/terms-of-service">terms of service.</a>
+                                <small>
+                                    By asking for an account, you accept TeamMood's
+                                    <a href="/terms-of-service">terms of service.</a>
+                                </small>
                             </p>
                             <br>
-                            <button class="btn-lg light-orange-btn" ng-disabled="account_form.$invalid" type="submit" ng-click="create_account(email, '{{page.lang}}')">I Want An Account</button>
+                            <button class="btn-lg light-orange-btn" ng-disabled="account_form.$invalid" type="submit" ng-click="create_account(email, '{{page.lang}}')">I Want An Access</button>
                         </form>
                     </div>
                     <div class="grey">
