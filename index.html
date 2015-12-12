@@ -8,16 +8,19 @@
     </head>
 
     <script type="text/javascript">
-        var language = navigator.language;
+        var language = navigator.language || navigator.systemLanguage;
 
         var base = "http:" + window.location.href.substring(window.location.protocol.length);
         if (window.location.protocol == "https:")
             base = "https:" + window.location.href.substring(window.location.protocol.length);
 
         if (language.toLowerCase().indexOf('fr') != -1) {
-            window.location = base + '/fr';
+            var dest = base + '/fr';
+            window.location.replace ? window.location.replace(dest) : window.location = dest;
+
         } else {
-            window.location = base + '/en';
+            var dest = base + '/fr';
+            window.location.replace ? window.location.replace(dest) : window.location = dest;
         }
 
     </script>
