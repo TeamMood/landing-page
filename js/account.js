@@ -21,11 +21,9 @@ teammood.controller('AccountCtrl', function($scope, $window, $http, $httpParamSe
               'Content-Type': 'application/json'
           }
         }).then(function successCallback(response) {
-            console.log(response);
             on_success(lang);
         }, function errorCallback(error) {
-            console.log(error);
-            //on_success(lang)
+            on_success(lang)
         });
 
     };
