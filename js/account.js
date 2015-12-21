@@ -12,20 +12,20 @@ teammood.controller('AccountCtrl', function($scope, $window, $http, $httpParamSe
 
         $http({
           method: 'POST',
-          url: 'https://docs.google.com/forms/d/1vChMxuVCzNCLqPTusirUwrnAdRzBCFvVcmqqUxa5zuA/formResponse',
-          data: $httpParamSerializer({
-              'entry.1': email,
-              'entry.1924653994': 'signup',
-              'entry.535205848': language,
-              'entry.192311241': user_agent
-          }),
+          url: 'https://app.teammood.com/api/presignup',
+          data: {
+              email: email,
+              lang: lang
+          },
           headers: {
-              'Content-Type': 'application/x-www-form-urlencoded'
+              'Content-Type': 'application/json'
           }
         }).then(function successCallback(response) {
+            console.log(response);
             on_success(lang);
         }, function errorCallback(error) {
-            on_success(lang)
+            console.log(error);
+            //on_success(lang)
         });
 
     };
