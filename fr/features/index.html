@@ -45,7 +45,6 @@
             document, 'script', '//connect.facebook.net/en_US/fbevents.js');
 
         fbq('init', '1654308301475038');
-        fbq('track', "PageView");
     </script>
     <noscript>
         <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1654308301475038&ev=PageView&noscript=1" />
@@ -111,7 +110,10 @@
 </div>
 
 
-    <div class="front-header header">
+    <script>
+    fbq('track', "Lead");
+</script>
+<div class="front-header header">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -178,6 +180,22 @@
                 <p>Choisissez les jours de la semaine et l'heure auxquelles vous souhaitez recevoir l'email.</p>
                 <p>Choisissez votre langue : Français ou Anglais</p>
                 <p>Configurez votre fuseau horaire.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 col-md-offset-2">
+                <img class="img-circle img-responsive" src="/images/testimonials/luc_doumerc.jpg">
+            </div>
+            <div class="col-md-7">
+                <blockquote>
+                    <p><sup><i class="fa fa-quote-left"></i></sup>TeamMood permet de voir si les membres de l'équipe se sentent bien ou pas, et c'est une information assez difficile à avoir en temps normal.<sup><i class="fa fa-quote-right"></i></sup> </p>
+                    <p><small>Luc D., <i>Lyra  Network</i></small></p>
+                </blockquote>
             </div>
         </div>
     </div>
