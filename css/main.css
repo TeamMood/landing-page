@@ -1156,7 +1156,7 @@ body .container,body .visitors.about section.office article,.visitors.about sect
 
 .registrations.new .login-container,.registrations.create .login-container,.sessions.new .login-container,.passwords.new .login-container,.passwords.create .login-container,.passwords.edit .login-container,.passwords.update .login-container {
     max-width: 400px;
-    margin: 50px auto;
+    margin: 50px auto 20px;
     font-size: 16px;
     text-align: center
 }

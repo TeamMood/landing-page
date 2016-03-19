@@ -4,36 +4,48 @@ lang: fr
 ---
 <div class="dashboard-body" ng-controller="AccountCtrl">
     <div class="container">
-        <div class="">
-            <div class="container">
-                <div class="login-container">
-                    <div class="logo orange center">
-                        <div class="fa fa-smile-o"></div>
-                        TeamMood
+        <div class="login-container">
+            <div class="logo orange center">
+                <div class="fa fa-smile-o"></div>
+                TeamMood
+            </div>
+            <br>
+            <div class="board-box">
+                <h2>Demande d'accès</h2>
+                <form name="account_form" class="simple_form new_user" accept-charset="UTF-8">
+                    <div class="form-group">
+                        <label for="email-field">
+                            Adresse email
+                        </label>
+                        <input ng-model="email" autofocus="autofocus" class="form-control input-lg" placeholder="you@domain.com" required="required" type="email" value="" autocomplete="off">
                     </div>
+                    <p class="light-grey">
+                        En demandant un compte, vous acceptez les
+                        <a href="/terms-of-service">conditions générales</a> de TeamMood.
+                    </p>
                     <br>
-                    <div class="board-box">
-                        <h2>Demande d'accès</h2>
-                        <form name="account_form" class="simple_form new_user" accept-charset="UTF-8">
-                            <div class="form-group">
-                                <label for="email-field">
-                                    Adresse email
-                                </label>
-                                <input ng-model="email" autofocus="autofocus" class="form-control input-lg" placeholder="you@domain.com" required="required" type="email" value="" autocomplete="off">
-                            </div>
-                            <p class="light-grey">
-                                En demandant un compte, vous acceptez les
-                                <a href="/terms-of-service">conditions générales</a> de TeamMood.
-                            </p>
-                            <br>
-                            <button class="btn-lg light-orange-btn" ng-disabled="account_form.$invalid" type="submit" ng-click="create_account(email, '{{page.lang}}')">Je veux un compte</button>
-                        </form>
-                    </div>
-                    <div class="grey">
-                        Vous avez déjà un compte ?
-                        <a href="https://app.teammood.com/app#/login">Connexion</a>
-                    </div>
-                </div>
+                    <button class="btn-lg light-orange-btn" ng-disabled="account_form.$invalid" type="submit" ng-click="create_account(email, '{{page.lang}}')">Je veux un compte</button>
+                </form>
+            </div>
+            <div class="grey">
+                Vous avez déjà un compte ?
+                <a href="https://app.teammood.com/app#/login">Connexion</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 col-md-offset-2">
+                <img class="img-circle img-responsive" src="/images/testimonials/luc_d.jpg">
+            </div>
+            <div class="col-md-7">
+                <blockquote>
+                    <p><sup><i class="fa fa-quote-left"></i></sup>TeamMood permet de voir si les membres de l'équipe se sentent bien ou pas, et c'est une information assez difficile à avoir en temps normal.<sup><i class="fa fa-quote-right"></i></sup> </p>
+                    <p><small>Luc D., <i>Lyra  Network</i></small></p>
+                </blockquote>
             </div>
         </div>
     </div>
