@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-        <meta name="keywords" content="niko-niko calendar, niko niko, nikoniko, niko-niko, mood, team, happiness, humeur, métrique, mood meter, mood tracker">
-    </head>
+    {% include head.html %}
 
     <script type="text/javascript">
         var language = navigator.language || navigator.systemLanguage;
@@ -22,7 +18,7 @@
             window.location.replace ? window.location.replace(dest) : window.location = dest;
 
         } else {
-            var dest = base + '/en/' + params; ;
+            var dest = base + '/en/' + params;
 
             window.location.replace ? window.location.replace(dest) : window.location = dest;
         }
