@@ -6,6 +6,10 @@ var teammood = angular
     'ngSanitize'
   ]);
 
+teammood.config(function($interpolateProvider){
+    $interpolateProvider.startSymbol('[[').endSymbol(']]');
+});
+
 teammood.run(function($rootScope) {
 
     

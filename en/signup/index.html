@@ -112,7 +112,7 @@
                     </div>
                     <br>
                     <div class="board-box">
-                        <h2>Ask for a private beta access</h2>
+                        <h2>Create account</h2>
                         <form name="account_form" class="simple_form new_user" accept-charset="UTF-8">
                             <div class="form-group">
                                 <label for="email-field">
@@ -120,16 +120,20 @@
                                 </label>
                                 <input ng-model="email" autofocus="autofocus" class="form-control input-lg" placeholder="you@domain.com" required="required" type="email" value="" autocomplete="off">
                             </div>
-                            <p>We'll get back to you quickly.</p>
                             <p class="light-grey">
                                 <small>
-                                    By asking for an account, you accept TeamMood's
+                                    By creating an account, you accept TeamMood's
                                     <a href="/terms-of-service">terms of service.</a>
                                 </small>
                             </p>
                             <br>
-                            <button class="btn-lg light-orange-btn" ng-disabled="account_form.$invalid" type="submit" ng-click="create_account(email, 'en')">I Want An Access</button>
+                            <button class="btn-lg light-orange-btn" ng-disabled="account_form.$invalid || button_disabled" type="submit" ng-click="create_account(email, 'en')">I Want An Access</button>
                         </form>
+                    </div>
+                    <div id="flash" ng-show="show_error">
+                        <div class="alert alert-danger alert-dismissible" role="alert">
+                            <span ng-bind-html="error_message"></span>
+                        </div>
                     </div>
                     <div class="grey">
                         Already have an account?
