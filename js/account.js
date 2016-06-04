@@ -1,12 +1,15 @@
-teammood.controller('AccountCtrl', function($scope, $window, $http, $httpParamSerializer) {
+teammood.controller('AccountCtrl', function($scope, $window, $http) {
     'use strict';
 
     var on_success = function(lang) {
         $window.location = '/' + lang + '/thankyou';
     };
 
-    $scope.create_account = function(email, lang) {
+    $scope.button_disabled = false;
+    $scope.show_error = false;
 
+    $scope.create_account = function(email, lang) {
+        $scope.button_disabled = true;
         var language = navigator.language;
         var user_agent = navigator.userAgent;
 
@@ -23,7 +26,12 @@ teammood.controller('AccountCtrl', function($scope, $window, $http, $httpParamSe
         }).then(function successCallback(response) {
             on_success(lang);
         }, function errorCallback(error) {
-            on_success(lang)
+            if (error.status == 409) {
+                $scope.error_message = error.data;
+            }
+            $scope.button_disabled = false;
+            $scope.show_error = true;
+
         });
 
     };
