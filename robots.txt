@@ -6,5 +6,6 @@ Disallow: /privacy-policy/
 Disallow: /en/thankyou
 Disallow: /fr/thankyou
 Disallow: /maintenance
+Disallow: /demo
 Allow: /en
 Allow: /fr
