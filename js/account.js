@@ -24,7 +24,12 @@ teammood.controller('AccountCtrl', function($scope, $window, $http) {
               'Content-Type': 'application/json'
           }
         }).then(function successCallback(response) {
+
+            if (response.data.id && ga) {
+                ga('set', 'userId', response.data.id);
+            }
             on_success(lang);
+
         }, function errorCallback(error) {
             if (error.status == 409) {
                 $scope.error_message = error.data;
