@@ -9,17 +9,18 @@ lang: en
     var host = window.location.host;
 
     var base = "http://" + host;
-    if (window.location.protocol == "https")
+    if (window.location.protocol === "https:") {
         base = "https://" + host;
+    }
 
-    if (language.toLowerCase().indexOf('fr') != -1) {
-        var dest = base + '/fr/' + params;
-        window.location.replace ? window.location.replace(dest) : window.location = dest;
+    if (language.toLowerCase().indexOf('fr') !== -1) {
+        var dest_fr = base + '/fr/' + params;
+        window.location.replace ? window.location.replace(dest_fr) : window.location = dest_fr;
 
     } else {
-        var dest = base + '/en/' + params;
+        var dest_en = base + '/en/' + params;
 
-        window.location.replace ? window.location.replace(dest) : window.location = dest;
+        window.location.replace ? window.location.replace(dest_en) : window.location = dest_en;
     }
 
 </script>
