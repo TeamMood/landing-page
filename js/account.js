@@ -1,4 +1,4 @@
-teammood.controller('AccountCtrl', function($scope, $window, $http, $location) {
+teammood.controller('AccountCtrl', function($scope, $window, $http) {
     'use strict';
 
     var on_success = function(lang) {
@@ -8,8 +8,6 @@ teammood.controller('AccountCtrl', function($scope, $window, $http, $location) {
     $scope.button_disabled = false;
     $scope.show_error = false;
 
-    var query_params = $window.location.search;
-
     $scope.create_account = function(email, lang) {
         $scope.button_disabled = true;
         var language = navigator.language;
@@ -17,7 +15,7 @@ teammood.controller('AccountCtrl', function($scope, $window, $http, $location) {
 
         $http({
           method: 'POST',
-          url: 'http://localhost:9000/api/presignup',//'https://app.teammood.com/api/presignup',
+          url: 'https://app.teammood.com/api/presignup',
           data: {
               email: email,
               lang: lang
@@ -26,7 +24,12 @@ teammood.controller('AccountCtrl', function($scope, $window, $http, $location) {
               'Content-Type': 'application/json'
           }
         }).then(function successCallback(response) {
+
+            if (response.data.id && ga) {
+                ga('set', 'userId', response.data.id);
+            }
             on_success(lang);
+
         }, function errorCallback(error) {
             if (error.status == 409) {
                 $scope.error_message = error.data;
