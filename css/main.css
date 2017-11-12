@@ -20,6 +20,15 @@ img {
     margin: 0 auto
 }
 
+a {
+    color: #1abc9c
+}
+
+a:hover {
+    color: #0F6F5C;
+    text-decoration: none;
+}
+
 .authform {
     padding-top: 30px;
     max-width: 320px;
@@ -101,6 +110,23 @@ img {
     box-shadow: 0 0 10px white, 0 0 5px white !important
 }
 
+.story {
+    background: #fefeff;
+    border: 1px solid #dde5ed;
+    padding: 30px;
+    opacity: 1;
+    text-decoration: none;
+    outline: none;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: box-shadow .5s;
+    transition: box-shadow .5s
+}
+
+.story:hover {
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.25)
+}
 
 @font-face {
     font-family: "proxima-nova";
@@ -1213,7 +1239,8 @@ body .container,body .visitors.about section.office article,.visitors.about sect
 
 .front-header {
     padding: 0 20px;
-    color: #333
+    color: #333;
+    text-align: center
 }
 
 .front-header h1 {
