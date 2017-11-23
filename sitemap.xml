@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.teammood.com/en/features/</loc>
+    <loc>https://www.teammood.com/fr/success/</loc>
   </url>
   <url>
-    <loc>https://www.teammood.com/en/pricing/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/en/signup/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/en/success/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/en/</loc>
+    <loc>https://www.teammood.com/fr/signup/</loc>
   </url>
   <url>
     <loc>https://www.teammood.com/fr/features/</loc>
@@ -22,13 +13,22 @@
     <loc>https://www.teammood.com/fr/pricing/</loc>
   </url>
   <url>
-    <loc>https://www.teammood.com/fr/signup/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/fr/success/</loc>
-  </url>
-  <url>
     <loc>https://www.teammood.com/fr/</loc>
+  </url>
+  <url>
+    <loc>https://www.teammood.com/en/success/</loc>
+  </url>
+  <url>
+    <loc>https://www.teammood.com/en/signup/</loc>
+  </url>
+  <url>
+    <loc>https://www.teammood.com/en/features/</loc>
+  </url>
+  <url>
+    <loc>https://www.teammood.com/en/pricing/</loc>
+  </url>
+  <url>
+    <loc>https://www.teammood.com/en/</loc>
   </url>
   <url>
     <loc>https://www.teammood.com/</loc>
