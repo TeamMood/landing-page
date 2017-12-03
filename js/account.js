@@ -1,4 +1,4 @@
-teammood.controller('AccountCtrl', function($scope, $window, $http) {
+teammood.controller('AccountCtrl', function($scope, $window, $http, $cookies) {
     'use strict';
 
     var on_success = function(lang) {
@@ -18,7 +18,8 @@ teammood.controller('AccountCtrl', function($scope, $window, $http) {
           url: 'https://app.teammood.com/api/presignup',
           data: {
               email: email,
-              lang: lang
+              lang: lang,
+              params: $cookies.get('params')
           },
           headers: {
               'Content-Type': 'application/json'
@@ -32,7 +33,7 @@ teammood.controller('AccountCtrl', function($scope, $window, $http) {
             on_success(lang);
 
         }, function errorCallback(error) {
-            if (error.status == 409) {
+            if (error.status === 409) {
                 $scope.error_message = error.data;
             }
             $scope.button_disabled = false;
