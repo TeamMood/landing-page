@@ -109,7 +109,16 @@
 
   <body class="application-back registrations new">
 
-    <div class="dashboard-body" ng-controller="AccountCtrl">
+    <script>
+    !function(){
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://risk.clearbit.com/v1/risk.js';
+        var parent = document.getElementsByTagName('script')[0];
+        parent.parentNode.insertBefore(script, parent);
+    }();
+</script>
+<div class="dashboard-body" ng-controller="AccountCtrl">
     <div class="container">
         <div class="login-container">
             <div class="logo orange center">
