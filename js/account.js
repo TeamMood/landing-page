@@ -36,6 +36,9 @@ teammood.controller('AccountCtrl', function($scope, $window, $http, $cookies) {
             if (error.status === 409) {
                 $scope.error_message = error.data;
             }
+            if (error.status === 400) {
+                $scope.error_message = error.data;
+            }
             $scope.button_disabled = false;
             $scope.show_error = true;
 
