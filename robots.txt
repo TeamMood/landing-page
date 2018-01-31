@@ -7,5 +7,6 @@ Disallow: /en/thankyou
 Disallow: /fr/thankyou
 Disallow: /maintenance
 Disallow: /demo
+Disallow: /make-a-difference
 Allow: /en
 Allow: /fr
