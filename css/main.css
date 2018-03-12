@@ -3413,3 +3413,11 @@ body.registrations.edit section.invoices article .download-links {
     display: flex;
     align-items: center;
 }
+
+.lp-bg-image {
+    background-image: url('/images/lp/teammood_at_office.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    height: 500px;
+}
