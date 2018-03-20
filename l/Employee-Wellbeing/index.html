@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="https://cdn.optimizely.com/js/2738340043.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>TeamMood - For Agile Teams</title>
+    <meta name="description" content="Managers, do you (really) know how your team is doing? With TeamMood, track the well-being of your team, easily.">
+
+    <meta name="keywords" content="niko-niko calendar, niko niko, nikoniko, niko-niko, mood, team, happiness, humeur, métrique, mood meter, mood tracker, mood marble, team well being">
+
+    <!-- Facebook meta for sharing -->
+    <meta property="og:url"                content="https://www.teammood.com/?utm_medium=share&utm_campaign=facebook_share&utm_source=facebook" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="TeamMood - For Agile Teams" />
+    <meta property="og:description"        content="Managers, do you (really) know how your team is doing?" />
+    <meta property="og:image"              content="https://www.teammood.com/images/main-en.jpg" />
+
+    <link rel="shortcut icon" href="/images/logo-128px.png">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href=" /css/main.css ">
+
+    <link rel="canonical" href="https://www.teammood.com/l/Employee-Wellbeing/">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '1654308301475038');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1654308301475038&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-39772075-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+    <!-- Heatmap -->
+    <!-- Hotjar Tracking Code for www.teammood.com -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:809910,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Drip -->
+    <!--script type="text/javascript">
+        var _dcq = _dcq || [];
+        var _dcs = _dcs || {};
+        _dcs.account = '4668236';
+
+        (function() {
+            var dc = document.createElement('script');
+            dc.type = 'text/javascript'; dc.async = true;
+            dc.src = '//tag.getdrip.com/4668236.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(dc, s);
+        })();
+    </script-->
+
+    <!-- Intercom -->
+    <script>
+        window.intercomSettings = {
+            app_id: "dc53z013"
+        };
+    </script>
+    <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/dc53z013';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
+    <!-- Hello bar -->
+    <script src="//my.hellobar.com/f390e7a96432ba97974b96a49bfd15a067095dbd.js" type="text/javascript" charset="utf-8" async="async"></script>
+
+    <!-- custom script -->
+    <script src="/js/cookies.js"></script>
+
+    <!-- Leadworx -->
+    <script src="//adpxl.co/6kU2556V/an.js"></script><noscript><img src="//adpxl.co/6kU2556V/spacer.gif"></noscript>
+</head>
+
+
+  <body class="application-front visitors landing-page" style="padding-top: 80px;">
+
+
+    <nav class="navbar navbar-fixed-top" id="navigation" style="background-color: #FFF; margin-top:0px; padding-top: 20px">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand orange logo-md"><i class="fa fa-smile-o"></i>TeamMood</span>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="grey navbar-right">
+                <li class="nav-cta-link">
+                    <a class="light-orange-btn" href="/en/signup">Start Your Free Trial</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#benefits">Benefits</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container">
+
+      <div class="front-header">
+        <h1>People Leave Managers, Not Companies.</h1>
+        <div class="subtitle">TeamMood helps managers to have a better understanding of what's going on at the workplace.</div>
+      </div>
+    </div>
+
+    <div class="content-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 center">
+            <a class="light-orange-btn btn-lg" href="/en/signup">Start Your Free Trial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lp-bg-image"></div>
+
+    <a name="benefits"></a>
+
+    <div class="content-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 col-md-offset-2">
+                <img class="img-circle img-responsive" src="/images/testimonials/paul_r.jpg">
+            </div>
+            <div class="col-md-7">
+                <blockquote>
+                    <p><sup><i class="fa fa-quote-left"></i></sup>
+                        It’s not rocket science, happy people get better results.<sup><i class="fa fa-quote-right"></i></sup> </p>
+                    <p><small>Paul R., <i>Westpac, New Zealand</i></small></p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="homepage-api">
+    <div class="container">
+        <h2 class="text-center" style="padding-bottom: 30px;">How TeamMood improves the workplace</h2>
+        <div class="row">
+            <div class="col-sm-4 col-md-4">
+                <p class="text-center"><i class="fa fa-comments fa-4x grey"></i></p>
+                <h3>Open up conversations</h3>
+                <p>Transparency is key. Everyone in the team sees the data, and talk about it. As a manager, take part to those conversations to better understand what is going on.</p>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <p class="text-center"><i class="fa fa-bullhorn fa-4x grey"></i></p>
+                <h3>Uncover hidden issues</h3>
+                <p>Thanks to anonymity, get an honest feedback from your teammates. It's easier for someone to say something through TeamMood instead of going to tell in person.</p>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <p class="text-center"><i class="fa fa-bolt fa-4x grey"></i></p>
+                <h3>Get a clear picture of what actions need to be taken</h3>
+                <p>Thanks to the daily survey, discover an issue quickly, and address it without waiting, before the issue becomes out of control.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="visitors homepage">
+    <div class="homepage-press" style="padding: 50px 0 100px 0;">
+        <div class="container">
+            <h2 class="text-center">TeamMood at a glance</h2>
+            <div class="row">
+                <div class="col-sm-4 col-md-4">
+                    <img class="img-responsive" src="/images/nikoniko.png" style="margin:auto; height: 160px; padding:10px">
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <h4>Easy As Pie</h4>
+                    <p>Team members will receive a daily email, asking for their mood of the day. One click and you're done! No need to login, no more than 5 seconds per day.</p>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <img class="img-responsive" src="/images/analytics.png" style="margin:auto; height: 160px; padding:10px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-4">
+                    <h4>Anonymous</h4>
+                    <p>Do not track individuals, but follow the mood at the team level. The metrics are available to everyone on the team, not only to the managers.</p>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <h4>Analytics</h4>
+                    <p>Quickly get a glimpse on what's going on. Wanna know if things are better or worse? Just check the mood's average variation.</p>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <h4>Connected</h4>
+                    <p>Our seamless integrations with the tools you already use make participating even simpler.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-4">
+                    <h4>Agile DNA</h4>
+                    <p>Based on the niko-niko practice, each team member tells if she/he is having a good or a bad day. Those insights help the team for continuous improvement.</p>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <h4>For Remote Teams</h4>
+                    <p>Teammates spread all around the world? We manage timezones, so people get notified at the right time.</p>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <h4>Secured</h4>
+                    <p>Data are encrypted everywhere. TeamMood is enterprise ready with SAML based SSO.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="homepage-press">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="light-grey text-center">From ten people startups, to large companies with several hundreds of people, you're in good company.</h2>
+            <div class="row">
+    <div class="col-xs-6 col-md-2 col-md-offset-2">
+        <img alt="Decathlon" title="Decathlon" class="img-responsive thumbnail" src="//logo.clearbit.com/decathlon.fr?greyscale=true">
+    </div>
+    <div class="col-xs-6 col-md-2">
+        <img alt="SNCF" title="SNCF" class="img-responsive thumbnail" src="//logo.clearbit.com/sncf.com?greyscale=true">
+    </div>
+    <div class="col-xs-6 col-md-2">
+        <img alt="ANZ" title="ANZ" class="img-responsive thumbnail" src="//logo.clearbit.com/anz.com?greyscale=true">
+    </div>
+    <div class="col-xs-6 col-md-2">
+        <img alt="eBay" title="eBay" class="img-responsive thumbnail" src="//logo.clearbit.com/ebay.com?greyscale=true">
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 col-md-2 col-md-offset-2">
+        <img alt="Nike" title="Nike" class="img-responsive thumbnail" src="//logo.clearbit.com/nike.com?greyscale=true">
+    </div>
+    <div class="col-xs-6 col-md-2">
+        <img alt="TUI Group" title="TUI Group" class="img-responsive thumbnail" src="//logo.clearbit.com/tui.com?greyscale=true">
+    </div>
+    <div class="col-xs-6 col-md-2">
+        <img alt="IPSEN" title="IPSEN" class="img-responsive thumbnail" src="//logo.clearbit.com/ipsen.com?greyscale=true">
+    </div>
+    <div class="col-xs-6 col-md-2">
+        <img alt="RS Components" title="RS Components" class="img-responsive thumbnail" src="//logo.clearbit.com/rs-components.com?greyscale=true">
+    </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="content-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 center">
+            <a class="light-orange-btn btn-lg" href="/en/signup">Get Started In 3 Minutes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a name="pricing"></a>
+
+    <div class="front-header header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Simple pricing.</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="homepage-press">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">$ 1 / active user / month</h1>
+                <p class="light-grey text-center">After a 30 days trial period.</p>
+                <h3 class="light-grey text-center">We also provide yearly plans,<br>and custom ones for large companies: <a href="mailto:sales@teammood.com">contact us</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 center">
+                <a class="light-orange-btn btn-lg" href="/en/signup">Start the free 30-day trial period</a>
+                <p><small>No credit card required</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="legal-mentions">
+                    <span>
+                        Copyright 2018
+                    </span>
+                    <span class="separator">•</span>
+                    <span>
+                        <a href="/terms-of-service">Terms</a>
+                    </span>
+                    <span class="separator">•</span>
+                    <span>
+                        <a href="/privacy-policy">Privacy Policy</a>
+                    </span>
+                    <span class="separator">•</span>
+                    <span>
+                        <a href="https://help.teammood.com/pricing-security-privacy-and-terms/legals/how-were-preparing-for-gdpr">GDPR</a>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-4">
+                <div class="phones-footer">
+                    Made with <i class="fa fa-heart"></i> in Toulouse, France
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  </body>
+
+</html>

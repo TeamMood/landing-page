@@ -1031,7 +1031,7 @@ footer .footer-logo {
     display: inline-block;
     margin-right: 10px;
     font-size: 25px;
-    font-weight: 600
+    font-family: 'Lobster', cursive;
 }
 
 footer .footer-logo .fa {
@@ -1040,7 +1040,6 @@ footer .footer-logo .fa {
 
 footer .legal-mentions {
     color: #747474;
-    margin-top: 15px
 }
 
 footer .legal-mentions .separator {
@@ -3413,4 +3412,12 @@ body.registrations.edit section.invoices article .download-links {
 .vcenter {
     display: flex;
     align-items: center;
+}
+
+.lp-bg-image {
+    background-image: url('/images/lp/teammood_at_office.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    height: 500px;
 }
