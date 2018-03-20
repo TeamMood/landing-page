@@ -3421,3 +3421,7 @@ body.registrations.edit section.invoices article .download-links {
     background-size: contain;
     height: 500px;
 }
+
+.benefits p {
+    font-size: 17px;
+}
