@@ -13,6 +13,7 @@ lang: en
         base = "https://" + host;
     }
 
+    //redirecting
     if (language.toLowerCase().indexOf('fr') !== -1) {
         var dest_fr = base + '/fr/' + params;
         window.location.replace ? window.location.replace(dest_fr) : window.location = dest_fr;
