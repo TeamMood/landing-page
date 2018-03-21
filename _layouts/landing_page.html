@@ -5,6 +5,14 @@
 
   <body class="application-front visitors landing-page" style="padding-top: 80px;">
 
+  {% if page.facebook_tag %}
+    <script>
+        fbq('track', 'ViewContent', {
+            'content_name': '{{ page.facebook_tag }}'
+        });
+    </script>
+  {% endif %}
+
 
     {% include lp_header.html %}
 
