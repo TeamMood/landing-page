@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>TeamMood - Track The Well-Being of Your Team</title>
+    <meta name="description" content="Managers, do you (really) know how your team is doing? With TeamMood, track the well-being of your team, easily.">
+
+    <meta name="keywords" content="niko-niko calendar, niko niko, nikoniko, niko-niko, mood, team, happiness, humeur, métrique, mood meter, mood tracker, mood marble, team well being">
+
+    <!-- Facebook meta for sharing -->
+    <meta property="og:url"                content="https://www.teammood.com/?utm_medium=share&utm_campaign=facebook_share&utm_source=facebook" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="TeamMood - Track The Well-Being of Your Team" />
+    <meta property="og:description"        content="Managers, do you (really) know how your team is doing?" />
+    <meta property="og:image"              content="https://www.teammood.com/images/main-en.jpg" />
+
+    <link rel="shortcut icon" href="/images/logo-128px.png">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="/css/main.css ">
+
+    <link rel="canonical" href="https://www.teammood.com/terms-of-service/20171009-terms-of-service-v2.0.html">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '1654308301475038');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1654308301475038&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-39772075-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- LinkedIn pixel -->
+    <script type="text/javascript">
+        _linkedin_data_partner_id = "329514";
+    </script><script type="text/javascript">
+    (function(){var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);})();
+</script>
+    <noscript>
+        <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=329514&fmt=gif" />
+    </noscript>
+
+    <!-- Intercom -->
+    <script>
+        window.intercomSettings = {
+            app_id: "dc53z013"
+        };
+    </script>
+    <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/dc53z013';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
+    <!-- Hello bar -->
+    <script src="//my.hellobar.com/f390e7a96432ba97974b96a49bfd15a067095dbd.js" type="text/javascript" charset="utf-8" async="async"></script>
+
+    <!-- custom script -->
+    <script src="/js/cookies.js"></script>
+
+    <!-- Leadworx -->
+    <script src="//adpxl.co/6kU2556V/an.js"></script><noscript><img src="//adpxl.co/6kU2556V/spacer.gif"></noscript>
+</head>
+
+
+  <body class="application-front visitors homepage">
+
+    <div class="container">
+    <nav class="navbar" id="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand orange logo-md" href="/en"><i class="fa fa-smile-o"></i>TeamMood</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="grey navbar-right">
+                    <li class="nav-cta-link">
+                        <a class="light-orange-btn" href="/en/signup">Get started</a>
+                    </li>
+                    <li class="nav-right-link">
+                        <a href="https://app.teammood.com/app#/login">Login</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/en/success">Customers</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/en/pricing">Pricing</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/en/features">Features</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+    <div class="container content-page">
+  <h1>User Agreement</h1>
+
+<p>This document (the “User Agreement”) is a legally binding agreement between you and TeamMood (“TeamMood) that governs your use of TeamMood′s online services.</p>
+
+<p>For information about your data privacy, please see our <a href="/privacy-policy">Privacy Policy</a>.</p>
+
+<p>For information about security, please see our <a href="/security">Security Page</a>.</p>
+
+<h2>Contract Formation</h2>
+
+<p>By using the teammood.com web site (“Service”), or any services of TeamMood, you are agreeing to be bound by the following terms and conditions (“User Agreement”).</p>
+
+<h2>Changes to the User Agreement</h2>
+
+<p>TeamMood reserves the right to update and change the User Agreement from time to time without notice and at its sole discretion.</p>
+
+<p>Any new features or tools which are added to the current Service shall be also subject to the Terms of Service. Continued use of the Service after any such changes shall constitute your consent to such changes.</p>
+
+<p>You can review the most current version of the User Agreement at any time at: https://www.teammood.com/terms-of-service. TeamMood reserves the right to update and change the User Agreement by posting updates and changes to the Service website. You are advised to check the Terms of Service from time to time for any updates or changes that may impact you.</p>
+
+<h2>Violation</h2>
+
+<p>Violation of any of the terms below will result in the termination of your Account. You agree to use the Service at your own risk.</p>
+
+<h2>Account Terms</h2>
+
+<ul>
+<li>You must be 18 years or older to use this Service.</li>
+<li>You must provide your full name, a valid email address, and any other information requested in order to complete the signup process.</li>
+<li>A single username and password (“login”) may only be used by one person.</li>
+<li>You are responsible for keeping your password secure. TeamMood cannot and will not be liable for any loss or damage from your failure to maintain the security of your account and password.</li>
+<li>You are responsible for all activity and Content (data, graphics, photos, links) that is uploaded under your Service account.</li>
+<li>You must not upload, post, host, or transmit unsolicited email, SMS, Instant Messenger, Twitter or “spam” messages.</li>
+<li>You must not transmit any worms or viruses or any code of a destructive nature.</li>
+<li>You may not use the Service for any illegal or unauthorized purpose.</li>
+<li>You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service without the express written permission by TeamMood.</li>
+<li>A breach or violation of any of the Account Terms as determined in the sole discretion of TeamMood will result in an immediate termination of your services.</li>
+</ul>
+
+
+<h2>General Conditions</h2>
+
+<p>You must read, agree with and accept all of the terms and conditions contained in this User Agreement before you may become a member of the Service.</p>
+
+<ul>
+<li>We reserve the right to modify or terminate the Service for any reason, without notice at any time.</li>
+<li>We reserve the right to refuse service to anyone for any reason at any time.</li>
+<li>Your use of the Service is at your sole risk. The Service is provided on an “as is” and “as available” basis without any warranty or condition, express, implied or statutory.</li>
+<li>TeamMood does not warrant that the Service will be uninterrupted, timely, secure, or error-free.</li>
+<li>TeamMood does not warrant that the results that may be obtained from the use of the service will be accurate or reliable.</li>
+<li>Technical support is only provided to paying account holders and is only available via email.</li>
+<li>You understand that TeamMood uses third party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run the Service.</li>
+<li>We may, but have no obligation to, remove Content and Accounts containing Content that we determine in our sole discretion are unlawful, offensive, threatening, libelous, defamatory, pornographic, obscene or otherwise objectionable or violates any party’s intellectual property or these Terms of Service.</li>
+<li>You understand that your Content (not including credit card information), may be transferred unencrypted and involve (a) transmissions over various networks; and (b) changes to conform and adapt to technical requirements of connecting networks or devices. Credit Card information is always encrypted during transfer over networks.</li>
+<li>You retain ownership over all content that you submit to your Service account, however, by making your account public, you agree to allow others to view your content.</li>
+<li>TeamMood does not warrant that (i) the service will meet your specific requirements, (ii) the service will be uninterrupted, timely, secure, or error-free, (iii) the results that may be obtained from the use of the service will be accurate or reliable, (iv) the quality of any products, services, information, or other material purchased or obtained by you through the service will meet your expectations, and (v) any errors in the Service will be corrected.</li>
+<li>You expressly understand and agree that in no event shall TeamMood, its affiliates, officers, directors and employees be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses (even if TeamMood has been advised of the possibility of such damages), resulting from: (i) the use or the inability to use the service; (ii) the cost of procurement of substitute goods and services resulting from any goods, data, information or services purchased or obtained or messages received or transactions entered into through or from the service; (iii) unauthorized access to or alteration of your transmissions or data; (iv) statements or conduct of any third party on the service; (v) or any other matter relating to the service.</li>
+<li>The failure of TeamMood to exercise or enforce any right or provision of the Terms of Service shall not constitute a waiver of such right or provision. The Terms of Service constitutes the entire agreement between you and TeamMood and govern your use of the Service, superceding any prior agreements between you and TeamMood (including, but not limited to, any prior versions of the Terms of Service).</li>
+<li>TeamMood reserves the right to assign this User Agreement or any part thereof without restrictions.</li>
+<li>Questions about the Terms of Service should be sent to support email contact@teammood.com.</li>
+</ul>
+
+
+<h2>Modifications to the Service and Prices</h2>
+
+<ul>
+<li>TeamMood reserves the right at any time and from time to time to modify or discontinue, temporarily or permanently, the Service (or any part thereof) with or without notice.</li>
+<li>Prices of all Services, including but not limited to monthly subscription plan fees to the Service, are subject to change upon 30 days notice from us. Such notice may be provided at any time by posting the changes to the Service site (teammood.com) or the Service itself.</li>
+<li>TeamMood shall not be liable to you or to any third party for any modification, price change, suspension or discontinuance of the Service.</li>
+</ul>
+
+
+<h2>Payment of Fees, Refunds, Upgrading and Downgrading</h2>
+
+<ul>
+<li>The Service is billed in advance on a monthly basis and is non-refundable. There will be no refunds or credits for partial months of service, upgrade/downgrade refunds, or refunds for months unused with an open account.</li>
+<li>An upgrade or downgrade made during a 30-day free trial period will immediately bill you.</li>
+<li>All fees are exclusive of all taxes, levies, or duties imposed by taxing authorities, and you shall be responsible for payment of all such taxes, levies, or duties, excluding only United States (federal or state) taxes.</li>
+<li>For any upgrade or downgrade in plan level outside of a 30-day trial period, the credit card that you provided will automatically be charged the new rate on your next billing cycle.</li>
+<li>Downgrading your Service may cause the loss of Content, features, or capacity of your Account. TeamMood does not accept any liability for such loss. Downgrading your Service may not be completed without direct action from you to remove Content, features, or capacity in place that exceeds the Content, features, or capacity offered by the lesser plan.</li>
+<li>Canceling your Service will result in the immediate and irrevocable deletion of your Content.</li>
+</ul>
+
+
+<h2>Cancellation and Termination</h2>
+
+<ul>
+<li>Verbal, physical, written or other abuse (including threats of abuse) of any TeamMood customer, employee, member, or officer will result in immediate account termination.</li>
+<li>You are solely responsible for properly canceling your account. You can cancel your account at any time by clicking on the Admin link in the global navigation bar at the top of the screen. The Admin screen provides a cancellation link. An email or phone request to cancel your account is not considered cancellation.</li>
+<li>Your cancellation will take effect immediately and you will not be charged again. However, no refunds will be issued for any previous charges, in whole or in part.</li>
+<li>All of your Content will be immediately deleted from the Service upon cancellation. This information can not be recovered once your account is cancelled.</li>
+<li>We reserve the right to modify or terminate your Service for any reason, without notice at any time.</li>
+</ul>
+
+
+<h2>Entire Agreement</h2>
+
+<p>This User Agreement constitutes all the terms and conditions agreed upon between you and TeamMood and supercedes any prior agreements, whether written or oral. Any additional or different terms or conditions in any written or oral communication from you to TeamMood are void. You agree and accept that you have not accepted the terms and conditions of this User Agreement in reliance of or to any oral or written representations made by TeamMood not contained in this User Agreement.</p>
+
+<h2>Severability</h2>
+
+<p>Should for any reason or to any extent any provision of this User Agreement be held invalid or unenforceable, such invalidity or enforceability shall not in any manner affect or render invalid or unenforceable the remaining provisions of this User Agreement and the application of that provision shall be enforced to the extent permitted by law.</p>
+
+<h2>Governing Law and Disputes</h2>
+
+<p>This User Agreement shall be governed and construed in accordance with the substantive laws of France. Any dispute, controversy or claim arising out of or in connection with this User Agreement will be subject to the jurisdiction of the courts of France.</p>
+
+<h2>Change Log</h2>
+
+<ul>
+<li><em>Version 1.0, June 27, 2015.</em> Initial release.</li>
+<li><em>Version 1.1, September 15, 2015.</em> 'Payment of Fees, Refunds, Upgrading and Downgrading' and 'Cancellation and Termination' sections.</li>
+<li><em>Version 2.0, October 9, 2017.</em> Change of Legal Form.</li>
+</ul>
+
+
+<h2>Legal mentions / Mentions légales</h2>
+
+<p>TeamMood is a french company. For legal reasons, the following informations will be in French, it gives our address and administrative informations.</p>
+
+<p>TeamMood est édité par Power Up Conseil, SAS au capital de 2000€.</p>
+
+<p>SIREN n° 830 493 474, R.C.S. Toulouse<br>
+Greffe du Tribunal de Commerce de Toulouse</p>
+
+<p>Déclarations CNIL n° 1905292</p>
+
+<p>Power Up Conseil - TeamMood<br>
+2 rue Auguste Valats<br>
+31300 Toulouse<br>
+France<br></p>
+
+</div>
+
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="footer-logo">
+                    <i class="fa fa-smile-o"></i>TeamMood
+                </div>
+                <div class="legal-mentions">
+                    <p>
+                        Copyright 2018
+                    </p>
+                    <p>
+                        <span>
+                            <a href="/terms-of-service">Terms</a>
+                        </span>
+                        <span class="separator">•</span>
+                        <span>
+                            <a href="/privacy-policy">Privacy Policy</a>
+                        </span>
+                        <span class="separator">•</span>
+                        <span>
+                            <a href="https://help.teammood.com/pricing-security-privacy-and-terms/legals/how-teammood-complies-with-gdpr">GDPR</a>
+                        </span>
+                    </p>
+                </div>
+                <p>&nbsp;</p>
+                <p><a href="http://status.teammood.com" target="_blank"><i class="fa fa-signal"></i> System status</a></p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Product</h3>
+                        <p>
+                            <a href="/en/features">Features</a>
+                        </p>
+                        <p>
+                            <a href="/en/success">Customers</a>
+                        </p>
+                        <p>
+                            <a href="/en/pricing">Pricing</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>About</h3>
+                        <p>
+                            <a href="mailto:hello@teammood.com">Contact us</a>
+                        </p>
+                        <p>
+                            <a href="https://blog.teammood.com">Blog</a>
+                        </p>
+                        <p>
+                            <a href="https://twitter.com/teammood" target="_blank">
+                            </a>
+                        </p>
+                        <div class="fa fa-twitter"></div><a href="https://twitter.com/teammood" target="_blank">
+        Twitter
+        </a>
+                        <p></p>
+                        <p>
+                            <a href="https://www.facebook.com/TeamMood" target="_blank">
+                            </a>
+                        </p>
+                        <div class="fa fa-facebook"></div><a href="https://www.facebook.com/TeamMood" target="_blank">
+        Facebook
+        </a>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="phones-footer">
+                    <strong>Made with <i class="fa fa-heart"></i> in Toulouse, France</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  </body>
+
+</html>
