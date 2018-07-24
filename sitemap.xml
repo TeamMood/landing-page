@@ -1,82 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.teammood.com/en/signup/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/fr/success/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/fr/signup/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/fr/features/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/fr/pricing/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/fr/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/en/success/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/en/features/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/en/pricing/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/en/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/l/Continuous-Improvement/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/l/Niko-Niko/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/l/Agile-Retrospective/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/l/Employee-Wellbeing/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/l/Agile-Information-Radiator/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/l/Feedback-Tool/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/l/Agile-Project-Management/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/l/Emotional-Intelligence/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/l/Get-Feedback/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/l/ces2018/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/</loc>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/en/make-a-difference/index.html</loc>
-    <lastmod>2018-01-31T11:33:53+01:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/googleb2410028bc96f9a2.html</loc>
-    <lastmod>2015-11-09T16:07:35+01:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/maintenance/afklcomingsoon/index.html</loc>
-    <lastmod>2018-06-06T21:23:13+02:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.teammood.com/maintenance/index.html</loc>
-    <lastmod>2016-12-06T21:20:45+01:00</lastmod>
-  </url>
+<url>
+<loc>http://localhost:4000/fr/signup/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/fr/success/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/fr/features/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/fr/pricing/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/fr/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/en/signup/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/en/success/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/en/features/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/en/pricing/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/en/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/l/Get-Feedback/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/l/Emotional-Intelligence/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/l/ces2018/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/l/Agile-Information-Radiator/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/l/Feedback-Tool/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/l/Niko-Niko/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/l/Agile-Retrospective/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/l/Continuous-Improvement/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/l/Agile-Project-Management/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/l/Employee-Wellbeing/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/en/make-a-difference/</loc>
+<lastmod>2018-07-23T11:41:15+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/en/success/Success-story-Ascension-en.pdf</loc>
+<lastmod>2018-07-23T11:41:15+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/en/success/Success-story-Fioulmarket-en.pdf</loc>
+<lastmod>2018-07-23T11:41:15+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/en/success/Success-story-agile-team-en.pdf</loc>
+<lastmod>2018-07-23T11:41:15+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/en/success/Success-story-banque-en.pdf</loc>
+<lastmod>2018-07-23T11:41:15+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/en/success/Success-story-scrum-masters-en.pdf</loc>
+<lastmod>2018-07-23T11:41:15+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/fr/presentation.pdf</loc>
+<lastmod>2018-07-23T11:41:15+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/fr/success/Success-story-Fioulmarket-fr.pdf</loc>
+<lastmod>2018-07-23T11:41:15+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/fr/success/Success-story-banque-fr.pdf</loc>
+<lastmod>2018-07-23T11:41:15+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/fr/success/Success-story-scrum-masters-fr.pdf</loc>
+<lastmod>2018-07-23T11:41:15+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/googleb2410028bc96f9a2.html</loc>
+<lastmod>2018-07-23T11:41:15+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/maintenance/afklcomingsoon/</loc>
+<lastmod>2018-07-23T11:41:15+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/maintenance/</loc>
+<lastmod>2018-07-23T11:41:15+02:00</lastmod>
+</url>
 </urlset>
