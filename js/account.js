@@ -26,10 +26,6 @@ teammood.controller('AccountCtrl', function($scope, $window, $http, $cookies) {
           }
         }).then(function successCallback(response) {
 
-            if (response.data.id && ga) {
-                ga('set', 'userId', response.data.id);
-                ga('send', 'event', 'registration', 'signedUp', 'Started a trial');
-            }
             on_success(lang);
 
         }, function errorCallback(error) {
