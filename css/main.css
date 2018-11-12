@@ -2901,6 +2901,16 @@ body.registrations.edit section.invoices article .download-links {
     font-weight: 100
 }
 
+.visitors.homepage .homepage-currency {
+    background-color: #fafafa;
+    padding: 20px 0 0 0;
+}
+
+.visitors.homepage .homepage-currency .btn-default.active {
+    background: #1abc9c;
+    color: white;
+}
+
 .visitors.homepage .homepage-api {
     padding: 30px 18px
 }
