@@ -687,7 +687,7 @@ button.swiper-pagination-bullet {
     }
 }
 
-.white-btn,.light-orange-btn,.visitors.about section.press a,.dark-orange-btn {
+.white-btn,.light-orange-btn,.light-blue-btn,.visitors.about section.press a,.dark-orange-btn {
     display: inline-block;
     text-align: center;
     border-radius: 3px;
@@ -729,6 +729,18 @@ button.swiper-pagination-bullet {
 
 .light-orange-btn:hover,.visitors.about section.press a:hover,.light-orange-btn:focus,.visitors.about section.press a:focus,.light-orange-btn:active,.visitors.about section.press a:active {
     background: #16A287;
+    color: #fff
+}
+
+
+.light-blue-btn,.visitors.about section.press a {
+    background: #5c91df;
+    color: #fff !important;
+    border: 0
+}
+
+.light-blue-btn:hover,.visitors.about section.press a:hover,.light-blue-btn:focus,.visitors.about section.press a:focus,.light-blue-btn:active,.visitors.about section.press a:active {
+    background: #4769a5;
     color: #fff
 }
 
@@ -2915,6 +2927,13 @@ body.registrations.edit section.invoices article .download-links {
     padding: 30px 18px
 }
 
+
+.visitors.homepage .homepage-api.pricing {
+    background-color: #fafafa;
+    padding: 30px 18px
+}
+
+
 .visitors.homepage .homepage-api h2 {
     font-weight: 100;
     font-size: 32px
@@ -2924,6 +2943,29 @@ body.registrations.edit section.invoices article .download-links {
     font-weight: 100;
     font-size: 20px;
     color: #888
+}
+
+.homepage-api.pricing p.pricing-feature {
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.visitors.homepage .homepage-api div.standard-plan {
+    border-top: 4px solid #5c91df;
+}
+
+.visitors.homepage .homepage-api div.standard-plan i {
+    color: #5c91df;
+}
+
+.visitors.homepage .homepage-api div.enterprise-plan {
+    border-top: 4px solid #1abc9c;
+}
+
+.homepage-api.pricing i {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #1abc9c;
 }
 
 .visitors.homepage .homepage-api a {
