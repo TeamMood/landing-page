@@ -13,11 +13,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 center">
-
-                    <div class="btn-group" role="group" ng-repeat="currency in currencies">
-                        <button type="button" class="btn btn-default" ng-class="{active: currency.active}" ng-click="update(currency)">[[currency.label]]</button>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" ng-class="{active: currency.active}" ng-click="update(currency)" ng-repeat="currency in currencies">[[currency.label]]</button>
                     </div>
-
                 </div>
             </div>
         </div>
