@@ -155,13 +155,28 @@
     </div>
 </div>
 
-<div class="homepage-press">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center">US$ 2 / active user / month</h1>
-                <p class="light-grey text-center">After a 30 days trial period.</p>
-                <h3 class="light-grey text-center">We also provide yearly plans,<br>and custom ones for large companies: <a href="mailto:sales@teammood.com">contact us</a></h3>
+<div ng-controller="PricingCtrl">
+    <div class="homepage-currency">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 center">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" ng-class="{active: currency.active}" ng-click="update(currency)" ng-repeat="currency in currencies">[[currency.label]]</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="homepage-press" style="padding: 0 0 100px 0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 center">
+
+                    <h1 class="text-center">[[price]] / active user / month</h1>
+                    <p class="light-grey text-center">After a 30 days trial period.</p>
+                    <h3 class="light-grey text-center">We also provide yearly plans,<br>and custom ones for large companies: <a href="mailto:sales@teammood.com">contact us</a></h3>
+                </div>
             </div>
         </div>
     </div>
@@ -177,6 +192,14 @@
         </div>
     </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-cookies.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-sanitize.min.js"></script>
+
+<script src="/js/app.js"></script>
+<script src="/js/pricing.js"></script>
 
 <div class="content-page">
     <div class="container">
