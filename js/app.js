@@ -18,3 +18,9 @@ teammood.run(function($rootScope) {
 angular.element(document).ready(function() {
   angular.bootstrap(document, ['teammood']);
 });
+
+
+// bootstrap popover
+$(function () {
+    $('[data-toggle="popover"]').popover()
+});
