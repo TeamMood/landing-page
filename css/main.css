@@ -687,7 +687,7 @@ button.swiper-pagination-bullet {
     }
 }
 
-.white-btn,.light-orange-btn,.visitors.about section.press a,.dark-orange-btn {
+.white-btn,.light-orange-btn,.light-blue-btn,.visitors.about section.press a,.dark-orange-btn {
     display: inline-block;
     text-align: center;
     border-radius: 3px;
@@ -729,6 +729,18 @@ button.swiper-pagination-bullet {
 
 .light-orange-btn:hover,.visitors.about section.press a:hover,.light-orange-btn:focus,.visitors.about section.press a:focus,.light-orange-btn:active,.visitors.about section.press a:active {
     background: #16A287;
+    color: #fff
+}
+
+
+.light-blue-btn,.visitors.about section.press a {
+    background: #5c91df;
+    color: #fff !important;
+    border: 0
+}
+
+.light-blue-btn:hover,.visitors.about section.press a:hover,.light-blue-btn:focus,.visitors.about section.press a:focus,.light-blue-btn:active,.visitors.about section.press a:active {
+    background: #4769a5;
     color: #fff
 }
 
@@ -2901,12 +2913,12 @@ body.registrations.edit section.invoices article .download-links {
     font-weight: 100
 }
 
-.visitors.homepage .homepage-currency {
+.homepage-currency {
     background-color: #fafafa;
     padding: 20px 0 0 0;
 }
 
-.visitors.homepage .homepage-currency .btn-default.active {
+.homepage-currency .btn-default.active {
     background: #1abc9c;
     color: white;
 }
@@ -2914,6 +2926,13 @@ body.registrations.edit section.invoices article .download-links {
 .visitors.homepage .homepage-api {
     padding: 30px 18px
 }
+
+
+.homepage-api.pricing {
+    background-color: #fafafa;
+    padding: 30px 18px
+}
+
 
 .visitors.homepage .homepage-api h2 {
     font-weight: 100;
@@ -2926,7 +2945,30 @@ body.registrations.edit section.invoices article .download-links {
     color: #888
 }
 
-.visitors.homepage .homepage-api a {
+.homepage-api.pricing p.pricing-feature {
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.homepage-api div.standard-plan {
+    border-top: 4px solid #5c91df;
+}
+
+.homepage-api div.standard-plan i {
+    color: #5c91df;
+}
+
+.homepage-api div.enterprise-plan {
+    border-top: 4px solid #1abc9c;
+}
+
+.homepage-api.pricing i {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #1abc9c;
+}
+
+.homepage-api a {
     margin-top: 20px
 }
 
