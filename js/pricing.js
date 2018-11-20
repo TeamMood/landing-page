@@ -20,12 +20,12 @@ teammood.controller('PricingCtrl', function($scope) {
         },
         {
             label: 'AUD',
-            value: 'AU$2',
+            value: 'AU$3',
             countries: ["AU", "CC", "CX", "HM", "KI", "NF", "NR", "TV"]
         },
         {
             label: 'CAD',
-            value: 'CA$2',
+            value: 'CA$3',
             countries: ['CA']
         },
         {
