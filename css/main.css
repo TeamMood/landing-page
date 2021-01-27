@@ -3477,3 +3477,19 @@ body.registrations.edit section.invoices article .download-links {
 .benefits p {
     font-size: 17px;
 }
+
+/* --------------------------------------------------------- Morgane rules -> order by ? --------------------------------------------------------------------*/
+.teammood_mood_indicator_tool_img{
+    width: 100%;
+}
+
+/* "/en/cookies-policy/" */
+
+.cookies-table{
+    width: 100%;
+}
+
+.cookies-table th, .cookies-table td{
+    border: lightgrey 1px solid;
+    padding: 10px;
+}
