@@ -103,7 +103,7 @@ a:hover {
 }
 
 .application-back #nprogress .bar {
-    background-color: white !important
+    background-color: #ffffff !important
 }
 
 .application-back #nprogress .peg {
@@ -2903,7 +2903,7 @@ body.registrations.edit section.invoices article .download-links {
 .visitors.homepage .homepage-press img {
     height: 75px;
     opacity: 0.7;
-    margin: 20px 0
+    margin: 20px auto
 }
 
 .visitors.homepage .homepage-press blockquote {
