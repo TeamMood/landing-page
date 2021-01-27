@@ -3485,11 +3485,11 @@ body.registrations.edit section.invoices article .download-links {
 
 /* "/en/cookies-policy/" */
 
-.cookies-table{
+.private-policy-table{
     width: 100%;
 }
 
-.cookies-table th, .cookies-table td{
+.private-policy-table th, .private-policy-table td{
     border: lightgrey 1px solid;
     padding: 10px;
 }
