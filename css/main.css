@@ -114,10 +114,10 @@ a:hover {
     background: #fefeff;
     border: 1px solid #dde5ed;
     padding: 30px;
+    margin-bottom: 30px;
     opacity: 1;
     text-decoration: none;
     outline: none;
-    border-radius: 6px;
     position: relative;
     overflow: hidden;
     -webkit-transition: box-shadow .5s;
@@ -127,6 +127,11 @@ a:hover {
 .story:hover {
     box-shadow: 0 1px 10px 0 rgba(0,0,0,0.25)
 }
+
+.read_story{
+    margin: 0;
+}
+
 
 @font-face {
     font-family: "proxima-nova";
@@ -1033,7 +1038,8 @@ nav .nav-right-link a {
 
 footer {
     font-size: 16px;
-    padding: 100px 15px 80px 15px;
+    padding: 50px 15px;
+    margin-top: 40px;
     background-color: #3e3328;
     color: #ccc
 }
@@ -1050,19 +1056,6 @@ footer .footer-logo .fa {
     margin-right: 10px
 }
 
-footer .legal-mentions {
-    color: #747474;
-}
-
-footer .legal-mentions .separator {
-    margin: 0 5px
-}
-
-footer .legal-mentions a,footer .legal-mentions a:hover,footer .legal-mentions a:active,footer .legal-mentions a:focus {
-    color: #747474;
-    border-bottom: 1px dotted #747474;
-    text-decoration: none
-}
 
 footer h3 {
     margin: 0 0 30px 0;
@@ -3492,4 +3485,10 @@ body.registrations.edit section.invoices article .download-links {
 .private-policy-table th, .private-policy-table td{
     border: lightgrey 1px solid;
     padding: 10px;
+}
+
+.footer_copyright{
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 0.5px solid #fff;
 }
