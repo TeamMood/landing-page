@@ -2907,7 +2907,6 @@ body.registrations.edit section.invoices article .download-links {
 }
 
 .homepage-currency {
-    background-color: #fafafa;
     padding: 20px 0 0 0;
 }
 
@@ -2922,7 +2921,6 @@ body.registrations.edit section.invoices article .download-links {
 
 
 .homepage-api.pricing {
-    background-color: #fafafa;
     padding: 30px 18px
 }
 
@@ -3468,7 +3466,7 @@ body.registrations.edit section.invoices article .download-links {
 }
 
 .benefits p {
-    font-size: 17px;
+    font-size: 18px;
 }
 
 /* --------------------------------------------------------- Morgane rules -> order by ? --------------------------------------------------------------------*/
@@ -3492,3 +3490,59 @@ body.registrations.edit section.invoices article .download-links {
     padding-top: 40px;
     border-top: 0.5px solid #fff;
 }
+
+
+.benefits > div{
+    padding: 30px;
+}
+
+.benefits i, .benefits h3{
+    color: #1abc9c;
+}
+
+
+
+.benefits-grid > div{
+    padding: 20px 5px;
+}
+
+.benefits-grid > div > div{
+    text-align: center;
+    border: 1px solid #ededed;
+    padding: 30px;
+    background-color: white;
+}
+.benefits-grid-1 > div > div{
+    height: 320px;
+}
+
+.benefits-grid-2 > div > div{
+    height: 380px;
+}
+
+
+.benefits-grid i{
+    color: #1abc9c;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.benefits-grid p:first-child{
+    position: relative;
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    background-color: #ededed;
+    border-radius: 50%;
+}
+
+.benefits-grid h4{
+    font-size: 1.7em;
+    margin: 20px auto;
+}
+
+
+
