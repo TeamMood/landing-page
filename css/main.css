@@ -3544,5 +3544,33 @@ body.registrations.edit section.invoices article .download-links {
     margin: 20px auto;
 }
 
+.testimonial{
+    margin: 40px auto;
+}
 
+.testimonial img{
+    margin-top: 20px;
+}
 
+.testimonial p{
+    margin: 0;
+}
+
+.testimonial p small::before{
+    content: none;
+}
+
+.testimonial blockquote{
+    border-left: 3px solid #eee;
+    font-size: 20px;
+}
+
+.testimonial blockquote::before{
+    font-family: "proxima-nova", sans-serif !important;
+    content: "”";
+    color:lightgrey;
+    font-size:7em;
+    position: absolute;
+    right: 20px;
+    top:-25px;
+}
