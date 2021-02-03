@@ -4,7 +4,7 @@ body {
 
 @media all and (min-width: 767px) {
     body {
-        padding:0
+        padding:0;
     }
 }
 
@@ -803,7 +803,8 @@ nav .nav-right-link a {
 
 .visitors nav,.search_landing_page nav {
     margin-top: 40px;
-    margin-left: 15px
+    padding-bottom: 10px;
+    ;
 }
 
 .visitors nav ul,.search_landing_page nav ul {
@@ -3548,9 +3549,9 @@ body.registrations.edit section.invoices article .download-links {
     margin: 40px auto;
 }
 
-.testimonial img{
+/* .testimonial img{
     margin-top: 20px;
-}
+} */
 
 .testimonial p{
     margin: 0;
@@ -3562,7 +3563,8 @@ body.registrations.edit section.invoices article .download-links {
 
 .testimonial blockquote{
     border-left: 3px solid #eee;
-    font-size: 20px;
+    font-size: 1.1em;
+    margin-bottom: 0;
 }
 
 .testimonial blockquote::before{
@@ -3574,3 +3576,35 @@ body.registrations.edit section.invoices article .download-links {
     right: 20px;
     top:-25px;
 }
+
+.fab{
+    font-size: 0.8em;
+}
+
+
+@media (max-width: 992px) {
+    .testimonial img{
+        width: 120px;
+    }
+}
+
+@media (min-width: 992px) {
+    .row.equal {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .row.equal.testimonial > div:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+    .row.equal > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+  }
