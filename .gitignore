@@ -3,4 +3,6 @@ _site
 .sass-cache
 .jekyll-metadata
 .deploy
+.DS_Store
+.jekyll-cache
 Gemfile.lock
