@@ -4,7 +4,7 @@ body {
 
 @media all and (min-width: 767px) {
     body {
-        padding:0
+        padding:0;
     }
 }
 
@@ -103,7 +103,7 @@ a:hover {
 }
 
 .application-back #nprogress .bar {
-    background-color: white !important
+    background-color: #ffffff !important
 }
 
 .application-back #nprogress .peg {
@@ -114,10 +114,10 @@ a:hover {
     background: #fefeff;
     border: 1px solid #dde5ed;
     padding: 30px;
+    margin-bottom: 30px;
     opacity: 1;
     text-decoration: none;
     outline: none;
-    border-radius: 6px;
     position: relative;
     overflow: hidden;
     -webkit-transition: box-shadow .5s;
@@ -127,6 +127,11 @@ a:hover {
 .story:hover {
     box-shadow: 0 1px 10px 0 rgba(0,0,0,0.25)
 }
+
+.read_story{
+    margin: 0;
+}
+
 
 @font-face {
     font-family: "proxima-nova";
@@ -798,7 +803,8 @@ nav .nav-right-link a {
 
 .visitors nav,.search_landing_page nav {
     margin-top: 40px;
-    margin-left: 15px
+    padding-bottom: 10px;
+    ;
 }
 
 .visitors nav ul,.search_landing_page nav ul {
@@ -1033,7 +1039,8 @@ nav .nav-right-link a {
 
 footer {
     font-size: 16px;
-    padding: 100px 15px 80px 15px;
+    padding: 50px 15px;
+    margin-top: 40px;
     background-color: #3e3328;
     color: #ccc
 }
@@ -1050,19 +1057,6 @@ footer .footer-logo .fa {
     margin-right: 10px
 }
 
-footer .legal-mentions {
-    color: #747474;
-}
-
-footer .legal-mentions .separator {
-    margin: 0 5px
-}
-
-footer .legal-mentions a,footer .legal-mentions a:hover,footer .legal-mentions a:active,footer .legal-mentions a:focus {
-    color: #747474;
-    border-bottom: 1px dotted #747474;
-    text-decoration: none
-}
 
 footer h3 {
     margin: 0 0 30px 0;
@@ -2903,7 +2897,7 @@ body.registrations.edit section.invoices article .download-links {
 .visitors.homepage .homepage-press img {
     height: 75px;
     opacity: 0.7;
-    margin: 20px 0
+    margin: 20px auto
 }
 
 .visitors.homepage .homepage-press blockquote {
@@ -2914,7 +2908,6 @@ body.registrations.edit section.invoices article .download-links {
 }
 
 .homepage-currency {
-    background-color: #fafafa;
     padding: 20px 0 0 0;
 }
 
@@ -2929,7 +2922,6 @@ body.registrations.edit section.invoices article .download-links {
 
 
 .homepage-api.pricing {
-    background-color: #fafafa;
     padding: 30px 18px
 }
 
@@ -3475,5 +3467,144 @@ body.registrations.edit section.invoices article .download-links {
 }
 
 .benefits p {
-    font-size: 17px;
+    font-size: 18px;
 }
+
+/* --------------------------------------------------------- Morgane rules -> order by ? --------------------------------------------------------------------*/
+.teammood_mood_indicator_tool_img{
+    width: 100%;
+}
+
+/* "/en/cookies-policy/" */
+
+.private-policy-table{
+    width: 100%;
+}
+
+.private-policy-table th, .private-policy-table td{
+    border: lightgrey 1px solid;
+    padding: 10px;
+}
+
+.footer_copyright{
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 0.5px solid #fff;
+}
+
+
+.benefits > div{
+    padding: 30px;
+}
+
+.benefits i, .benefits h3{
+    color: #1abc9c;
+}
+
+
+
+.benefits-grid > div{
+    padding: 20px 5px;
+}
+
+.benefits-grid > div > div{
+    text-align: center;
+    border: 1px solid #ededed;
+    padding: 30px;
+    background-color: white;
+}
+.benefits-grid-1 > div > div{
+    height: 320px;
+}
+
+.benefits-grid-2 > div > div{
+    height: 380px;
+}
+
+
+.benefits-grid i{
+    color: #1abc9c;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.benefits-grid p:first-child{
+    position: relative;
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    background-color: #ededed;
+    border-radius: 50%;
+}
+
+.benefits-grid h4{
+    font-size: 1.7em;
+    margin: 20px auto;
+}
+
+.testimonial{
+    margin: 40px auto;
+}
+
+/* .testimonial img{
+    margin-top: 20px;
+} */
+
+.testimonial p{
+    margin: 0;
+}
+
+.testimonial p small::before{
+    content: none;
+}
+
+.testimonial blockquote{
+    border-left: 3px solid #eee;
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+
+.testimonial blockquote::before{
+    font-family: "proxima-nova", sans-serif !important;
+    content: "”";
+    color:lightgrey;
+    font-size:7em;
+    position: absolute;
+    right: 20px;
+    top:-25px;
+}
+
+.fab{
+    font-size: 0.8em;
+}
+
+
+@media (max-width: 992px) {
+    .testimonial img{
+        width: 120px;
+    }
+}
+
+@media (min-width: 992px) {
+    .row.equal {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .row.equal.testimonial > div:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+    .row.equal > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+  }

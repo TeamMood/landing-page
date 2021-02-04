@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" href="/css/main.css ">
 
-    <link rel="canonical" href="https://www.teammood.com/en/pricing/">
+    <link rel="canonical" href="https://www.teammood.com/en/security/">
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -157,127 +157,51 @@
 </div>
 
 
-    <div class="front-header header">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Simple pricing.</h1>
-            </div>
-        </div>
-    </div>
-</div>
+    <div class="container content-page">
+    <img class="teammood_mood_indicator_tool_img" src="/images/lp/teammood_mood_indicator_tool.jpeg" alt="TeamMood - Mood Indicator Tool with Daily Calendar & Mood Meter Charts">
 
-<div ng-controller="PricingCtrl">
-    <div class="homepage-currency">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 center">
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default" ng-class="{active: currency.active}" ng-click="update(currency)" ng-repeat="currency in currencies">[[currency.label]]</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <h1>Keeping Your Data Secure</h1>
 
-    <div class="homepage-api pricing">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-md-offset-1">
-                    <div class="story standard-plan">
-                        <h1 class="text-center">ESSENTIAL</h1>
-                        <h2 class="text-center">[[price]] / user / month</h2>
-                        <p class="light-grey text-center">After a 30 days trial period.</p>
-                        <hr/>
-                        <p>Core features:</p>
-                        <p class="pricing-feature"><i class="fa fa-check"></i>Daily or Weekly Notifications <small><i class="fa fa-question-circle" data-toggle="popover" title="Notifications Frequency" data-content="Choose when notifications are sent: daily, several days a week or weekly." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-check"></i>Team Feedback <small><i class="fa fa-question-circle" data-toggle="popover" title="Your Team Voice" data-content="Get feedback from your teammates, and take action from it." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-check"></i>Anonymous <small><i class="fa fa-question-circle" data-toggle="popover" title="Strong Anonymity" data-content="Avoid survey bias using anonymity." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-check"></i>Multiple Teams <small><i class="fa fa-question-circle" data-toggle="popover" title="Designed For Large Organizations" data-content="From a small team of 10, to thousands of people." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-check"></i>Analytics <small><i class="fa fa-question-circle" data-toggle="popover" title="Advanced Analytics" data-content="Deep dive into your data and draw actionable intelligence." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-check"></i>Export Center And API <small><i class="fa fa-question-circle" data-toggle="popover" title="You Own Your Data" data-content="Explore your data with the tools you love." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-check"></i>Third Party Integrations <small><i class="fa fa-question-circle" data-toggle="popover" title="Company Friendly" data-content="Integrate with the tools you love, such as Slack or Tableau etc..." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-check"></i>Monthly or Yearly Billing <small><i class="fa fa-question-circle" data-toggle="popover" title="Yearly Subscription Available" data-content="We provide discounted yearly plans for larger teams." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="center"><a class="light-blue-btn btn-lg" href="https://app.teammood.com/signup">START FOR FREE</a></p>
-                        <p class="text-center"><small>No credit card required</small></p>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="story enterprise-plan">
-                        <h1 class="text-center">ENTERPRISE</h1>
-                        <h2 class="text-center">Custom</h2>
-                        <p class="light-grey text-center">Seamless Integration With Your Business.</p>
-                        <hr/>
-                        <p>Everything in the Essential plan, plus:</p>
-                        <p class="pricing-feature"><i class="fa fa-plus"></i>Custom Branding <small><i class="fa fa-question-circle" data-toggle="popover" title="Make It Yours" data-content="Customize the mood email with your content and logo." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-plus"></i>Custom Reporting <small><i class="fa fa-question-circle" data-toggle="popover" title="Advanced Reports" data-content="Not satisfied with the provided reports? We'll build your own." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-plus"></i>Custom End User Policy <small><i class="fa fa-question-circle" data-toggle="popover" title="Strong Policy" data-content="Use your own policy or code of conduct." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-plus"></i>Customs ACLs <small><i class="fa fa-question-circle" data-toggle="popover" title="Fine Grained Access Control" data-content="Set the right access-level to the right people." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-plus"></i>Single Sign On <small><i class="fa fa-question-circle" data-toggle="popover" title="Not Another Password" data-content="SAML2 or Okta." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-plus"></i>Dedicated Hosting <small><i class="fa fa-question-circle" data-toggle="popover" title="Strong Personal Data Policy" data-content="Increase your security by getting your own TeamMood server instance, in the location of your choice." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-plus"></i>Premium Support <small><i class="fa fa-question-circle" data-toggle="popover" title="Never Alone" data-content="Blazing fast support." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-plus"></i>Eased Procurement <small><i class="fa fa-question-circle" data-toggle="popover" title="Your Procurement Processes" data-content="We adapt to your procurement process  (legal compliance, technical and security review, purchase orders...)." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="center"><a class="light-orange-btn btn-lg" href="mailto:sales@teammood.com?subject=Enterprise quote">CONTACT US</a></p>
-                        <p class="text-center"><small>We'll get back to you quickly</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <p>We do our best to actively provide a strong level of security. This page explains how.</p>
 
-</div>
+    <p>Please note that we're humans though — and that security is an ever-going chasing game, with several high profile websites hacked every year.</p>
 
-<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps=" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-cookies.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-sanitize.min.js"></script>
+    <p>Think you found an issue? We're more than welcoming your feedback - please <a href="#Reporting+Incidents">report an incident</a>.</p>
 
-<script src="/js/app.js"></script>
-<script src="/js/pricing.js"></script>
+    <h2 id="Up-To-Date+Infrastructure+And+Patches">Up-To-Date Infrastructure And Patches</h2>
 
-<div class="content-page">
-    <div class="container">
+    <p>We keep our infrastructure updated with scheduled security maintenance updates, as well as applying any patches that are recommended to be rolled out immediately. We rely on a <a href="https://www.heroku.com/policy/security">security-minded hosting provider</a> which provides easy-to-apply security updates on all infrastructure components.</p>
 
-        <div class="row testimonial equal ">
-            <div class="col-md-1 col-md-offset-2">
-                <img class="img-circle img-responsive" src="/images/testimonials/philippe-r.jpg">
-            </div>
-            <div class="col-md-7">
-                <blockquote>
-                    <p>
-                        <strong>Philippe R.</strong><br>
-                        <small>AirFrance</small>
-                    </p>
-                    <p>
-                        Thanks to TeamMood, we demonstrated that one of our weekly meeting was not providing any added value to anyone.
-                    </p>
-                </blockquote>
-            </div>
-        </div>
+    <p>Similarly, we patch our application code very quickly when vulnerabilities are discovered. We rely on internal and external tools to audit our app code and behaviour.</p>
 
-    </div>
-</div>
+    <h2 id="Proactive+Monitoring">Proactive Monitoring</h2>
 
+    <p>We use redundant, world-wide monitoring services to monitor TeamMood’s infrastructure 24x7x365. Any errors or other abnormalities trigger automatic alarms and we pro-actively work on fixing any issues detected. If we detect issues with your account, we will contact the account owner by email.</p>
 
-<div class="homepage-api">
-    <div class="container">
-        <div class="row vcenter">
-            <div class="col-md-12">
-                <h2>Questions on pricing.</h2>
-                <h3>What's a user?</h3>
-                <p class="text-justify">We only charge for active users, ie users that received at least an email asking for their mood during the month. You have the ability to deactivate users in your admin panel. You only pay as you go.</p>
+    <h2 id="Protection+Against+Data+Loss">Protection Against Data Loss</h2>
 
-                <h3>Can I add or remove users at any time?</h3>
-                <p class="text-justify">Yes! TeamMood is pay-as-you-go, and you can easily add or remove users from your account with a couple of clicks.</p>
+    <p>We make daily backups of TeamMood's database as well as regular full images (snapshots) of TeamMood's servers.</p>
 
-                <h3>I work in a large company, and it's hard to pay monthly with a variable cost?</h3>
-                <p class="text-justify">We also provide yearly plans, with several payment options.</p>
+    <p>The backups are saved encrypted and regularly tested for integrity.</p>
 
-                <h3>I have more questions.</h3>
-                <p class="text-justify"><a href="mailto:sales@teammood.com">Contact us</a>, we'll be happy to help :-)</p>
-            </div>
-        </div>
-    </div>
+    <p>We have the required infrastructure to rebuild a fully running service based on those backups very quickly.</p>
+
+    <h2 id="Your+Credit+Card+Data+Is+Safe">Your Credit Card Data Is Safe</h2>
+
+    <p>We do not store your billing information on our servers.</p>
+
+    <p>Your credit card data is directly and securely submitted to a leading, full PCI-compliant payment gateway provider (<a href="https://stripe.com">Stripe</a>), using their JavaScript API.</p>
+
+    <h2 id="Reporting+Incidents">Reporting Incidents</h2>
+
+    <p>Have you noticed abuse, misuse, or experienced an incident with your account or have you identified a vulnerability in our systems?</p>
+
+    <p>We'll take your feedback very seriously: email <a href="mailto:contact@teammood.com">contact@teammood.com</a>. We <strong>will reply</strong> in all cases and <strong>work with you to handle the situation</strong>.</p>
+
+    <h2 id="Questions">Questions?</h2>
+
+    <p>Please email us at <a href="mailto:contact@teammood.com">contact@teammood.com</a>.</p>
+
 </div>
 
 

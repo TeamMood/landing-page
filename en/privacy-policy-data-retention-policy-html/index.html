@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" href="/css/main.css ">
 
-    <link rel="canonical" href="https://www.teammood.com/en/pricing/">
+    <link rel="canonical" href="https://www.teammood.com/en/privacy-policy-data-retention-policy-html/">
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -157,127 +157,109 @@
 </div>
 
 
-    <div class="front-header header">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Simple pricing.</h1>
-            </div>
-        </div>
-    </div>
-</div>
+    <div class="container content-page">
 
-<div ng-controller="PricingCtrl">
-    <div class="homepage-currency">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 center">
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default" ng-class="{active: currency.active}" ng-click="update(currency)" ng-repeat="currency in currencies">[[currency.label]]</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <img class="teammood_mood_indicator_tool_img" src="/images/lp/teammood_mood_indicator_tool.jpeg" alt="TeamMood - Mood Indicator Tool with Daily Calendar & Mood Meter Charts">
 
-    <div class="homepage-api pricing">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-md-offset-1">
-                    <div class="story standard-plan">
-                        <h1 class="text-center">ESSENTIAL</h1>
-                        <h2 class="text-center">[[price]] / user / month</h2>
-                        <p class="light-grey text-center">After a 30 days trial period.</p>
-                        <hr/>
-                        <p>Core features:</p>
-                        <p class="pricing-feature"><i class="fa fa-check"></i>Daily or Weekly Notifications <small><i class="fa fa-question-circle" data-toggle="popover" title="Notifications Frequency" data-content="Choose when notifications are sent: daily, several days a week or weekly." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-check"></i>Team Feedback <small><i class="fa fa-question-circle" data-toggle="popover" title="Your Team Voice" data-content="Get feedback from your teammates, and take action from it." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-check"></i>Anonymous <small><i class="fa fa-question-circle" data-toggle="popover" title="Strong Anonymity" data-content="Avoid survey bias using anonymity." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-check"></i>Multiple Teams <small><i class="fa fa-question-circle" data-toggle="popover" title="Designed For Large Organizations" data-content="From a small team of 10, to thousands of people." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-check"></i>Analytics <small><i class="fa fa-question-circle" data-toggle="popover" title="Advanced Analytics" data-content="Deep dive into your data and draw actionable intelligence." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-check"></i>Export Center And API <small><i class="fa fa-question-circle" data-toggle="popover" title="You Own Your Data" data-content="Explore your data with the tools you love." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-check"></i>Third Party Integrations <small><i class="fa fa-question-circle" data-toggle="popover" title="Company Friendly" data-content="Integrate with the tools you love, such as Slack or Tableau etc..." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-check"></i>Monthly or Yearly Billing <small><i class="fa fa-question-circle" data-toggle="popover" title="Yearly Subscription Available" data-content="We provide discounted yearly plans for larger teams." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="center"><a class="light-blue-btn btn-lg" href="https://app.teammood.com/signup">START FOR FREE</a></p>
-                        <p class="text-center"><small>No credit card required</small></p>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="story enterprise-plan">
-                        <h1 class="text-center">ENTERPRISE</h1>
-                        <h2 class="text-center">Custom</h2>
-                        <p class="light-grey text-center">Seamless Integration With Your Business.</p>
-                        <hr/>
-                        <p>Everything in the Essential plan, plus:</p>
-                        <p class="pricing-feature"><i class="fa fa-plus"></i>Custom Branding <small><i class="fa fa-question-circle" data-toggle="popover" title="Make It Yours" data-content="Customize the mood email with your content and logo." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-plus"></i>Custom Reporting <small><i class="fa fa-question-circle" data-toggle="popover" title="Advanced Reports" data-content="Not satisfied with the provided reports? We'll build your own." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-plus"></i>Custom End User Policy <small><i class="fa fa-question-circle" data-toggle="popover" title="Strong Policy" data-content="Use your own policy or code of conduct." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-plus"></i>Customs ACLs <small><i class="fa fa-question-circle" data-toggle="popover" title="Fine Grained Access Control" data-content="Set the right access-level to the right people." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-plus"></i>Single Sign On <small><i class="fa fa-question-circle" data-toggle="popover" title="Not Another Password" data-content="SAML2 or Okta." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-plus"></i>Dedicated Hosting <small><i class="fa fa-question-circle" data-toggle="popover" title="Strong Personal Data Policy" data-content="Increase your security by getting your own TeamMood server instance, in the location of your choice." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-plus"></i>Premium Support <small><i class="fa fa-question-circle" data-toggle="popover" title="Never Alone" data-content="Blazing fast support." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="pricing-feature"><i class="fa fa-plus"></i>Eased Procurement <small><i class="fa fa-question-circle" data-toggle="popover" title="Your Procurement Processes" data-content="We adapt to your procurement process  (legal compliance, technical and security review, purchase orders...)." data-trigger="hover" data-placement="top"></i></small></p>
-                        <p class="center"><a class="light-orange-btn btn-lg" href="mailto:sales@teammood.com?subject=Enterprise quote">CONTACT US</a></p>
-                        <p class="text-center"><small>We'll get back to you quickly</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <h1>Data Retention Policy</h1>
+    <p>Effective Starting Date : 25/05/2018
+    <br>Version 1.0</p>
+    <h2>Introduction</h2>
+    <p>This data retention policy sets out the obligations of Power Up Conseil/TeamMood (&ldquo;us/we/our&rdquo;) and the basis upon which we shall retain, review and destroy data held by us, or within our custody or control.</p>
+    <p>This policy applies to our entire organisation including our officers, employees, agents and sub-contractors and sets out what the retention periods are and when any such data may be deleted.</p>
+    <h2>Objectives</h2>
+    <p>It is necessary to retain and process certain information to enable our business to operate. We may store data in the following places:</p>
+    <ul>
+        <li>our own servers;</li>
+        <li>any third party servers;</li>
+        <li>potential email accounts;</li>
+        <li>desktops;</li>
+        <li>employee-owned devices (BYOD);</li>
+        <li>potential backup storage; and/or</li>
+        <li>our paper files.</li>
+    </ul>
+    <p>This policy applies equally to paper, electronic media and any other method used to store personal data. The period of retention only commences when the record is closed.</p>
+    <p>We are bound by various obligations under the law in relation to this and therefore, to comply with the law, information must be collected and used fairly, stored safely and not disclosed to any other person unlawfully in respect of their personal data under the General Data Protection Regulation (&ldquo;the Regulation&rdquo;).</p>
+    <p>The Regulation defines &ldquo;personal data&rdquo; as any information relating to an identified or identifiable natural person (a data subject); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier, or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of that natural person.</p>
+    <p>This Policy sets out the procedures that are to be followed when dealing with personal data and how we aim to comply with the Regulation in so far as it is possible. In summary, the Regulation states that all personal data shall be:</p>
+    <ol type="a">
+        <li>processed lawfully, fairly, and in a transparent manner in relation to the data subject;</li>
+        <li>collected for specified, explicit, and legitimate purposes and not further processed in a manner that is incompatible with those purposes; further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes shall not be considered to be incompatible with the initial purposes;</li>
+        <li>adequate, relevant and limited to what is necessary in relation to the purposes for which it is processed;</li>
+        <li>accurate and, where necessary, kept up to date; every reasonable step must be taken to ensure that personal data that is inaccurate, having regard to the purposes for which they are processed, is erased or rectified without delay;</li>
+        <li>kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data is processed; personal data may be stored for longer periods insofar as the personal data will be processed solely for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes subject to implementation of the appropriate technical and organisational measures required by the Regulation in order to safeguard the rights and freedoms of the data subject;</li>
+        <li>processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures.</li>
+    </ol>
+    <p>The Fourth and Fifth Data Protection Principles require that any data should not be kept longer than necessary for the purpose for which it is processed and when it is no longer required, it shall be deleted and that the data should be adequate, relevant and limited for the purpose in which it is processed.</p>
+    <p>With this in mind, this policy should be read in conjunction with our other policies which are relevant such as our data protection policy and IT security policy (available on demand).</p>
+    <h2>Security and Storage</h2>
+    <p>All data and records are stored securely to avoid misuse or loss. We take appropriate security measures against unlawful or unauthorised processing of personal data, and against the accidental loss of, or damage to, personal data.</p>
+    <p>We put in place procedures and technologies to maintain the security of all personal data from the point of collection to the point of destruction. Personal data will only be transferred to a data processor if there is agreement by them to comply with those procedures and policies, or if there are adequate measures in place.</p>
+    <p>Our main storage facility is located in Dublin, Ireland, on the AWS infrastructure.</p>
 
-</div>
+    <p>We will maintain data security by protecting the confidentiality, integrity and availability of the personal data, defined as follows:</p>
+    <ol type="a">
+        <li><strong>Confidentiality</strong> means that only people who are authorised to use the data can access it.</li>
+        <li><strong>Integrity</strong> means that personal data should be accurate and suitable for the purpose for which it is processed.</li>
+        <li><strong>Availability</strong> means that authorised users should be able to access the data if they need it for authorised purposes.</li>
+    </ol>
+    <h2>Retention Policy</h2>
+    <p>Data retention is defined as the retention of data for a specific period of time and for back up purposes.</p>
 
-<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps=" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-cookies.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-sanitize.min.js"></script>
+    <p>We shall not keep any personal data longer than necessary, but acknowledge that this will be dependent on the different types of documents and data that we have responsibility for. As such, our general data retention period shall be for a period of 4 years.</p>
+    <p>Our specific data retention periods are set out below.</p>
 
-<script src="/js/app.js"></script>
-<script src="/js/pricing.js"></script>
+    <table class="private-policy-table">
+        <thead>
+            <tr>
+                <th>Type of data</th>
+                <th>Purpose of processing</th>
+                <th>Type of recipient to whom personal data is transferred</th>
+                <th>Retention period</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Platform data, including mood and comments</td>
+                <td>Core business for customers.</td>
+                <td>Customers/Users, support</td>
+                <td>3 years maximum, customisable</td>
+            </tr>
+            <tr>
+                <td>Customers / Users data, including name, email, company</td>
+                <td>Communication with customers/users.</td>
+                <td>Marketing and support</td>
+                <td>1 year once disabled</td>
+            </tr>
+            <tr>
+                <td>Live chat history</td>
+                <td>Communication with leads and customers/users.</td>
+                <td>Marketing, sales, support</td>
+                <td>2 years</td>
+            </tr>
+            <tr>
+                <td>Metrics data</td>
+                <td>Learn how the solution is used.</td>
+                <td>Marketing and support</td>
+                <td>3 years</td>
+            </tr>
+            <tr>
+                <td>Non customers / Leads data, including name, email</td>
+                <td>Acquisition of new customers.</td>
+                <td>Marketing, sales</td>
+                <td>2 years</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
 
-<div class="content-page">
-    <div class="container">
+    <p>From time to time, it may be necessary to retain or access historic personal data under certain circumstances such as if we have contractually agreed to do so or if we have become involved in unforeseen events like litigation or business disaster recoveries.</p>
+    <h2>Destruction and Disposal</h2>
+    <p>Upon expiry of our retention periods, we shall delete confidential or sensitive records categorised as requiring high protection and very high protection, and we shall either delete or anonymise less important documents. </p>
+    <p>Our team is responsible for the continuing process of identifying the records that have met their required retention period and supervising their destruction. The destruction of confidential, financial, and personnel-related records shall be securely destroyed electronically or by shredding if possible. Non-confidential records may be destroyed by recycling.</p>
+    <h2>Updates to this Notice</h2>
+    <p>This Data Retention Policy may be updated from time to time. If we make any changes, we will notify you by revising the "effective starting" date at the top of this notice.</p>
 
-        <div class="row testimonial equal ">
-            <div class="col-md-1 col-md-offset-2">
-                <img class="img-circle img-responsive" src="/images/testimonials/philippe-r.jpg">
-            </div>
-            <div class="col-md-7">
-                <blockquote>
-                    <p>
-                        <strong>Philippe R.</strong><br>
-                        <small>AirFrance</small>
-                    </p>
-                    <p>
-                        Thanks to TeamMood, we demonstrated that one of our weekly meeting was not providing any added value to anyone.
-                    </p>
-                </blockquote>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-
-<div class="homepage-api">
-    <div class="container">
-        <div class="row vcenter">
-            <div class="col-md-12">
-                <h2>Questions on pricing.</h2>
-                <h3>What's a user?</h3>
-                <p class="text-justify">We only charge for active users, ie users that received at least an email asking for their mood during the month. You have the ability to deactivate users in your admin panel. You only pay as you go.</p>
-
-                <h3>Can I add or remove users at any time?</h3>
-                <p class="text-justify">Yes! TeamMood is pay-as-you-go, and you can easily add or remove users from your account with a couple of clicks.</p>
-
-                <h3>I work in a large company, and it's hard to pay monthly with a variable cost?</h3>
-                <p class="text-justify">We also provide yearly plans, with several payment options.</p>
-
-                <h3>I have more questions.</h3>
-                <p class="text-justify"><a href="mailto:sales@teammood.com">Contact us</a>, we'll be happy to help :-)</p>
-            </div>
-        </div>
-    </div>
 </div>
 
 
