@@ -804,7 +804,8 @@ nav .nav-right-link a {
 .visitors nav,.search_landing_page nav {
     margin-top: 40px;
     padding-bottom: 10px;
-    ;
+    padding-left: 20px;
+
 }
 
 .visitors nav ul,.search_landing_page nav ul {
@@ -3458,13 +3459,14 @@ body.registrations.edit section.invoices article .download-links {
     align-items: center;
 }
 
-.lp-bg-image {
+/*.lp-bg-image {
     background-image: url('/images/lp/teammood_at_office.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
     height: 500px;
-}
+}*/
+
 
 .benefits p {
     font-size: 18px;
@@ -3486,7 +3488,7 @@ body.registrations.edit section.invoices article .download-links {
     padding: 10px;
 }
 
-.footer_copyright{
+.row.footer_copyright{
     margin-top: 40px;
     padding-top: 40px;
     border-top: 0.5px solid #fff;
@@ -3513,14 +3515,14 @@ body.registrations.edit section.invoices article .download-links {
     padding: 30px;
     background-color: white;
 }
+
 .benefits-grid-1 > div > div{
-    height: 320px;
+    height: 340px;
 }
 
 .benefits-grid-2 > div > div{
-    height: 380px;
+    height: 370px;
 }
-
 
 .benefits-grid i{
     color: #1abc9c;
@@ -3545,13 +3547,11 @@ body.registrations.edit section.invoices article .download-links {
     margin: 20px auto;
 }
 
+
+
 .testimonial{
     margin: 40px auto;
 }
-
-/* .testimonial img{
-    margin-top: 20px;
-} */
 
 .testimonial p{
     margin: 0;
@@ -3581,12 +3581,20 @@ body.registrations.edit section.invoices article .download-links {
     font-size: 0.8em;
 }
 
-
-@media (max-width: 992px) {
-    .testimonial img{
-        width: 120px;
-    }
+.lp-text{
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding: 0 60px;
+    margin-bottom: 60px;
 }
+
+
+.lp-bg-image img{
+    width: 100%;
+    margin: 30px 0;
+}
+
+
 
 @media (min-width: 992px) {
     .row.equal {
@@ -3608,3 +3616,36 @@ body.registrations.edit section.invoices article .download-links {
     }
 
   }
+
+@media all and (max-width: 992px) {
+    .benefits-grid-1 > div > div{
+        height: min-content;
+    }
+
+    .benefits-grid-2 > div > div{
+        height: min-content;
+    }
+
+    .benefits-grid > div{
+        padding: 10px 5px;
+    }
+
+    .testimonial img{
+        width: 100px;
+    }
+
+}
+
+@media all and (max-width: 768px) {
+    .benefits-grid > div{
+        padding: 2px ;
+    }
+
+    .testimonial blockquote{
+        font-size: 1em;
+    }
+}
+
+.row{
+    margin: 0;
+}
