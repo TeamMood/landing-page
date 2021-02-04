@@ -1,16 +1,22 @@
 <div class="content-page">
     <div class="container">
-        <div class="row">
+
+        <div class="row testimonial equal ">
             <div class="col-md-1 col-md-offset-2">
                 <img class="img-circle img-responsive" src="/images/testimonials/{{ include.img }}">
             </div>
             <div class="col-md-7">
                 <blockquote>
-                    <p><sup><i class="fa fa-quote-left"></i></sup>
-                        {{ include.text }}<sup><i class="fa fa-quote-right"></i></sup> </p>
-                    <p><small>{{ include.author }}, <i>{{ include.company }}</i></small></p>
+                    <p>
+                        <strong>{{ include.author }}</strong><br>
+                        <small>{{ include.company }}</small>
+                    </p>
+                    <p>
+                        {{ include.text }}
+                    </p>
                 </blockquote>
             </div>
         </div>
+
     </div>
 </div>
