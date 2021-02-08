@@ -3643,40 +3643,11 @@ body.registrations.edit section.invoices article .download-links {
         font-size: 1em;
     }
 
-    .collapse.navbar-collapse{
-        background-color: #f9f9f9;
-        margin-top: 20px;
-        border-bottom: #dadada 1px dotted;
-    }
+    .lp-bg-image img{
+        height: 300px;
+        width: auto;
+        object-fit: cover;
 
-    .collapse.navbar-collapse ul{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .collapse.navbar-collapse li{
-        flex: 0 0 auto;
-    }
-
-    .collapse.navbar-collapse .grey .nav-link a, .collapse.navbar-collapse .grey .nav-right-link a{
-        border-bottom: none;
-    }
-
-    .collapse.navbar-collapse .grey .nav-link, .collapse.navbar-collapse .grey .nav-right-link{
-        border-bottom: #dadada 1px dotted;
-        padding-bottom: 10px;
-    }
-
-    .collapse.navbar-collapse .navbar-right{
-        text-align: center;
-    }
-
-    .collapse.navbar-collapse .grey{
-        padding-left: 0;
-    }
-
-    .collapse.navbar-collapse .grey .nav-cta-link{
-        margin-bottom: 5px;
     }
 
 }
