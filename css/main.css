@@ -3656,9 +3656,24 @@ body.registrations.edit section.invoices article .download-links {
     margin: 0;
 }
 
-
-
-
 .navbar-brand > img{
     margin-left: 20px;
+}
+
+.about-bg-image img{
+    width: 100%;
+    margin: 30px 0;
+}
+.about-bg-image {
+    position: relative;
+}
+
+.about-bg-image p{
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    width: 50%;
+    background-color: rgb(220,220,220, 0.7);
+    padding: 30px;
 }
