@@ -3632,6 +3632,11 @@ body.registrations.edit section.invoices article .download-links {
         width: 100px;
     }
 
+    .about-bg-image p{
+        position: initial;
+
+    }
+
 }
 
 @media all and (max-width: 768px) {
@@ -3641,13 +3646,6 @@ body.registrations.edit section.invoices article .download-links {
 
     .testimonial blockquote{
         font-size: 1em;
-    }
-
-    .lp-bg-image img{
-        height: 300px;
-        width: auto;
-        object-fit: cover;
-
     }
 
 }
@@ -3662,8 +3660,13 @@ body.registrations.edit section.invoices article .download-links {
 
 .about-bg-image img{
     width: 100%;
-    margin: 30px 0;
+    margin: 0;
 }
+
+.about-bg-image-bottom{
+    margin-bottom: -40px;
+}
+
 .about-bg-image {
     position: relative;
 }
@@ -3674,6 +3677,73 @@ body.registrations.edit section.invoices article .download-links {
     right: 40px;
     transform: translateY(-50%);
     width: 50%;
-    background-color: rgb(220,220,220, 0.7);
+    background-color: rgb(220,220,220, 0.8);
     padding: 30px;
 }
+
+.about-ambition{
+    background-color: #1abc9c ;
+    color: white;
+    padding: 40px 80px;
+}
+
+.about-text{
+    font-size: 20px;
+}
+
+.about-page{
+    text-align: justify;
+}
+
+@media all and (max-width: 992px) {
+
+    .about-bg-image p{
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+        width: 80%;
+    }
+
+}
+
+@media all and (max-width: 737px) {
+
+    .about-bg-image p{
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: translate(0, 0);
+        width: 100%;
+    }
+
+}
+
+
+/*!* Typing animation*!
+.front-header h1 span{
+    display: inline-block;
+    border-right: solid 3px #333333;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+!* Animation *!
+.front-header h1 span{
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+    animated-cursor 600ms steps(29,end) infinite;
+}
+
+!* text animation *!
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 100%;}
+}
+
+!* cursor animations *!
+
+@keyframes animated-cursor{
+    from{border-right-color: #333333;}
+    to{border-right-color: white;}
+}*/
+
