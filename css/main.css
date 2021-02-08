@@ -762,7 +762,7 @@ button.swiper-pagination-bullet {
 
 .btn-lg,.btn-group-lg>.btn,.btn-group-lg>.submit,.authform .btn-group-lg>.button,.btn-group-lg>.button-xs,.submit {
     padding: 16px 22px;
-    font-size: 16px
+    font-size: 18px
 }
 
 nav {
@@ -804,8 +804,6 @@ nav .nav-right-link a {
 .visitors nav,.search_landing_page nav {
     margin-top: 40px;
     padding-bottom: 10px;
-    padding-left: 20px;
-
 }
 
 .visitors nav ul,.search_landing_page nav ul {
@@ -2510,7 +2508,7 @@ body.registrations.edit section.invoices article .download-links {
 
 .visitors.chrome_welcome .chrome-features .feature-container .btn-lg,.visitors.chrome_welcome .chrome-features .feature-container .btn-group-lg>.btn,.visitors.chrome_welcome .chrome-features .feature-container .authform .btn-group-lg>.button,.authform .visitors.chrome_welcome .chrome-features .feature-container .btn-group-lg>.button,.visitors.chrome_welcome .chrome-features .feature-container .btn-group-lg>.button-xs,.visitors.chrome_welcome .chrome-features .feature-container .submit,.visitors.chrome .chrome-features .feature-container .btn-lg,.visitors.chrome .chrome-features .feature-container .btn-group-lg>.btn,.visitors.chrome .chrome-features .feature-container .authform .btn-group-lg>.button,.authform .visitors.chrome .chrome-features .feature-container .btn-group-lg>.button,.visitors.chrome .chrome-features .feature-container .btn-group-lg>.button-xs,.visitors.chrome .chrome-features .feature-container .submit {
     margin-top: 15px;
-    font-size: 16px
+    font-size: 18px
 }
 
 .visitors.chrome_welcome .chrome-features .feature1,.visitors.chrome .chrome-features .feature1 {
@@ -3644,8 +3642,52 @@ body.registrations.edit section.invoices article .download-links {
     .testimonial blockquote{
         font-size: 1em;
     }
+
+    .collapse.navbar-collapse{
+        background-color: #f9f9f9;
+        margin-top: 20px;
+        border-bottom: #dadada 1px dotted;
+    }
+
+    .collapse.navbar-collapse ul{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .collapse.navbar-collapse li{
+        flex: 0 0 auto;
+    }
+
+    .collapse.navbar-collapse .grey .nav-link a, .collapse.navbar-collapse .grey .nav-right-link a{
+        border-bottom: none;
+    }
+
+    .collapse.navbar-collapse .grey .nav-link, .collapse.navbar-collapse .grey .nav-right-link{
+        border-bottom: #dadada 1px dotted;
+        padding-bottom: 10px;
+    }
+
+    .collapse.navbar-collapse .navbar-right{
+        text-align: center;
+    }
+
+    .collapse.navbar-collapse .grey{
+        padding-left: 0;
+    }
+
+    .collapse.navbar-collapse .grey .nav-cta-link{
+        margin-bottom: 5px;
+    }
+
 }
 
 .row{
     margin: 0;
+}
+
+
+
+
+.navbar-brand > img{
+    margin-left: 20px;
 }
