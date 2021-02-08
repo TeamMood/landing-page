@@ -3717,3 +3717,33 @@ body.registrations.edit section.invoices article .download-links {
     }
 
 }
+
+
+/*!* Typing animation*!
+.front-header h1 span{
+    display: inline-block;
+    border-right: solid 3px #333333;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+!* Animation *!
+.front-header h1 span{
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+    animated-cursor 600ms steps(29,end) infinite;
+}
+
+!* text animation *!
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 100%;}
+}
+
+!* cursor animations *!
+
+@keyframes animated-cursor{
+    from{border-right-color: #333333;}
+    to{border-right-color: white;}
+}*/
+
