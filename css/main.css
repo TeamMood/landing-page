@@ -3643,6 +3643,12 @@ body.registrations.edit section.invoices article .download-links {
         font-size: 1em;
     }
 
+    .lp-bg-image img{
+        height: 300px;
+        width: auto;
+        object-fit: cover;
+
+    }
 
 }
 
