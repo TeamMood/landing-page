@@ -1,0 +1,9 @@
+/*
+nav header_en, nav header_fr :
+- nav items to the right in desktop view
+- toggle button
+*/
+
+.row.footer_copyright {
+    border-top: 0.5px solid #fff;
+}

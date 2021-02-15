@@ -1,35 +1,31 @@
-<div class="container">
-    <nav class="navbar" id="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand orange logo-md" href="/{{ page.lang }}"><img src="/images/logo-140px.png" width="80px"></a>
-            </div>
 
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul class="grey navbar-right">
-                    <li class="nav-cta-link">
-                        <a class="light-orange-btn" href="https://app.teammood.com/signup">Get started</a>
-                    </li>
-                    <li class="nav-right-link">
-                        <a href="https://app.teammood.com/app#/login">Login</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="/{{ page.lang }}/success">Customers</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="/{{ page.lang }}/pricing">Pricing</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="/{{ page.lang }}/features">Features</a>
-                    </li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/{{ page.lang }}">
+            <img src="/images/logo-140px.png" width="80px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="far fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbar-collapse-1">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="/{{ page.lang }}/features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/{{ page.lang }}/pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/{{ page.lang }}/success">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://app.teammood.com/app#/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn light-orange-btn" href="https://app.teammood.com/signup">Get started</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-</div>
+    </div>
+</nav>
