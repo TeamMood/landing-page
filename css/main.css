@@ -3661,7 +3661,7 @@ body.registrations.edit section.invoices article .download-links {
 .about-bg-image img{
     width: 100%;
     margin: 0;
-}
+} 
 
 .about-bg-image-bottom{
     margin-bottom: -40px;
@@ -3691,8 +3691,22 @@ body.registrations.edit section.invoices article .download-links {
     font-size: 20px;
 }
 
-.about-page{
+.about-justify{
     text-align: justify;
+    
+}
+
+.about-justify p, .about-page p{
+    font-size: 17px !important;
+}
+
+.about-justify img{
+    padding: 40px;
+}
+
+.about-page, .about-justify{
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 @media all and (max-width: 992px) {

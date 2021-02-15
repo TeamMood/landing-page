@@ -17,5 +17,9 @@ twitter_username: teammood
 # Build settings
 markdown: kramdown
 
-gems:
+plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
+
+redirect_from:
+  json: false
