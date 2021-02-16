@@ -52,6 +52,14 @@ h4{
     font-size: 1.2em;
 }
 
+a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0F6F5C;
+}
 /*
 body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -66,6 +74,8 @@ body {
     background: #1abc9c;
     color: #fff !important;
     border: 0;
+    text-decoration: none;
+
 }
 
 .green-btn:hover, .green-btn:focus,.green-btn:active{
@@ -91,9 +101,11 @@ body {
 
 /*
 nav header_en, nav header_fr :
-- nav items to the right in desktop view
 - toggle button
 */
+.navbar-collapse{
+    flex-grow: initial;
+}
 
 .row.footer_copyright {
     border-top: 0.5px solid #fff;
@@ -115,6 +127,10 @@ nav header_en, nav header_fr :
     position: absolute;
     right: 20px;
     top: -35px;
+}
+
+.testimonial img{
+    max-width: 80px;
 }
 
 .homepage-api div.standard-plan {
@@ -171,11 +187,117 @@ nav header_en, nav header_fr :
     box-shadow: 0 1px 10px 0 rgba(0,0,0,0.25)
 }
 
-.navbar-collapse{
-    flex-grow: initial;
+.benefits > div{
+    padding: 30px;
 }
 
-/* TEMPLATES */
+.benefits i, .benefits h3{
+    color: #1abc9c;
+}
 
+.benefits-grid > div{
+    padding: 20px 5px;
+}
+
+.benefits-grid > div > div{
+    text-align: center;
+    border: 1px solid #ededed;
+    padding: 30px;
+    background-color: white;
+}
+
+.benefits-grid-1 > div > div{
+    height: 340px;
+}
+
+.benefits-grid-2 > div > div{
+    height: 370px;
+}
+
+.benefits-grid i{
+    color: #1abc9c;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.benefits-grid p:first-child{
+    position: relative;
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    background-color: #ededed;
+    border-radius: 50%;
+}
+
+.benefits-grid h4{
+    font-size: 1.7em;
+    margin: 20px auto;
+}
+
+
+/* TEMPLATES */
+.front-header {
+    padding: 0 20px;
+    color: #333;
+    text-align: center
+}
+
+.front-header h1 {
+    font-weight: 100;
+    letter-spacing: -1.5px;
+    font-size: 3.5em;
+}
+
+.front-header .subtitle {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: #888
+}
+
+.lp-bg-image img{
+    width: 100%;
+}
+
+.benefits-grey-block{
+    background-color: #f3f3f3;
+}
 
 /* PAGES */
+
+
+@media all and (max-width: 992px) {
+    .benefits-grid-1 > div > div{
+        height: min-content;
+    }
+
+    .benefits-grid-2 > div > div{
+        height: min-content;
+    }
+
+    .benefits-grid > div{
+        padding: 10px 5px;
+    }
+
+}
+
+@media all and (max-width: 768px) {
+    .benefits-grid > div{
+        padding: 2px ;
+    }
+
+    .front-header h1 {
+        font-size: 44px !important;
+        margin-top: 10px !important
+    }
+
+    .front-header .subtitle {
+        font-size: 28px !important
+    }
+
+    .enterprise-plan{
+        margin-top: 40px;
+    }
+}
