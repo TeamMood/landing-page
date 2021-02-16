@@ -1,13 +1,12 @@
-<div class="content-page">
-    <div class="container">
 
-        <div class="row testimonial equal ">
-            <div class="col-md-1 col-md-offset-2">
-                <img class="img-circle img-responsive" src="/images/testimonials/{{ include.img }}">
+    <div class="container my-5">
+        <div class="row testimonial equal justify-content-center align-items-center">
+            <div class="col-md-1 col-3">
+                <img class="img-fluid rounded-circle" src="/images/testimonials/{{ include.img }}">
             </div>
             <div class="col-md-7">
                 <blockquote>
-                    <p>
+                    <p class="mb-0">
                         <strong>{{ include.author }}</strong><br>
                         <small>{{ include.company }}</small>
                     </p>
@@ -17,6 +16,4 @@
                 </blockquote>
             </div>
         </div>
-
     </div>
-</div>

@@ -7,3 +7,22 @@ nav header_en, nav header_fr :
 .row.footer_copyright {
     border-top: 0.5px solid #fff;
 }
+
+
+.testimonial blockquote{
+    border-left: 3px solid #eee;
+    padding-left: 20px;
+    font-size: 1.1em;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.testimonial blockquote::before{
+    font-family: "times", sans-serif !important;
+    content: "”";
+    color: lightgrey;
+    font-size: 6em;
+    position: absolute;
+    right: 20px;
+    top: -25px;
+}
