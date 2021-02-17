@@ -111,6 +111,20 @@ nav header_en, nav header_fr :
     flex-grow: initial;
 }
 
+.navbar .nav-item a{
+    color: #888;
+    margin-left: 15px;
+}
+
+.navbar .nav-item a:hover{
+    text-decoration: underline dotted;
+    text-underline-position: under;
+}
+
+.navbar .nav-item a.green-btn:hover{
+    text-decoration: none ;
+}
+
 .row.footer_copyright {
     border-top: 0.5px solid #fff;
 }
@@ -152,7 +166,6 @@ nav header_en, nav header_fr :
 .homepage-api div.enterprise-plan i{
     color: #1abc9c;
 }
-
 
 .homepage-currency .btn-default {
     color: #333;
