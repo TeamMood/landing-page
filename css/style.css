@@ -270,6 +270,44 @@ nav header_en, nav header_fr :
 }
 
 /* PAGES */
+.about-bg-image img{
+    width: 100%;
+    margin: 0;
+}
+
+.about-bg-image-bottom{
+    margin-bottom: -40px;
+}
+
+.about-bg-image {
+    position: relative;
+}
+
+.about-bg-image p{
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    width: 50%;
+    background-color: rgb(220,220,220, 0.8);
+    padding: 30px;
+    color: black;
+}
+
+.about-ambition{
+    background-color: #1abc9c ;
+    color: white;
+    padding: 40px 80px;
+}
+
+.about-text{
+    font-size: 20px;
+}
+
+.about-justify{
+    text-align: justify;
+}
+
 
 
 @media all and (max-width: 992px) {
@@ -283,6 +321,13 @@ nav header_en, nav header_fr :
 
     .benefits-grid > div{
         padding: 10px 5px;
+    }
+
+    .about-bg-image p{
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+        width: 80%;
     }
 
 }
@@ -303,5 +348,13 @@ nav header_en, nav header_fr :
 
     .enterprise-plan{
         margin-top: 40px;
+    }
+
+    .about-bg-image p{
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: translate(0, 0);
+        width: 100%;
     }
 }
