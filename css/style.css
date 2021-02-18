@@ -115,6 +115,7 @@ nav header_en, nav header_fr :
 .navbar .nav-item a{
     color: #888;
     margin-left: 15px;
+    font-size: 17px;
 }
 
 .navbar .nav-item a:hover{
@@ -312,7 +313,7 @@ footer .nav-link:hover{
 }
 
 .about-bg-image-bottom{
-    margin-bottom: -40px;
+    margin-bottom: -50px;
 }
 
 .about-bg-image {
@@ -325,9 +326,13 @@ footer .nav-link:hover{
     right: 40px;
     transform: translateY(-50%);
     width: 50%;
-    background-color: rgb(220,220,220, 0.8);
+    background-color: rgba(220,220,220, 0.8);
     padding: 30px;
     color: black;
+}
+
+.about-img{
+    max-width: 300px;
 }
 
 .about-ambition{
