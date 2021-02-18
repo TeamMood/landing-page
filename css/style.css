@@ -41,6 +41,18 @@ body {
     line-height: 1.42857143;
     color: #888;
 }
+/*
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.42857143;
+    color: #333;
+}
+*/
+.container{
+    max-width: 1050px;
+}
 
 h1, h2, h3{
     font-weight: 300;
@@ -60,15 +72,6 @@ a {
 a:hover {
     color: #0F6F5C;
 }
-/*
-body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.42857143;
-    color: #333;
-}
-*/
 
 .green-btn {
     background: #1abc9c;
@@ -342,7 +345,7 @@ footer .nav-link:hover{
 }
 
 .about-text{
-    font-size: 20px;
+    font-size: 1.1em;
 }
 
 .about-justify{
@@ -373,6 +376,9 @@ body .documentation{
     padding: 10px;
 }
 
+.lp-text{
+    font-size: 1.2em;
+}
 
 @media all and (max-width: 992px) {
     .benefits-grid-1 > div > div{
