@@ -344,6 +344,29 @@ footer .nav-link:hover{
     text-align: justify;
 }
 
+body .documentation{
+    color: rgb(102, 102, 102);
+}
+
+.documentation h1, .documentation h2, .documentation h3{
+    color: rgb(102, 102, 102);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.documentation h2{
+    margin-top: 40px;
+}
+
+/* "/en/cookies-policy/" */
+.private-policy-table{
+    width: 100%;
+}
+
+.private-policy-table th, .private-policy-table td{
+    border: lightgrey 1px solid;
+    padding: 10px;
+}
 
 
 @media all and (max-width: 992px) {
