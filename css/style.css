@@ -103,6 +103,7 @@ body {
 
 /* INCLUDES ITEMS */
 
+/* 1/ INCLUDES header & footer */
 /*
 nav header_en, nav header_fr :
 - toggle button
@@ -125,10 +126,32 @@ nav header_en, nav header_fr :
     text-decoration: none ;
 }
 
+footer {
+    background-color: #3e3328;
+    color: #ccc;
+}
+footer h3{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+footer .nav-link{
+    color: #ccc;
+}
+
+footer .nav-link:hover{
+    color: #fff;
+}
+
 .row.footer_copyright {
     border-top: 0.5px solid #fff;
 }
 
+
+/* 2/ INCLUDES blocks */
 .testimonial blockquote{
     border-left: 3px solid #eee;
     padding-left: 20px;
