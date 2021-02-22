@@ -3,8 +3,7 @@
 
   {% include head.html %}
 
-  <body class="application-front visitors landing-page">
-
+  <body>
     {% if page.facebook_tag %}
       <script>
           fbq('track', 'ViewContent', {
@@ -23,10 +22,8 @@
       </div>
     </div>
 
-    <div class="content-page">
-      <div class="container text-center pb-4">
-            <a class="green-btn btn-lg py-3 px-4" href="https://app.teammood.com/signup">Start Your Free Trial</a>
-      </div>
+    <div class="container text-center pb-4">
+          <a class="green-btn btn-lg py-3 px-4" href="https://app.teammood.com/signup">Start Your Free Trial</a>
     </div>
 
     <div class="lp-bg-image my-5">
@@ -42,24 +39,21 @@
     <a id="benefits" class="pt-5"></a>
     {% include lp_benefits.html %}
 
-    <div class="homepage-press">
-      <div class="container my-5">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="light-grey text-center">From ten people startups, to large companies with several hundreds of people, you're in good company.</h2>
-          </div>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="light-grey text-center">From ten people startups, to large companies with several hundreds of people, you're in good company.</h2>
         </div>
-      </div>
-      <div class="container">
-        {% include logos_2x4.html %}
       </div>
     </div>
 
+    <div class="container">
+      {% include logos_2x4.html %}
+    </div>
 
-    <div class="content-page">
-        <div class="container my-5 text-center">
-              <a class="green-btn btn-lg py-3 px-4" href="https://app.teammood.com/signup">Get Started In 3 Minutes</a>
-        </div>
+    <div class="container my-5 text-center">
+      <a class="green-btn btn-lg py-3 px-4" href="https://app.teammood.com/signup">Get Started In 3 Minutes</a>
     </div>
 
     <a id="pricing" class="pt-5"></a>
@@ -67,7 +61,5 @@
 
     {% include lp_footer.html %}
 
-
   </body>
-
 </html>

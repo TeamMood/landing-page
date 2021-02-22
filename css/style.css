@@ -50,6 +50,7 @@ body {
     color: #333;
 }
 */
+
 .container{
     max-width: 1050px;
 }
@@ -178,19 +179,19 @@ footer .nav-link:hover{
     max-width: 80px;
 }
 
-.homepage-api div.standard-plan {
+.standard-plan {
     border-top: 4px solid #5c91df !important;
 }
 
-.homepage-api div.standard-plan i {
+.standard-plan i {
     color: #5c91df;
 }
 
-.homepage-api div.enterprise-plan {
+.enterprise-plan {
     border-top: 4px solid #1abc9c !important;
 }
 
-.homepage-api div.enterprise-plan i{
+.enterprise-plan i{
     color: #1abc9c;
 }
 
@@ -326,7 +327,7 @@ footer .nav-link:hover{
 .about-bg-image p{
     position: absolute;
     top: 50%;
-    right: 40px;
+    right: 5%;
     transform: translateY(-50%);
     width: 50%;
     background-color: rgba(220,220,220, 0.8);
