@@ -35,7 +35,7 @@
 
 body {
     font-family: "proxima-nova", sans-serif !important;
-    font-size: 16px;
+    font-size: 18px;
     padding: 0;
     font-weight: 100;
     line-height: 1.42857143;
@@ -114,6 +114,10 @@ nav header_en, nav header_fr :
 */
 .navbar-collapse{
     flex-grow: initial;
+}
+
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 0;
 }
 
 .navbar .nav-item a{
@@ -282,6 +286,28 @@ footer .nav-link:hover{
     margin: 20px auto;
 }
 
+.teammood-features p{
+    font-size: 20px;
+}
+
+.teammood-features h3{
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.pricing i{
+    padding: 0 5px;
+}
+
+.pricing h3{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.standard-plan .essential{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 /* TEMPLATES */
 .front-header {
@@ -293,7 +319,7 @@ footer .nav-link:hover{
 .front-header h1 {
     font-weight: 100;
     letter-spacing: -1.5px;
-    font-size: 3.5em;
+    font-size: 3em;
 }
 
 .front-header .subtitle {
@@ -347,6 +373,7 @@ footer .nav-link:hover{
 
 .about-text{
     font-size: 1.1em;
+    margin-bottom: 0;
 }
 
 .about-justify{
@@ -406,6 +433,10 @@ body .documentation{
 @media all and (max-width: 768px) {
     .benefits-grid > div{
         padding: 2px ;
+    }
+
+    .story{
+        margin: 30px 30px 0 !important;
     }
 
     .front-header h1 {
