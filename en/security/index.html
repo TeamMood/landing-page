@@ -21,13 +21,15 @@
     
     <link rel="shortcut icon" href="/images/logo-128px.png">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
 
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="/css/main.css ">
+<!--    <link rel="stylesheet" href="/css/main.css ">-->
+    <link rel="stylesheet" href="/css/style.css ">
+
 
     <link rel="canonical" href="https://www.teammood.com/en/security/">
 
@@ -40,94 +42,91 @@
     <!-- End Google Tag Manager -->
 
     <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
 </head>
 
 
-  <body class="application-front visitors homepage">
+  <body>
   	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7JRV8W"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7JRV8W" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 
-    <div class="container">
-    <nav class="navbar" id="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand orange logo-md" href="/en"><img src="/images/logo-140px.png" width="80px"></a>
-            </div>
 
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul class="grey navbar-right">
-                    <li class="nav-cta-link">
-                        <a class="light-orange-btn" href="https://app.teammood.com/signup">Get started</a>
+        <header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand p-3" href="/en">
+                <img src="/images/logo-140px.png" width="80px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="far fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbar-collapse-1">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/en/features">Features</a>
                     </li>
-                    <li class="nav-right-link">
-                        <a href="https://app.teammood.com/app#/login">Login</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/en/pricing">Pricing</a>
                     </li>
-                    <li class="nav-link">
-                        <a href="/en/success">Customers</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/en/success">Customers</a>
                     </li>
-                    <li class="nav-link">
-                        <a href="/en/pricing">Pricing</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://app.teammood.com/app#/login">Login</a>
                     </li>
-                    <li class="nav-link">
-                        <a href="/en/features">Features</a>
+                    <li class="nav-item">
+                        <a class="btn green-btn" href="https://app.teammood.com/signup">Get started</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-</div>
+</header>
 
 
-    <div class="container content-page">
-    <img class="teammood_mood_indicator_tool_img" src="/images/lp/teammood_mood_indicator_tool.jpeg" alt="TeamMood - Mood Indicator Tool with Daily Calendar & Mood Meter Charts">
+        <main data-cms-content-wrapper="/_layouts/default.html">
+            <div class="container documentation">
+    <img class="img-fluid" src="/images/lp/teammood_mood_indicator_tool.jpeg" alt="TeamMood - Mood Indicator Tool with Daily Calendar & Mood Meter Charts">
 
     <h1>Keeping Your Data Secure</h1>
 
     <p>We do our best to actively provide a strong level of security. This page explains how.</p>
-
     <p>Please note that we're humans though — and that security is an ever-going chasing game, with several high profile websites hacked every year.</p>
-
     <p>Think you found an issue? We're more than welcoming your feedback - please <a href="#Reporting+Incidents">report an incident</a>.</p>
+
 
     <h2 id="Up-To-Date+Infrastructure+And+Patches">Up-To-Date Infrastructure And Patches</h2>
 
     <p>We keep our infrastructure updated with scheduled security maintenance updates, as well as applying any patches that are recommended to be rolled out immediately. We rely on a <a href="https://www.heroku.com/policy/security">security-minded hosting provider</a> which provides easy-to-apply security updates on all infrastructure components.</p>
-
     <p>Similarly, we patch our application code very quickly when vulnerabilities are discovered. We rely on internal and external tools to audit our app code and behaviour.</p>
+
 
     <h2 id="Proactive+Monitoring">Proactive Monitoring</h2>
 
     <p>We use redundant, world-wide monitoring services to monitor TeamMood’s infrastructure 24x7x365. Any errors or other abnormalities trigger automatic alarms and we pro-actively work on fixing any issues detected. If we detect issues with your account, we will contact the account owner by email.</p>
 
+
     <h2 id="Protection+Against+Data+Loss">Protection Against Data Loss</h2>
 
     <p>We make daily backups of TeamMood's database as well as regular full images (snapshots) of TeamMood's servers.</p>
-
     <p>The backups are saved encrypted and regularly tested for integrity.</p>
-
     <p>We have the required infrastructure to rebuild a fully running service based on those backups very quickly.</p>
+
 
     <h2 id="Your+Credit+Card+Data+Is+Safe">Your Credit Card Data Is Safe</h2>
 
     <p>We do not store your billing information on our servers.</p>
-
     <p>Your credit card data is directly and securely submitted to a leading, full PCI-compliant payment gateway provider (<a href="https://stripe.com">Stripe</a>), using their JavaScript API.</p>
+
 
     <h2 id="Reporting+Incidents">Reporting Incidents</h2>
 
     <p>Have you noticed abuse, misuse, or experienced an incident with your account or have you identified a vulnerability in our systems?</p>
-
     <p>We'll take your feedback very seriously: email <a href="mailto:contact@teammood.com">contact@teammood.com</a>. We <strong>will reply</strong> in all cases and <strong>work with you to handle the situation</strong>.</p>
+
 
     <h2 id="Questions">Questions?</h2>
 
@@ -135,81 +134,44 @@
 
 </div>
 
+        </main>
 
-    <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="col-md-4 center">
-                    <h3>
-                        TeamMood
-                    </h3>
-                    <p>
-                        <a href="/en/terms-of-service/">Terms</a>
-                    </p>
-                    <p>
-                        <a href="/en/privacy-policy/">Privacy Policy</a>
-                    </p>
-                    <p>
-                        <a href="https://help.teammood.com/pricing-security-privacy-and-terms/legals/how-teammood-complies-with-gdpr">GDPR</a>
-                    </p>
-                    <p>
-                        <a href="http://status.teammood.com" target="_blank"><i class="fa fa-signal"></i> System status</a>
-                    </p>
-                </div>
-                <div class="col-md-4 center">
-                    <h3>Product</h3>
-                    <p>
-                        <a href="/en/features">Features</a>
-                    </p>
-                    <p>
-                        <a href="/en/success">Customers</a>
-                    </p>
-                    <p>
-                        <a href="/en/security">Security</a>
-                    </p>
-                    <p>
-                        <a href="/en/pricing">Pricing</a>
-                    </p>
-                    <p>
-                        <a href="http://apidocs.teammood.com/">API</a>
-                    </p>
-                </div>
-                <div class="col-md-4 center">
-                    <h3>Company</h3>
-                    <p>
-                        <a href="/en/about">About</a>
-                    </p>
-                    <p>
-                        <a href="mailto:hello@teammood.com">Contact us</a>
-                    </p>
-                    <p>
-                        <a href="https://blog.teammood.com">Blog</a>
-                    </p>
-                    <p>
-                        <a href="https://twitter.com/teammood" target="_blank">
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://twitter.com/teammood" target="_blank">
-                            <i class="fab fa-twitter"></i> Twitter
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://www.linkedin.com/company/teammood/" target="_blank">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                    </p>
-                </div>
-            </div>
+        <footer class="container-fluid px-4 pt-4 pb-5 mt-5">
+    <nav class="nav row justify-content-center align-items-baseline text-center my-5 mx-auto">
+        <div class="flex-column col-md-4">
+            <h3>TeamMood</h3>
+            <a class="nav-link" href="/en/terms-of-service/">Terms</a>
+            <a class="nav-link" href="/en/privacy-policy/">Privacy Policy</a>
+            <a class="nav-link" href="https://help.teammood.com/pricing-security-privacy-and-terms/legals/how-teammood-complies-with-gdpr">GDPR</a>
+            <a class="nav-link" href="http://status.teammood.com" target="_blank"><i class="fa fa-signal"></i> System status</a>
         </div>
-    </div>
+        <div class="flex-column col-md-4 mt-5 mt-md-0">
+            <h3>Product</h3>
+            <a class="nav-link" href="/en/features">Features</a>
+            <a class="nav-link" href="/en/success">Customers</a>
+            <a class="nav-link" href="/en/security">Security</a>
+            <a class="nav-link" href="/en/pricing">Pricing</a>
+            <a class="nav-link" href="http://apidocs.teammood.com/">API</a>
+        </div>
+        <div class="flex-column col-md-4 mt-5 mt-md-0">
+            <h3>Company</h3>
+            <a class="nav-link" href="/en/about">About</a>
+            <a class="nav-link" href="mailto:hello@teammood.com">Contact us</a>
+            <a class="nav-link" href="https://blog.teammood.com">Blog</a>
+            <a class="nav-link" href="https://twitter.com/teammood" target="_blank">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a class="nav-link" href="https://www.linkedin.com/company/teammood/" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </nav>
 
-    <div class="row footer_copyright">
-        <div class="col center">
-            <div class="phones-footer">
+    <div class="row footer_copyright mt-4 pt-4">
+        <div class="col">
+            <div class="text-center mt-3">
                 Copyright © 2021
-                <i class="fa fa-smile-o"></i> TeamMood <span class="separator">•</span>
+                <i class="fa fa-smile-o"></i> TeamMood <span class="mx-1">•</span>
                 Made with <i class="fas fa-heart"></i> in Toulouse, France
             </div>
         </div>
