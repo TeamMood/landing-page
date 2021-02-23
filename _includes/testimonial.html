@@ -1,22 +1,19 @@
-<div class="content-page">
-    <div class="container">
 
-        <div class="row testimonial equal ">
-            <div class="col-md-1 col-md-offset-2">
-                <img class="img-circle img-responsive" src="/images/testimonials/{{ include.img }}">
+    <div class="container">
+        <div class="row py-5 testimonial justify-content-center">
+            <div class="col-md-1 col-3 pt-3">
+                <img class="img-fluid rounded-circle float-md-end" src="/images/testimonials/{{ include.img }}">
             </div>
-            <div class="col-md-7">
-                <blockquote>
-                    <p>
-                        <strong>{{ include.author }}</strong><br>
+            <div class="col-md-7 ms-3 ">
+                <blockquote class="align-middle">
+                    <p class="mb-0">
+                        <strong class="fw-bold">{{ include.author }}</strong><br>
                         <small>{{ include.company }}</small>
                     </p>
                     <p>
-                        {{ include.text }}
+                        <em>{{ include.text }}</em>
                     </p>
                 </blockquote>
             </div>
         </div>
-
     </div>
-</div>

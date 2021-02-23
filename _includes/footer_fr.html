@@ -1,69 +1,37 @@
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="col-md-4 center">
-                    <h3>
-                        TeamMood
-                    </h3>
-                    <p>
-                        <a href="/fr/conditions-generales-dutilisation/">CGV</a>
-                    </p>
-                    <p>
-                        <a href="/en/privacy-policy/">Vie Privée</a>
-                    </p>
-                    <p>
-                        <a href="https://help.teammood.com/pricing-security-privacy-and-terms/legals/how-teammood-complies-with-gdpr">RGPD</a>
-                    </p>
-                    <p>
-                        <a href="http://status.teammood.com" target="_blank"><i class="fa fa-signal"></i>Etat du système</a>
-                    </p>
-                </div>
-                <div class="col-md-4 center">
-                    <h3>Produit</h3>
-                    <p>
-                        <a href="/{{ page.lang }}/fonctionnalites">Fonctionnalités</a>
-                    </p>
-                    <p>
-                        <a href="/{{ page.lang }}/clients">Clients</a>
-                    </p>
-                    <p>
-                        <a href="/{{ page.lang }}/tarifs">Tarifs</a>
-                    </p>
-                    <p>
-                        <a href="http://apidocs.teammood.com/">API</a>
-                    </p>
-                </div>
-                <div class="col-md-4 center">
-                    <h3>À propos</h3>
-                    <p>
-                        <a href="mailto:hello@teammood.com">Nous contacter</a>
-                    </p>
-                    <p>
-                        <a href="https://blog.teammood.com">Blog</a>
-                    </p>
-                    <p>
-                        <a href="https://twitter.com/teammood" target="_blank">
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://twitter.com/teammood" target="_blank">
-                            <i class="fab fa-twitter"></i> Twitter
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://www.linkedin.com/company/teammood/" target="_blank">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="row footer_copyright">
-        <div class="col center">
-            <div class="phones-footer">
+<footer class="container-fluid px-4 pt-4 pb-5 mt-5">
+    <nav class="nav row justify-content-center align-items-baseline text-center my-5 mx-auto">
+        <div class="flex-column col-md-4">
+            <h3>TeamMood</h3>
+            <a class="nav-link" href="/fr/conditions-generales-dutilisation/">CGV</a>
+            <a class="nav-link" href="/en/privacy-policy/">Vie Privée</a>
+            <a class="nav-link" href="https://help.teammood.com/pricing-security-privacy-and-terms/legals/how-teammood-complies-with-gdpr">RGPD</a>
+            <a class="nav-link" href="http://status.teammood.com" target="_blank"><i class="fa fa-signal"></i> Etat du système</a>
+        </div>
+        <div class="flex-column col-md-4 mt-5 mt-md-0">
+            <h3>Produit</h3>
+            <a class="nav-link" href="/{{ page.lang }}/fonctionnalites">Fonctionnalités</a>
+            <a class="nav-link" href="/{{ page.lang }}/clients">Clients</a>
+            <a class="nav-link" href="/{{ page.lang }}/tarifs">Tarifs</a>
+            <a class="nav-link" href="http://apidocs.teammood.com/">API</a>
+        </div>
+        <div class="flex-column col-md-4 mt-5 mt-md-0">
+            <h3>À propos</h3>
+<!--            <a class="nav-link" href="/{{ page.lang }}/about">About</a>-->
+            <a class="nav-link" href="mailto:hello@teammood.com">Nous contacter</a>
+            <a class="nav-link" href="https://blog.teammood.com">Blog</a>
+            <a class="nav-link" href="https://twitter.com/teammood" target="_blank">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a class="nav-link" href="https://www.linkedin.com/company/teammood/" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </nav>
+
+    <div class="row footer_copyright mt-4 pt-4">
+        <div class="col">
+            <div class="text-center mt-3">
                 Copyright © {{ site.time | date: '%Y' }}
                 <i class="fa fa-smile-o"></i> TeamMood <span class="separator">•</span>
                 Concocté avec <i class="fas fa-heart"></i> à Toulouse, France
@@ -71,3 +39,4 @@
         </div>
     </div>
 </footer>
+
