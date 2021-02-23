@@ -481,4 +481,9 @@ body .documentation{
         max-width: 80%;
         margin-top: 20px;
     }
+
+    .story .img-fluid, .story .img-thumbnail{
+        max-width: 100%;
+        margin-top: 0;
+    }
 }
