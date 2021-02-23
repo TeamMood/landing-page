@@ -33,7 +33,7 @@
     font-weight: 700
 }
 
-body {
+body{
     font-family: "proxima-nova", sans-serif !important;
     font-size: 18px;
     padding: 0;
@@ -51,8 +51,8 @@ body {
 }
 */
 
-.container{
-    max-width: 1050px;
+.container, footer > nav{
+    max-width: 1140px;
 }
 
 h1, h2, h3{
@@ -105,6 +105,18 @@ a:hover {
     text-align: justify;
 }
 
+.popover{
+    box-shadow: lightgrey 1px 1px 2px;
+}
+
+.popover-header, .popover-body{
+    color: #888;
+}
+
+.popover-body{
+    font-size: 15px;
+}
+
 /* INCLUDES ITEMS */
 
 /* 1/ INCLUDES header & footer */
@@ -122,6 +134,7 @@ nav header_en, nav header_fr :
 
 .navbar .nav-item a{
     color: #888;
+    font-weight: 400;
     margin-left: 15px;
     font-size: 17px;
 }
@@ -337,6 +350,10 @@ footer .nav-link:hover{
 }
 
 /* PAGES */
+.homepage-header h1{
+    font-size: 2.8em;
+}
+
 .about-bg-image img{
     width: 100%;
     margin: 0;

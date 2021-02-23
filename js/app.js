@@ -20,11 +20,17 @@ angular.element(document).ready(function() {
 });
 
 
-// bootstrap popover
-/*$(function () {
-    $('[data-toggle="popover"]').popover()
-});*/
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-    return new bootstrap.Tooltip(tooltipTriggerEl)
+// bootstrap 5 popover
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl, {
+        placement: 'top',
+        container: 'body',
+        trigger: 'hover focus',
+        template:  	'<div class="popover text" role="tooltip">' +
+                        '<div class="popover-arrow"></div>' +
+                        '<h3 class="popover-header"></h3>' +
+                        '<div class="popover-body pt-2"></div>' +
+                    '</div>'
+    })
 })
