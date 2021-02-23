@@ -52,7 +52,7 @@ body {
 */
 
 .container, footer > nav{
-    max-width: 1140px;
+    max-width: 1050px;
 }
 
 h1, h2, h3{
@@ -475,5 +475,10 @@ body .documentation{
         top: 0;
         transform: translate(0, 0);
         width: 100%;
+    }
+
+    .img-fluid, .img-thumbnail{
+        max-width: 80%;
+        margin-top: 20px;
     }
 }
