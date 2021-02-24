@@ -425,6 +425,15 @@ body .documentation{
     font-size: 1.2em;
 }
 
+.bg-security{
+    background-color: #fafafa;
+    padding: 10px 30px;
+}
+
+.security-img > img{
+    max-width: 150px;
+}
+
 @media all and (max-width: 992px) {
     .benefits-grid-1 > div > div{
         height: min-content;
