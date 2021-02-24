@@ -118,12 +118,6 @@ a:hover {
 }
 
 /* INCLUDES ITEMS */
-
-/* 1/ INCLUDES header & footer */
-/*
-nav header_en, nav header_fr :
-- toggle button
-*/
 .navbar-collapse{
     flex-grow: initial;
 }
@@ -312,6 +306,10 @@ footer .nav-link:hover{
     padding: 0 5px;
 }
 
+.pricing i.fa-question-circle.i-adjustment{
+    padding: 0;
+}
+
 .pricing h3{
     font-size: 1.3em;
     font-weight: 500;
@@ -452,6 +450,10 @@ body .documentation{
         top: 50%;
         transform: translate(50%, -50%);
         width: 80%;
+    }
+
+    .pricing i.fa-question-circle.i-adjustment{
+        padding: 0 5px;
     }
 
 }
