@@ -27,11 +27,6 @@ teammood.controller('PricingCtrl', function($scope) {
             label: 'CAD',
             value: 'CA$3',
             countries: ['CA']
-        },
-        {
-            label: 'BRL',
-            value: 'R$9',
-            countries: ['BR']
         }
     ];
 
