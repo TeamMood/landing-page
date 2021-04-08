@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+{% include header_{{page.lang}}.html %}
+
+<main>
+    {{ content }}
+</main>
+
+{% include footer_{{page.lang}}.html %}
+
+</body>
+
+</html>
