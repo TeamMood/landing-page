@@ -494,6 +494,19 @@ body .documentation{
     color: #173693;
 }
 
+.success-text-yellow{
+    color: #f77000;
+}
+
+.success-bg-yellow{
+    color: white;
+    background-color: #f77000;
+}
+
+.success-story-btn.success-text-yellow:hover{
+    color: #cb5700;
+}
+
 .success-testimonial-img{
     max-width: 200px;
 }
