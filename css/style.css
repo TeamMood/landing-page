@@ -442,12 +442,14 @@ body .documentation{
     position: relative;
     width: 100%;
     height: calc(100vh - 98.5px);
+    min-height: 800px;
 }
 
 .success-header > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: bottom;
 }
 
 .success-header h1{
@@ -460,13 +462,14 @@ body .documentation{
     color: white;
     font-size: 4.2em;
     text-align: center;
+    z-index: 10;
 }
 
 .success-header div{
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 40px;
+    padding: 35px;
 }
 
 .success-text-blue{
@@ -478,23 +481,22 @@ body .documentation{
     background-color: #217d84;
 }
 
-.success-img-blue{
-    filter: invert(68%) sepia(27%) saturate(284%) hue-rotate(146deg) brightness(92%) contrast(89%);
-}
-
 .success-testimonial-img{
-    max-width: 150px;
+    max-width: 200px;
 }
 
 .success-number{
     display: inline-block;
-    background-color: #217d84;
     width: 30px;
     height: 30px;
     color: white;
     text-align: center;
     padding-top: 1px;
     margin-right: 10px;
+}
+
+.success-number-blue{
+    background-color: #217d84;
 }
 
 .success-blocquote{
@@ -518,22 +520,28 @@ body .documentation{
     object-fit: cover;
 }
 
-.success-logo{
+#success-logo{
     position: absolute;
-    bottom: 40px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 200px;
+    width: 380px;
+    padding-bottom: 0;
+}
+
+#success-logo > img{
+    width: 100%;
 }
 
 .success-header div.success-header-text{
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     text-align: center;
     color: white;
     font-size: 1.8em;
+    width: 60%;
 }
 
 .success-header div.success-header-text h2{
@@ -572,6 +580,42 @@ body .documentation{
 
     .pricing i.fa-question-circle.i-adjustment{
         padding: 0 5px;
+    }
+
+    /* success stories */
+    .sucess-main-text{
+        font-size: 18px;
+    }
+
+    .success-header h1{
+        width: 90%;
+        font-size: 4em;
+    }
+
+    .success-header div{
+        padding: 25px 25px 0;
+    }
+
+    .success-blocquote{
+        width: 80%;
+        font-size: 1.3em;
+    }
+
+    .success-testimonial-img{
+        margin-bottom: 30px;
+    }
+
+    .success-headband{
+        height: 300px;
+    }
+
+    .success-header div.success-header-text{
+        top: 30%;
+        width: 90%;
+    }
+
+    .success-header div.success-header-text h2{
+        font-size: 1.7em;
     }
 
 }
@@ -614,5 +658,39 @@ body .documentation{
     .story .img-fluid, .story .img-thumbnail{
         max-width: 100%;
         margin-top: 0;
+    }
+
+    .success-header h1{
+        position: absolute;
+        top: 300px;
+        width: 90%;
+        font-size: 3.7em;
+    }
+
+    .success-header div{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 25px;
+    }
+
+    .success-header div.success-header-text{
+        top: 20%;
+    }
+
+    #success-logo{
+        width: 250px;
+    }
+
+    .success-story-btn{
+        font-size: 1em;
+    }
+
+}
+
+@media all and (max-width: 550px) {
+    .success-header div.success-header-text{
+        top: 5%;
     }
 }
