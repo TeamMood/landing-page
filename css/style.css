@@ -481,6 +481,19 @@ body .documentation{
     background-color: #217d84;
 }
 
+.success-text-purple{
+    color: #244fcf;
+}
+
+.success-bg-purple{
+    color: white;
+    background-color: #244fcf;
+}
+
+.success-story-btn.success-text-purple:hover{
+    color: #173693;
+}
+
 .success-testimonial-img{
     max-width: 200px;
 }
@@ -493,10 +506,6 @@ body .documentation{
     text-align: center;
     padding-top: 1px;
     margin-right: 10px;
-}
-
-.success-number-blue{
-    background-color: #217d84;
 }
 
 .success-blocquote{
@@ -551,7 +560,6 @@ body .documentation{
 }
 
 .success-story-btn{
-    color: #217d84;
     font-weight: 600;
     background-color: white;
     padding: 25px 40px;
