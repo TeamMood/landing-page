@@ -507,6 +507,19 @@ body .documentation{
     color: #cb5700;
 }
 
+.success-text-azur{
+    color: #0080c6;
+}
+
+.success-bg-azur{
+    color: white;
+    background-color: #0080c6;
+}
+
+.success-story-btn.success-text-azur:hover{
+    color: #005f8e;
+}
+
 .success-testimonial-img{
     max-width: 200px;
 }
