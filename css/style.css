@@ -442,7 +442,7 @@ body .documentation{
     position: relative;
     width: 100%;
     height: calc(100vh - 98.5px);
-    min-height: 800px;
+    min-height: 700px;
 }
 
 .success-header > img{
