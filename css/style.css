@@ -760,10 +760,6 @@ body .documentation{
 }
 
 @media all and (max-width: 550px) {
-    .success-header div.success-story-text{
-
-    }
-
     .success-header h1, .success-header h1.success-long-title{
         font-size: 2.5em;
     }
