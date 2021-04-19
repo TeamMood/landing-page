@@ -617,6 +617,10 @@ body .documentation{
     width: 100%;
 }
 
+.img-fluid, .img-thumbnail{
+    min-width: 85px;
+}
+
 @media all and (max-width: 992px) {
     .benefits-grid-1 > div > div{
         height: min-content;
@@ -756,6 +760,14 @@ body .documentation{
     .success-story-btn{
         font-size: 1em;
     }
+
+    .lp-bg-image img{
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+        object-position: left;
+    }
+
 
 }
 
