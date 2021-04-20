@@ -775,4 +775,8 @@ body .documentation{
     .success-header h1, .success-header h1.success-long-title{
         font-size: 2.5em;
     }
+
+    .bpi-logo{
+        display: none;
+    }
 }
