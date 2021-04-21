@@ -435,19 +435,21 @@ body .documentation{
 
 /* success stories */
 .sucess-main-text{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .success-header{
     position: relative;
     width: 100%;
     height: calc(100vh - 98.5px);
+    min-height: 700px;
 }
 
 .success-header > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: bottom;
 }
 
 .success-header h1{
@@ -460,13 +462,38 @@ body .documentation{
     color: white;
     font-size: 4.2em;
     text-align: center;
+    z-index: 10;
 }
 
-.success-header div{
+.success-header h1.success-long-title{
+    font-size: 3.6em;
+}
+
+.success-header div.success-story-text{
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 40px;
+    padding: 20px 30px 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    min-width: 400px;
+}
+
+.success-story-logo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 160px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.success-story-logo > img{
+    width: 100%;
 }
 
 .success-text-blue{
@@ -478,17 +505,51 @@ body .documentation{
     background-color: #217d84;
 }
 
-.success-img-blue{
-    filter: invert(68%) sepia(27%) saturate(284%) hue-rotate(146deg) brightness(92%) contrast(89%);
+.success-text-purple{
+    color: #244fcf;
+}
+
+.success-bg-purple{
+    color: white;
+    background-color: #244fcf;
+}
+
+.success-story-btn.success-text-purple:hover{
+    color: #173693;
+}
+
+.success-text-yellow{
+    color: #f77000;
+}
+
+.success-bg-yellow{
+    color: white;
+    background-color: #f77000;
+}
+
+.success-story-btn.success-text-yellow:hover{
+    color: #cb5700;
+}
+
+.success-text-azur{
+    color: #0080c6;
+}
+
+.success-bg-azur{
+    color: white;
+    background-color: #0080c6;
+}
+
+.success-story-btn.success-text-azur:hover{
+    color: #005f8e;
 }
 
 .success-testimonial-img{
-    max-width: 150px;
+    max-width: 200px;
 }
 
 .success-number{
     display: inline-block;
-    background-color: #217d84;
     width: 30px;
     height: 30px;
     color: white;
@@ -518,14 +579,6 @@ body .documentation{
     object-fit: cover;
 }
 
-.success-logo{
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-}
-
 .success-header div.success-header-text{
     position: absolute;
     top: 50%;
@@ -534,20 +587,34 @@ body .documentation{
     text-align: center;
     color: white;
     font-size: 1.8em;
+    width: 60%;
 }
 
 .success-header div.success-header-text h2{
     color: white;
     font-size: 1.7em;
-    margin-bottom: 80px;
 }
 
-.success-story-btn{
-    color: #217d84;
+.success-header div.success-header-text .success-story-btn{
     font-weight: 600;
     background-color: white;
     padding: 25px 40px;
     border-radius: 20px;
+    margin: 60px auto;
+    display: block;
+    width: max-content;
+}
+
+#success-logo{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 380px;
+}
+
+#success-logo > img{
+    width: 100%;
 }
 
 @media all and (max-width: 992px) {
@@ -572,6 +639,41 @@ body .documentation{
 
     .pricing i.fa-question-circle.i-adjustment{
         padding: 0 5px;
+    }
+
+    /* success stories */
+    .sucess-main-text{
+        font-size: 16px;
+    }
+
+    .success-header h1{
+        width: 90%;
+        font-size: 4em;
+    }
+
+    .success-header div.success-story-text{
+        padding: 25px 25px 0;
+    }
+
+    .success-blocquote{
+        width: 80%;
+        font-size: 1.3em;
+    }
+
+    .success-testimonial-img{
+        margin-bottom: 30px;
+    }
+
+    .success-headband{
+        height: 300px;
+    }
+
+    .success-header div.success-header-text{
+        width: 90%;
+    }
+
+    .success-header div.success-header-text h2{
+        font-size: 1.7em;
     }
 
 }
@@ -614,5 +716,51 @@ body .documentation{
     .story .img-fluid, .story .img-thumbnail{
         max-width: 100%;
         margin-top: 0;
+    }
+
+    .success-header h1, .success-header h1.success-long-title{
+        position: absolute;
+        top: 300px;
+        width: 90%;
+        font-size: 2.8em;
+    }
+
+    .success-header div.success-story-text{
+        width: 100%;
+        min-width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .success-header div.success-story-text > p{
+        padding-left: 10px;
+    }
+
+    .success-story-logo{
+        position: absolute;
+        bottom: 210px;
+        height: 60px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .success-story-logo > img{
+        width: 170px;
+    }
+
+    #success-logo{
+        width: 250px;
+    }
+
+    .success-story-btn{
+        font-size: 1em;
+    }
+
+}
+
+@media all and (max-width: 550px) {
+    .success-header h1, .success-header h1.success-long-title{
+        font-size: 2.5em;
     }
 }
