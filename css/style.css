@@ -544,6 +544,32 @@ body .documentation{
     color: #005f8e;
 }
 
+.success-text-cyan{
+    color: #00bcd4;
+}
+
+.success-bg-cyan{
+    color: white;
+    background-color: #00bcd4;
+}
+
+.success-story-btn.success-text-cyan:hover{
+    color: #00a8bd;
+}
+
+/*.success-text-red{
+    color: #FF4341;
+}
+
+.success-bg-red{
+    color: white;
+    background-color: #FF4341;
+}
+
+.success-story-btn.success-text-red:hover{
+    color: #bd3735;
+}*/
+
 .success-testimonial-img{
     max-width: 200px;
 }
