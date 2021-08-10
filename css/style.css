@@ -65,6 +65,10 @@ h4{
     font-size: 1.2em;
 }
 
+img{
+    max-width: 100%;
+}
+
 a {
     color: #1abc9c;
     text-decoration: none;
@@ -188,6 +192,17 @@ footer .nav-link:hover{
 
 .testimonial img{
     max-width: 80px;
+}
+/* testimonial v2021*/
+.testimonial_2021{
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    padding: 20px;
+    height: 100%;
+}
+
+.testimonial_2021 img{
+    background-color: lightgrey;
 }
 
 .standard-plan {
@@ -645,6 +660,40 @@ body .documentation{
 
 .img-fluid, .img-thumbnail{
     min-width: 85px;
+}
+
+.icon-image{
+    fill: #3F3C39;
+    width: 40px;
+    min-width: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* v2021 */
+.homepage-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.homepage-start{
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    padding: 50px 30px;
+}
+
+.homepage-start h2{
+    font-weight: bold;
+}
+
+.logo .img-thumbnail{
+    height: 100%;
+    object-fit: contain;
+}
+
+.logo .logo-box{
+    height: 143px;
 }
 
 @media all and (max-width: 992px) {
