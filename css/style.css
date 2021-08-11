@@ -114,7 +114,7 @@ a:hover {
 }
 
 .popover-header, .popover-body{
-    color: #888;
+    color: #757575;
 }
 
 .popover-body{
@@ -131,7 +131,7 @@ a:hover {
 }
 
 .navbar .nav-item a{
-    color: #888;
+    color: #757575;
     font-weight: 400;
     margin-left: 15px;
     font-size: 17px;
@@ -351,7 +351,7 @@ footer .nav-link:hover{
 .front-header .subtitle {
     font-size: 1.5em;
     font-weight: 100;
-    color: #888
+    color: #757575
 }
 
 .lp-bg-image img{
@@ -666,6 +666,10 @@ body .documentation{
     fill: #3F3C39;
     width: 25px;
     min-width: auto;
+}
+
+.icon-image-large{
+    width: 40px;
 }
 
 /* v2021 */

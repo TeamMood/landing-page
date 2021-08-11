@@ -2,7 +2,11 @@
 <blockquote class="testimonial_2021">
     <p>{{ include.text }}</p>
     <figure class="pt-3 mb-0 d-flex">
-        <img class="img-fluid rounded-circle w-25" src="/images/testimonials/{{ include.img }}">
+        {% if include.img %}
+        <img class="img-fluid rounded-circle w-25" src="/images/testimonials/{{ include.img }}" alt="">
+        {% else %}
+        <img class="img-fluid rounded-circle w-25" src="/images/testimonials/default/grey.png" alt="">
+        {% endif %}
         <figcaption class="align-self-center ps-3">
             <strong class="fw-bold">{{ include.author }}</strong><br>
             <!--                        <small>{{ include.company }}</small>-->

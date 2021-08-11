@@ -15,7 +15,7 @@ lang: en
     </div>
 </section>
 <div class="container py-5">
-    <h2 class="text-black-50 text-center pb-2">From ten people startups, to large companies with several hundreds of people, you're in good company.</h2>
+    <p class="text-black-50 text-center pb-2 fs-3">From ten people startups, to large companies with several hundreds of people, you're in good company.</p>
     <div class="container"> {% include logos_1line.html %} </div>
 </div>
 
@@ -91,26 +91,32 @@ lang: en
 <!--   bloc 3-->
     <section class="row gx-5 d-md-flex my-5  flex-md-row-reverse py-4 align-items-center">
         <h2>Remote management with confidence</h2>
-        <p>Many of us had to adapt to working remotely and changing habits takes a while and is rarely smooth. TeamMood helps you overcome issues that come up when working from home because it helps communication between you and your teammates. This way you can work remotely with confidence!</p>
+        <p class="homepage-subtitle">Many of us had to adapt to working remotely and changing habits takes a while and is rarely smooth. TeamMood helps you overcome issues that come up when working from home because it helps communication between you and your teammates. This way you can work remotely with confidence!</p>
 
         <div class="col-md-10 mx-auto text-center">
             <img class="img-fluid" src="/images/homepage/screenshot/screenshot4.png" alt="TeamMood - get insight you team health">
         </div>
 
-        <div class="homepage-grid">
+        <div class="mt-2">
             <article>
-                <img class="img-fluid icon-image" src="/images/homepage/icon/timezones.svg" alt="">
-                <h3>Timezones are supported</h3>
+                <div class="d-flex mt-3 mb-1">
+                    <img class="img-fluid icon-image my-0 me-3" src="/images/homepage/icon/timezones.svg" alt="">
+                    <h3 class="mb-0">Timezones are supported</h3>
+                </div>
                 <p>Your teammates are spread all around the world? We manage timezones, so people get notified at the right time.</p>
             </article>
             <article>
-                <img class="img-fluid icon-image" src="/images/homepage/icon/teams.svg" alt="">
-                <h3>Manage multiple teams</h3>
+                <div class="d-flex mt-4 mb-1">
+                    <img class="img-fluid icon-image my-0 me-3" src="/images/homepage/icon/teams.svg" alt="">
+                    <h3 class="mb-0">Manage multiple teams</h3>
+                </div>
                 <p>Create as many teams as you want and track their moods and feedback easily. We built all the tools you need to make the process effortless.</p>
             </article>
             <article>
-                <img class="img-fluid icon-image" src="/images/homepage/icon/tags.svg" alt="">
-                <h3>Easy segmentation with tags</h3>
+                <div class="d-flex mt-4 mb-1">
+                    <img class="img-fluid icon-image my-0 me-3" src="/images/homepage/icon/tags.svg" alt="">
+                    <h3 class="mb-0">Easy segmentation with tags</h3>
+                </div>
                 <p>Tag members of a team to add information like location that will be useful for more accurate analytics and segmentation.</p>
             </article>
         </div>
@@ -120,34 +126,34 @@ lang: en
     <section class="row gx-5 d-md-flex my-5  py-4 align-items-center">
         <h2>All your needs are covered</h2>
 
-        <div class="homepage-grid">
+        <div class="homepage-grid mt-2">
             <article>
-                <img class="img-fluid icon-image" src="/images/homepage/icon/integrations.svg" alt="">
+                <img class="img-fluid icon-image icon-image-large mb-2" src="/images/homepage/icon/integrations.svg" alt="">
                 <h3>Integrations</h3>
                 <p>Nowadays, you use a lot of tools and adding a new one to the stack needs to be a careful choice. TeamMood seamlessly integrates with your existing tools (Slack, Teams, and more) to help you increase usage right where your teammates are.</p>
             </article>
             <article>
-                <img class="img-fluid icon-image" src="/images/homepage/icon/history.svg" alt="">
+                <img class="img-fluid icon-image icon-image-large mb-2" src="/images/homepage/icon/history.svg" alt="">
                 <h3>Feedback history at a glance</h3>
                 <p>You need a clean and clear overview to quickly see the mood of your team. That's why we made a special view based on niko-niko calendar and Agile retrospective practices so you can track moods in just one moment and see how wellness improves over time.</p>
             </article>
             <article>
-                <img class="img-fluid icon-image" src="/images/homepage/icon/success.svg" alt="">
+                <img class="img-fluid icon-image icon-image-large mb-2" src="/images/homepage/icon/success.svg" alt="">
                 <h3>Customer success</h3>
                 <p>We care about your success as a team leader and our support is here to help you in your experience with TeamMood if you ever need it.</p>
             </article>
             <article>
-                <img class="img-fluid icon-image" src="/images/homepage/icon/empowerment.svg" alt="">
+                <img class="img-fluid icon-image icon-image-large mb-2" src="/images/homepage/icon/empowerment.svg" alt="">
                 <h3>Team empowerment</h3>
                 <p>TeamMood gives you all the tools to lead efficiently your team and empower them to express themselves in a safe environment.</p>
             </article>
             <article>
-                <img class="img-fluid icon-image" src="/images/homepage/icon/meeting.svg" alt="">
+                <img class="img-fluid icon-image icon-image-large mb-2" src="/images/homepage/icon/meeting.svg" alt="">
                 <h3>Meeting facilitation</h3>
                 <p>With daily feedback, you will be able to stop never-ending meetings and resolves issues as they arise before they derail your meetings.</p>
             </article>
             <article>
-                <img class="img-fluid icon-image" src="/images/homepage/icon/security.svg" alt="">
+                <img class="img-fluid icon-image icon-image-large mb-2" src="/images/homepage/icon/security.svg" alt="">
                 <h3>Security</h3>
                 <p>Don't be afraid to store sensitive data they are encrypted all the way. Plus, TeamMood is enterprise ready with SAML based SSO.</p>
             </article>
@@ -158,47 +164,45 @@ lang: en
     <section class="row gx-5 d-md-flex my-5 py-4 align-items-center">
         <h2>Our customers tell it best</h2>
 
-        <div class="homepage-grid">
+        <div class="homepage-grid mt-2">
             <article>
                 {% include testimonial_2021.html
                 text="We get to learn how our team members are doing and what are their blockers. If we are going the wrong direction, we can know about it sooner than Retrospective."
                 author="Kristen C."
-                img=""
-                company="" %}
-            </article>
-            <article>
-                {% include testimonial_2021.html
-                text="It’s a great way to get feedback from the team and open up conversations about the tough days."
-                author="Patrick J."
-                img=""
+                img="default/woman1.png"
                 company="" %}
             </article>
             <article>
                 {% include testimonial_2021.html
                 text="TeamMood allowed us to validate that the integration into our team of a person with a radically different expertise was going well, both for the team and for himself."
                 author="Nathaniel R."
-                img=""
+                company="" %}
+            </article>
+            <article>
+                {% include testimonial_2021.html
+                text="It’s a great way to get feedback from the team and open up conversations about the tough days."
+                author="Patrick J."
                 company="" %}
             </article>
             <article>
                 {% include testimonial_2021.html
                 text="I think (hope) it conveys the message to our team that we care about how they think and feel. And in these crazy times of COVID, I think it's important for people to have a safe outlet to vent a bit. In these times, people need a safe harbor."
                 author="Dave R."
-                img=""
+                img="default/man1.png"
                 company="" %}
             </article>
             <article>
                 {% include testimonial_2021.html
                 text="The key benefit was empowering my team to provide open feedback, which helped develop a culture of transparent communication. From the comments, we were able to look at themes for areas for improvement for our team health."
                 author="Mary L."
-                img=""
+                img="default/woman2.png"
                 company="" %}
             </article>
             <article>
                 {% include testimonial_2021.html
                 text="It’s been great to get a measure of the overall feeling in the team on a day to day basis. Especially as our team are all homeworkers and we don’t have regular opportunities to meet face to face."
                 author="James H."
-                img=""
+                img="default/man2.png"
                 company="" %}
             </article>
         </div>
@@ -206,8 +210,8 @@ lang: en
 
     <section class="homepage-start">
         <h2>Start Your Free Trial</h2>
-        <p class="pb-2">You can begin to use TeamMood in just couple minutes, it's easy and straightforward.</p>
-        <a class="green-btn btn-lg py-3 px-4" href="https://app.teammood.com/signup">Get Started</a>
+        <p class="pt-1 pb-3 fs-5">You can begin to use TeamMood in just couple minutes, it's easy and straightforward.</p>
+        <a class="green-btn btn-lg py-3 px-4 fw-bold" href="https://app.teammood.com/signup">Get Started</a>
     </section>
 </div>
 
