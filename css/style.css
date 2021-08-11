@@ -684,6 +684,7 @@ body .documentation{
     fill: #3F3C39;
     width: 25px;
     min-width: auto;
+    max-height: 25px;
 }
 
 .icon-image-large{
