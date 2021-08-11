@@ -60,6 +60,10 @@ h1, h2, h3{
     color: #333;
 }
 
+h2{
+    font-size: 1.8em;
+}
+
 h4{
     font-weight: 300;
     font-size: 1.2em;
@@ -683,7 +687,7 @@ body .documentation{
 }
 
 .icon-image-large{
-    width: 40px;
+    width: 35px;
 }
 
 /* v2021 */
@@ -784,6 +788,10 @@ body .documentation{
         gap: 0;
     }
 
+    .homepage-header .subtitle{
+        font-size: 1.4em;
+    }
+
     .benefits-grid > div{
         padding: 2px ;
     }
@@ -795,10 +803,6 @@ body .documentation{
     .front-header h1 {
         font-size: 44px !important;
         margin-top: 10px !important
-    }
-
-    .front-header .subtitle {
-        font-size: 28px !important
     }
 
     .enterprise-plan{
