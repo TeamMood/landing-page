@@ -713,13 +713,14 @@ body .documentation{
 }
 
 .logo .img-thumbnail{
-    height: 100%;
     max-width: 100%;
     object-fit: contain;
 }
 
 .logo .logo-box{
     max-height: 143px;
+    display: flex;
+    justify-content: center;
 }
 
 @media all and (max-width: 992px) {
@@ -875,6 +876,18 @@ body .documentation{
     }
 
 
+}
+
+@media all and (max-width: 576px) {
+    .logo > div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    .logo .logo-box img {
+        max-width: 70px;
+    }
 }
 
 @media all and (max-width: 550px) {
