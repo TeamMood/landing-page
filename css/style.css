@@ -195,15 +195,29 @@ footer .nav-link:hover{
 }
 /* testimonial v2021*/
 .testimonial_2021{
+    position: relative;
     border: 1px solid #e8e8e8;
     border-radius: 5px;
-    padding: 20px;
+    padding: 20px 20px 15px 20px;
     height: 100%;
 }
 
 .testimonial_2021 img{
     background-color: lightgrey;
+    max-width: 25px;
 }
+
+/*
+.testimonial_2021::before{
+    font-family: "proxima-nova", sans-serif !important;
+    content: '\201d';
+    color: #eee;
+    font-size: 6em;
+    position: absolute;
+    right: 20px;
+    bottom: -50px;
+}
+*/
 
 .standard-plan {
     border-top: 4px solid #5c91df !important;
@@ -695,11 +709,16 @@ body .documentation{
 
 .logo .img-thumbnail{
     height: 100%;
+    max-width: 100%;
     object-fit: contain;
 }
 
 .logo .logo-box{
-    height: 143px;
+    max-height: 143px;
+}
+
+.logo .squared-logo{
+    height: 100%;
 }
 
 @media all and (max-width: 992px) {
@@ -764,6 +783,11 @@ body .documentation{
 }
 
 @media all and (max-width: 768px) {
+    .homepage-grid{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
     .benefits-grid > div{
         padding: 2px ;
     }

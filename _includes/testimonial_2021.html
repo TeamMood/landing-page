@@ -1,7 +1,7 @@
 
-<blockquote class="testimonial_2021">
+<!--<blockquote class="testimonial_2021">
     <p>{{ include.text }}</p>
-    <figure class="pt-3 mb-0 d-flex">
+    <figure class="pt-2 mb-0 d-flex">
         {% if include.img %}
         <img class="img-fluid rounded-circle w-25" src="/images/testimonials/{{ include.img }}" alt="">
         {% else %}
@@ -9,8 +9,13 @@
         {% endif %}
         <figcaption class="align-self-center ps-3">
             <strong class="fw-bold">{{ include.author }}</strong><br>
-            <!--                        <small>{{ include.company }}</small>-->
+            &lt;!&ndash;                        <small>{{ include.company }}</small>&ndash;&gt;
         </figcaption>
     </figure>
-</blockquote>
+</blockquote>-->
 
+<blockquote class="testimonial_2021">
+    <div class="my-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+    <p>{{ include.text }}</p>
+    <p class="fw-bold m-0">- {{ include.author }}</p>
+</blockquote>
