@@ -39,7 +39,7 @@ body{
     padding: 0;
     font-weight: 100;
     line-height: 1.42857143;
-    color: #888;
+    color: #757575;
 }
 /*
 body {
@@ -308,9 +308,9 @@ footer .nav-link:hover{
     margin: 20px auto;
 }
 
-.teammood-features p{
+/*.teammood-features p{
     font-size: 20px;
-}
+}*/
 
 .teammood-features h3{
     font-size: 1.3em;
@@ -664,13 +664,15 @@ body .documentation{
 
 .icon-image{
     fill: #3F3C39;
-    width: 40px;
+    width: 25px;
     min-width: auto;
-    margin-top: 20px;
-    margin-bottom: 10px;
 }
 
 /* v2021 */
+.homepage-subtitle{
+    font-size: 1.1em;
+}
+
 .homepage-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
