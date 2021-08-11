@@ -717,10 +717,6 @@ body .documentation{
     max-height: 143px;
 }
 
-.logo .squared-logo{
-    height: 100%;
-}
-
 @media all and (max-width: 992px) {
     .benefits-grid-1 > div > div{
         height: min-content;
