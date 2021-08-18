@@ -348,7 +348,7 @@ footer .nav-link:hover{
     font-weight: 500;
 }
 
-.pricing_wellness{
+.pricing_wellness, .d-md-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px
@@ -813,7 +813,7 @@ body .documentation{
         margin-top: 40px;
     }
 
-    .pricing_wellness{
+    .pricing_wellness, .d-md-grid{
         grid-template-columns: 1fr;
     }
 
