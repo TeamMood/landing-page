@@ -348,6 +348,12 @@ footer .nav-link:hover{
     font-weight: 500;
 }
 
+.pricing_wellness{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px
+}
+
 .standard-plan .essential{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -805,6 +811,10 @@ body .documentation{
 
     .enterprise-plan{
         margin-top: 40px;
+    }
+
+    .pricing_wellness{
+        grid-template-columns: 1fr;
     }
 
     .about-bg-image p{
