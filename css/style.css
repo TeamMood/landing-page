@@ -359,6 +359,10 @@ footer .nav-link:hover{
     padding-bottom: 30px;
 }
 
+.integrations h2{
+    font-size: 1.4em;
+}
+
 /* TEMPLATES */
 .front-header {
     padding: 0 20px;
