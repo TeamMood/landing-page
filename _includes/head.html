@@ -3,14 +3,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
-    {% if page.description && page.lang == 'en' %}
-    <meta name="description" content="{{ page.description }}">
-    {% else %}
-    <meta name="description" content="Managers, do you (really) know how your team is doing? With TeamMood, track the well-being of your team, easily.">
-    {% endif %}
-
     {% include meta_{{page.lang}}.html %}
     
     <link rel="shortcut icon" href="/images/logo-128px.png">
