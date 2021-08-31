@@ -1,21 +1,30 @@
 <footer class="container-fluid px-4 pt-4 pb-5 mt-5">
     <nav class="nav row justify-content-center align-items-baseline text-center my-5 mx-auto">
-        <div class="flex-column col-md-4">
+        <div class="flex-column col-md-3">
             <h3>TeamMood</h3>
             <a class="nav-link" href="/en/terms-of-service/">Terms</a>
             <a class="nav-link" href="/en/privacy-policy/">Privacy Policy</a>
             <a class="nav-link" href="https://help.teammood.com/pricing-security-privacy-and-terms/legals/how-teammood-complies-with-gdpr">GDPR</a>
             <a class="nav-link" href="http://status.teammood.com" target="_blank"><i class="fa fa-signal"></i> System status</a>
         </div>
-        <div class="flex-column col-md-4 mt-5 mt-md-0">
+        <div class="flex-column col-md-6 mt-5 mt-md-0">
             <h3>Product</h3>
-            <a class="nav-link" href="/{{ page.lang }}/features">Features</a>
-            <a class="nav-link" href="/{{ page.lang }}/success">Customers</a>
-            <a class="nav-link" href="/{{ page.lang }}/security">Security</a>
-            <a class="nav-link" href="/{{ page.lang }}/pricing">Pricing</a>
-            <a class="nav-link" href="http://apidocs.teammood.com/">API</a>
+            <div class="row">
+                <div class="col-md-6">
+                    <a class="nav-link" href="/{{ page.lang }}/easy-to-use">Easy and quick to use</a>
+                    <a class="nav-link" href="/{{ page.lang }}/mood-tracking">Mood tracking</a>
+                    <a class="nav-link" href="/{{ page.lang }}/anonymous-feedback">Anonymous feedback</a>
+                    <a class="nav-link" href="/{{ page.lang }}/analytics">Analytics</a>
+                </div>
+                <div class="col-md-6">
+                    <a class="nav-link" href="/{{ page.lang }}/pricing">Pricing</a>
+                    <a class="nav-link" href="/{{ page.lang }}/security">Security</a>
+                    <a class="nav-link" href="/{{ page.lang }}/integrations">Integrations</a>
+                    <a class="nav-link" href="http://apidocs.teammood.com/">API</a>
+                </div>
+            </div>
         </div>
-        <div class="flex-column col-md-4 mt-5 mt-md-0">
+        <div class="flex-column col-md-3 mt-5 mt-md-0">
             <h3>Company</h3>
             <a class="nav-link" href="/{{ page.lang }}/about">About</a>
             <a class="nav-link" href="mailto:hello@teammood.com">Contact us</a>

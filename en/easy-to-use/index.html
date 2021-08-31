@@ -40,7 +40,7 @@ lang: en
 
         <div  class="col-md-6">
             <figure class="text-center border p-2 m-3">
-                <figcaption class="text-center fw-bold">Mood Distribution By Day</figcaption>
+                <figcaption class="text-center fw-bold fs-6">Mood Distribution By Day</figcaption>
                 <img class="img-fluid" src="/images/homepage/screenshot/screenshot3.png" alt="TeamMood - analytics">
             </figure>
         </div>
@@ -55,26 +55,61 @@ lang: en
         <h2>All the integrations you need with just a few clicks</h2>
         <p class="homepage-subtitle">Nowadays, you use a lot of tools and adding a new one to the stack needs to be a careful choice. TeamMood seamlessly integrates with your existing tools to help you increase usage right where your teammates are.</p>
 
-        <div class="row d-md-flex align-items-center">
+        <div class="row d-md-flex align-items-center flex-md-row-reverse">
+            <div  class="col-md-6">
+                <img class="img-fluid mx-auto d-block" src="/images/integrations/teammood-integrations.png" alt="">
+            </div>
             <div class="col-md-6">
                 <article>
-                    <h3>Notifications</h3>
+                    <div class="d-flex mt-3 mb-1">
+                        <img class="img-fluid icon-image my-0 me-2" src="/images/homepage/icon/notification.svg" alt="">
+                        <h3>Notifications</h3>
+                    </div>
                     <p>You can get mood notifications by email, but TeamMood also integrates with the most popular messaging apps: Microsoft Teams, Slack, and Cisco WebEx.</p>
                 </article>
                 <article>
-                    <h3>Single-sign on (SSO)</h3>
+                    <div class="d-flex mt-3 mb-1">
+                        <img class="img-fluid icon-image my-0 me-2" src="/images/homepage/icon/sso.svg" alt="">
+                        <h3>Single-sign on (SSO)</h3>
+                    </div>
                     <p>We provide SSO integration using the SAML2 protocol, either through Azure AD, Okta or even your custom SAML2 portal. It is part of our Enterprise plan.</p>
                 </article>
                 <article>
-                    <h3>API</h3>
+                    <div class="d-flex mt-3 mb-1">
+                        <img class="img-fluid icon-image my-0 me-2" src="/images/homepage/icon/api.svg" alt="">
+                        <h3>API</h3>
+                    </div>
                     <p>If you have more specialized needs, we have an API to integrate TeamMood in your own tools or to fetch data to create custom reports.</p>
                 </article>
             </div>
-
-            <div  class="col-md-6">
-                <img class="img-fluid" src="/images/integrations/teammood-integrations.png" alt="">
-            </div>
         </div>
+    </section>
+
+    <section class="row d-md-flex my-4 py-4 align-items-center">
+        <h2>Our customers tell it best</h2>
+
+        <div class="homepage-grid mt-2">
+            <article class="pb-2">
+                {% include testimonial_2021.html
+                text="Team members said that they like the brief moment of reflection triggered by the TeamMood daily email."
+                author="Martin M." %}
+            </article>
+            <article class="pb-2">
+                {% include testimonial_2021.html
+                text="It helps to have a way getting things off your chest at the push of a button and it’s good to note there are many more good days than bad."
+                author="Andy C." %}
+            </article>
+            <article class="pb-2">
+                {% include testimonial_2021.html
+                text="Easy to use, little effort for the team members to enter their sentiment for the day, and to add comments if required. Reporting tool is great."
+                author="Rene M." %}
+            </article>
+        </div>
+
+        <p class="text-center mt-2">
+            <b>More reviews are available on <a href="https://www.capterra.com/p/164177/TeamMood/reviews/" target="_blank">Capterra.com</a>. <br>
+            TeamMood has an average score of 4.8 out of 5.</b>
+        </p>
     </section>
 </div>
 

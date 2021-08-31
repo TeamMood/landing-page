@@ -141,10 +141,13 @@ a:hover {
 }
 
 .navbar .nav-item a{
-    color: #757575;
+    color: #595959;
     font-weight: 400;
-    margin-left: 15px;
     font-size: 17px;
+}
+
+.navbar .navbar-item a{
+    margin-left: 15px;
 }
 
 .navbar .nav-item a:hover{
@@ -357,7 +360,7 @@ footer .nav-link:hover{
 .pricing_wellness, .d-md-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px
+    gap: 25px;
 }
 
 .standard-plan .essential{

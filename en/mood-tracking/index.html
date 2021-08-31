@@ -46,27 +46,33 @@ lang: en
         <p class="homepage-subtitle">For happy teammates, being a proactive leader is essential. But without enough insights it's practically impossible. In order to avoid conflicts and integrate new members to the team, you must put in place the right tools to be able to solve issues as soon as they emerge.</p>
 
         <div class="row d-md-flex align-items-center">
-            <div class="col-md-7">
+            <div class="col-md-6">
                 <article>
-                    <img class="img-fluid icon-image mb-2" src="/images/homepage/icon/analytics.svg" alt="">
-                    <h3>Get answers with analytics</h3>
+                    <div class="d-flex mt-3 mb-1">
+                        <img class="img-fluid icon-image my-0 me-3" src="/images/homepage/icon/analytics.svg" alt="">
+                        <h3>Get answers with analytics</h3>
+                    </div>
                     <p>The problem with generic tools like whiteboards is the lack of analytics. TeamMood is opinionated to help you be more proactive in managing your team. Get the right analytics, zero configuration required.</p>
                 </article>
                 <article>
-                    <img class="img-fluid icon-image mb-2" src="/images/homepage/icon/segment.svg" alt="">
-                    <h3>Dive deeper with segmentation</h3>
+                    <div class="d-flex mt-3 mb-1">
+                        <img class="img-fluid icon-image my-0 me-3" src="/images/homepage/icon/segment.svg" alt="">
+                        <h3>Dive deeper with segmentation</h3>
+                    </div>
                     <p>Analytics for multiple teams can become hard to decode. That's why you can segment data to get the most accurate analytics for a given situation and handle it quickly.</p>
                 </article>
                 <article>
-                    <img class="img-fluid icon-image mb-2" src="/images/homepage/icon/guide.svg" alt="">
-                    <h3>Guide to leadership (coming soon)</h3>
+                    <div class="d-flex mt-3 mb-1">
+                        <img class="img-fluid icon-image my-0 me-3" src="/images/homepage/icon/guide.svg" alt="">
+                        <h3>Guide to leadership (coming soon)</h3>
+                    </div>
                     <p>Tools will never replace management skills. But you might face problems you never experienced before and don't know how to react. We gathered all the situations you might face and the actions you need to take in a guide freely available to everyone.</p>
                 </article>
             </div>
 
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <figure class="text-center border p-2">
-                    <figcaption class="text-center fw-bold">Mood Distribution By Day</figcaption>
+                    <figcaption class="text-center fw-bold fs-6">Mood Distribution By Day</figcaption>
                     <img class="img-fluid" src="/images/homepage/screenshot/screenshot3.png" alt="TeamMood - analytics">
                 </figure>
             </div>
@@ -78,24 +84,30 @@ lang: en
         <p class="homepage-subtitle">Many of us had to adapt to working remotely and changing habits takes a while and is rarely smooth. TeamMood helps you overcome issues that come up when working from home because it helps communication between you and your teammates. This way you can work remotely with confidence!</p>
 
         <div class="row d-md-flex align-items-center">
-            <div class="col-md-5">
-                <img class="img-fluid border p-2" src="/images/homepage/screenshot/screenshot4.png" alt="TeamMood - get insight you team health">
+            <div class="col-md-6">
+                <img class="img-fluid border p-2" src="/images/remote.png" alt="TeamMood - get insight you team health">
             </div>
 
-            <div class="col-md-7">
+            <div class="col-md-6">
                 <article>
-                    <img class="img-fluid icon-image mb-2" src="/images/homepage/icon/timezones.svg" alt="">
-                    <h3>Timezones are supported</h3>
+                    <div class="d-flex mt-3 mb-1">
+                        <img class="img-fluid icon-image my-0 me-3" src="/images/homepage/icon/timezones.svg" alt="">
+                        <h3>Timezones are supported</h3>
+                    </div>
                     <p>Your teammates are spread all around the world? We manage timezones, so people get notified at the right time.</p>
                 </article>
                 <article>
-                    <img class="img-fluid icon-image mb-2" src="/images/homepage/icon/teams.svg" alt="">
-                    <h3>Manage multiple teams</h3>
+                    <div class="d-flex mt-3 mb-1">
+                        <img class="img-fluid icon-image my-0 me-3" src="/images/homepage/icon/teams.svg" alt="">
+                        <h3>Manage multiple teams</h3>
+                    </div>
                     <p>Create as many teams as you want and track their moods and feedback easily. We built all the tools you need to make the process effortless.</p>
                 </article>
                 <article>
-                    <img class="img-fluid icon-image mb-2" src="/images/homepage/icon/tags.svg" alt="">
-                    <h3>Easy segmentation with tags</h3>
+                    <div class="d-flex mt-3 mb-1">
+                        <img class="img-fluid icon-image my-0 me-3" src="/images/homepage/icon/tags.svg" alt="">
+                        <h3>Easy segmentation with tags</h3>
+                    </div>
                     <p>Tag members of a team to add information like location that will be useful for more accurate analytics and segmentation.</p>
                 </article>
             </div>
@@ -136,5 +148,53 @@ lang: en
                 <p>Don't be afraid to store sensitive data they are encrypted all the way. Plus, TeamMood is enterprise ready with SAML based SSO.</p>
             </article>
         </div>
+    </section>
+
+    <section class="row d-md-flex my-4 py-4 align-items-center">
+        <h2>Our customers tell it best</h2>
+
+        <div class="homepage-grid mt-2">
+            <article class="pb-2">
+                {% include testimonial_2021.html
+                text="We get to learn how our team members are doing and what are their blockers. If we are going the wrong direction, we can know about it sooner than Retrospective."
+                author="Kristen C."
+                company="" %}
+            </article>
+            <article class="pb-2">
+                {% include testimonial_2021.html
+                text="TeamMood allowed us to validate that the integration into our team of a person with a radically different expertise was going well, both for the team and for himself."
+                author="Nathaniel R."
+                company="" %}
+            </article>
+            <article class="pb-2">
+                {% include testimonial_2021.html
+                text="It’s a great way to get feedback from the team and open up conversations about the tough days."
+                author="Patrick J."
+                company="" %}
+            </article>
+            <article class="pb-2">
+                {% include testimonial_2021.html
+                text="I think (hope) it conveys the message to our team that we care about how they think and feel. And in these crazy times of COVID, I think it's important for people to have a safe outlet to vent a bit. In these times, people need a safe harbor."
+                author="Dave R."
+                company="" %}
+            </article>
+            <article class="pb-2">
+                {% include testimonial_2021.html
+                text="The key benefit was empowering my team to provide open feedback, which helped develop a culture of transparent communication. From the comments, we were able to look at themes for areas for improvement for our team health."
+                author="Mary L."
+                company="" %}
+            </article>
+            <article class="pb-2">
+                {% include testimonial_2021.html
+                text="It’s been great to get a measure of the overall feeling in the team on a day to day basis. Especially as our team are all homeworkers and we don’t have regular opportunities to meet face to face."
+                author="James H."
+                company="" %}
+            </article>
+        </div>
+
+        <p class="text-center mt-2">
+            <b>More reviews are available on <a href="https://www.capterra.com/p/164177/TeamMood/reviews/" target="_blank">Capterra.com</a>. <br>
+            TeamMood has an average score of 4.8 out of 5.</b>
+        </p>
     </section>
 </div>
