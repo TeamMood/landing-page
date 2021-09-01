@@ -372,6 +372,11 @@ footer .nav-link:hover{
     font-size: 1.4em;
 }
 
+#capterra{
+    width: 180px;
+    margin-top: 5px;
+}
+
 /* TEMPLATES */
 .front-header {
     color: #333;
@@ -826,6 +831,11 @@ body .documentation{
 
     .pricing_wellness, .d-md-grid{
         grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .d-md-grid p{
+        margin-bottom: 0;
     }
 
     .about-bg-image p{
@@ -837,7 +847,7 @@ body .documentation{
     }
 
     .img-fluid, .img-thumbnail{
-        max-width: 80%;
+        /*max-width: 80%;*/
         margin-top: 20px;
     }
 
@@ -914,5 +924,9 @@ body .documentation{
 
     .bpi-logo{
         display: none;
+    }
+
+    .navbar-nav .dropdown-menu.show {
+        text-align: center;
     }
 }
