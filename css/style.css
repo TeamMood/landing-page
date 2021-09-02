@@ -39,7 +39,7 @@ body{
     padding: 0;
     font-weight: 100;
     line-height: 1.42857143;
-    color: #888;
+    color: #595959; /* the clearest grey to get a sufficient contrast on white (accessibility) */
 }
 /*
 body {
@@ -60,9 +60,43 @@ h1, h2, h3{
     color: #333;
 }
 
+h2{
+    font-size: 1.8em;
+}
+
 h4{
     font-weight: 300;
     font-size: 1.2em;
+}
+
+h3{
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.version2021{
+    font-weight: 400 !important;
+}
+.version2021 p{
+    color: #5F6B77;
+}
+.version2021 h1{
+    font-weight: bolder !important;
+}
+.version2021 h2{
+    font-weight: bold !important;
+}
+.version2021 h3{
+    font-weight: bold !important;
+}
+.version2021 .dropdown-item:active {
+    font-weight: bold;
+    background-color: #e9ecef;
+}
+
+img{
+    max-width: 100%;
 }
 
 a {
@@ -110,7 +144,7 @@ a:hover {
 }
 
 .popover-header, .popover-body{
-    color: #888;
+    color: #757575;
 }
 
 .popover-body{
@@ -127,10 +161,13 @@ a:hover {
 }
 
 .navbar .nav-item a{
-    color: #888;
+    color: #595959;
     font-weight: 400;
-    margin-left: 15px;
     font-size: 17px;
+}
+
+.navbar .navbar-item a{
+    margin-left: 15px;
 }
 
 .navbar .nav-item a:hover{
@@ -189,6 +226,31 @@ footer .nav-link:hover{
 .testimonial img{
     max-width: 80px;
 }
+/* testimonial v2021*/
+.testimonial_2021{
+    position: relative;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    padding: 20px 20px 15px 20px;
+    height: 100%;
+}
+
+.testimonial_2021 img{
+    background-color: lightgrey;
+    max-width: 25px;
+}
+
+/*
+.testimonial_2021::before{
+    font-family: "proxima-nova", sans-serif !important;
+    content: '\201d';
+    color: #eee;
+    font-size: 6em;
+    position: absolute;
+    right: 20px;
+    bottom: -50px;
+}
+*/
 
 .standard-plan {
     border-top: 4px solid #5c91df !important;
@@ -293,9 +355,9 @@ footer .nav-link:hover{
     margin: 20px auto;
 }
 
-.teammood-features p{
+/*.teammood-features p{
     font-size: 20px;
-}
+}*/
 
 .teammood-features h3{
     font-size: 1.3em;
@@ -315,16 +377,29 @@ footer .nav-link:hover{
     font-weight: 500;
 }
 
+.pricing_wellness, .d-md-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
 .standard-plan .essential{
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
+.integrations h2{
+    font-size: 1.4em;
+}
+
+#capterra{
+    width: 180px;
+    margin-top: 5px;
+}
+
 /* TEMPLATES */
 .front-header {
-    padding: 0 20px;
     color: #333;
-    text-align: center
 }
 
 .front-header h1 {
@@ -336,7 +411,16 @@ footer .nav-link:hover{
 .front-header .subtitle {
     font-size: 1.5em;
     font-weight: 100;
-    color: #888
+    color: #757575
+}
+
+.version2021 .front-header .subtitle {
+    font-weight: 400;
+    color: #6b7280;
+}
+.version2021 .fromTenPeople{
+    font-weight: bold;
+    color: #9ca3af !important;
 }
 
 .lp-bg-image img{
@@ -647,6 +731,49 @@ body .documentation{
     min-width: 85px;
 }
 
+.icon-image{
+    fill: #3F3C39;
+    width: 25px;
+    min-width: auto;
+    max-height: 25px;
+}
+
+/* v2021 */
+.h1-subtitle{
+    font-size: 1.3em;
+}
+
+.h2-subtitle{
+    font-size: 1.1em;
+}
+
+.homepage-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.homepage-start{
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    padding: 50px 30px;
+}
+
+.homepage-start h2{
+    font-weight: bold;
+}
+
+.logo .img-thumbnail{
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.logo .logo-box{
+    max-height: 143px;
+    display: flex;
+    justify-content: center;
+}
+
 @media all and (max-width: 992px) {
     .benefits-grid-1 > div > div{
         height: min-content;
@@ -709,6 +836,15 @@ body .documentation{
 }
 
 @media all and (max-width: 768px) {
+    .homepage-grid{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .homepage-header .subtitle{
+        font-size: 1.4em;
+    }
+
     .benefits-grid > div{
         padding: 2px ;
     }
@@ -722,12 +858,17 @@ body .documentation{
         margin-top: 10px !important
     }
 
-    .front-header .subtitle {
-        font-size: 28px !important
-    }
-
     .enterprise-plan{
         margin-top: 40px;
+    }
+
+    .pricing_wellness, .d-md-grid{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .d-md-grid p{
+        margin-bottom: 0;
     }
 
     .about-bg-image p{
@@ -738,10 +879,10 @@ body .documentation{
         width: 100%;
     }
 
-    .img-fluid, .img-thumbnail{
+  /*  .img-fluid, .img-thumbnail{
         max-width: 80%;
         margin-top: 20px;
-    }
+    }*/
 
     .story .img-fluid, .story .img-thumbnail{
         max-width: 100%;
@@ -797,6 +938,18 @@ body .documentation{
 
 }
 
+@media all and (max-width: 576px) {
+    .logo > div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    .logo .logo-box img {
+        max-width: 70px;
+    }
+}
+
 @media all and (max-width: 550px) {
     .success-header h1, .success-header h1.success-long-title{
         font-size: 2.5em;
@@ -804,5 +957,9 @@ body .documentation{
 
     .bpi-logo{
         display: none;
+    }
+
+    .navbar-nav .dropdown-menu.show {
+        text-align: center;
     }
 }

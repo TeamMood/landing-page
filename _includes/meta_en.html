@@ -1,10 +1,19 @@
-<meta name="description" content="Managers, do you (really) know how your team is doing? With TeamMood, track the well-being of your team, easily.">
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-<meta name="keywords" content="niko-niko calendar, niko niko, nikoniko, niko-niko, mood, team, happiness, humeur, métrique, mood meter, mood tracker, mood marble, team well being">
+{% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% else %}
+    <meta name="description" content="Managers, do you (really) know how your team is doing? With TeamMood, track the well-being of your team, easily.">
+{% endif %}
 
 <!-- Facebook meta for sharing -->
 <meta property="og:url" content="https://www.teammood.com/?utm_medium=share&utm_campaign=facebook_share&utm_source=facebook"/>
 <meta property="og:type" content="website" />
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-<meta property="og:description" content="Managers, do you (really) know how your team is doing?" />
+{% if page.description %}
+    <meta property="og:description" content="{{ page.description }}">
+    {% else %}
+    <meta property="og:description" content="Managers, do you (really) know how your team is doing?" />
+{% endif %}
+
 <meta property="og:image" content="https://www.teammood.com/images/lp/teammood_at_office.jpg" />
