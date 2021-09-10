@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
     <meta charset="utf-8">
@@ -7,16 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>TeamMood - Track The Well-Being of Your Team</title>
-    
+
+
     <meta name="description" content="Managers, do you (really) know how your team is doing? With TeamMood, track the well-being of your team, easily.">
 
-<meta name="keywords" content="niko-niko calendar, niko niko, nikoniko, niko-niko, mood, team, happiness, humeur, métrique, mood meter, mood tracker, mood marble, team well being">
 
 <!-- Facebook meta for sharing -->
 <meta property="og:url" content="https://www.teammood.com/?utm_medium=share&utm_campaign=facebook_share&utm_source=facebook"/>
 <meta property="og:type" content="website" />
 <meta property="og:title" content="TeamMood - Track The Well-Being of Your Team" />
-<meta property="og:description" content="Managers, do you (really) know how your team is doing?" />
+
+    <meta property="og:description" content="Managers, do you (really) know how your team is doing?" />
+
+
 <meta property="og:image" content="https://www.teammood.com/images/lp/teammood_at_office.jpg" />
     
     <link rel="shortcut icon" href="/images/logo-128px.png">
@@ -29,7 +32,6 @@
 
 <!--    <link rel="stylesheet" href="/css/main.css ">-->
     <link rel="stylesheet" href="/css/style-mini.css">
-
 
     <link rel="canonical" href="https://www.teammood.com/en/privacy-policy-data-retention-policy-html/">
 
@@ -53,11 +55,11 @@
 	<!-- End Google Tag Manager (noscript) -->
 
 
-        <header>
+        <header class="version2021">
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand p-3" href="/en">
-                <img src="/images/logo-140px.png" width="80px">
+                <img src="/images/logo-140px.png" width="80px" alt="TeamMood - Homepage">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="far fa-bars"></i>
@@ -65,19 +67,30 @@
 
             <div class="collapse navbar-collapse " id="navbar-collapse-1">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/en/features">Features</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbar-item" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/en/product/easy-to-use">Easy and quick to use</a></li>
+                            <li><a class="dropdown-item" href="/en/product/mood-tracking">Mood tracking</a></li>
+                            <li><a class="dropdown-item" href="/en/product/anonymous-feedback">Anonymous feedback</a></li>
+                            <li><a class="dropdown-item" href="/en/product/analytics">Analytics</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item navbar-item">
+                        <a class="nav-link" href="/en/integrations">Integrations</a>
+                    </li>
+                    <li class="nav-item navbar-item">
                         <a class="nav-link" href="/en/pricing">Pricing</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/en/success">Customers</a>
+                    <li class="nav-item navbar-item">
+                        <a class="nav-link" href="/en/about">About</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item navbar-item">
                         <a class="nav-link" href="https://app.teammood.com/app#/login">Login</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item navbar-item">
                         <a class="btn green-btn" href="https://app.teammood.com/signup">Start Free Trial</a>
                     </li>
                 </ul>
@@ -197,22 +210,31 @@
 
         <footer class="container-fluid px-4 pt-4 pb-5 mt-5">
     <nav class="nav row justify-content-center align-items-baseline text-center my-5 mx-auto">
-        <div class="flex-column col-md-4">
+        <div class="flex-column col-md-3">
             <h3>TeamMood</h3>
             <a class="nav-link" href="/en/terms-of-service/">Terms</a>
             <a class="nav-link" href="/en/privacy-policy/">Privacy Policy</a>
             <a class="nav-link" href="https://help.teammood.com/pricing-security-privacy-and-terms/legals/how-teammood-complies-with-gdpr">GDPR</a>
             <a class="nav-link" href="http://status.teammood.com" target="_blank"><i class="fa fa-signal"></i> System status</a>
         </div>
-        <div class="flex-column col-md-4 mt-5 mt-md-0">
+        <div class="flex-column col-md-6 mt-5 mt-md-0">
             <h3>Product</h3>
-            <a class="nav-link" href="/en/features">Features</a>
-            <a class="nav-link" href="/en/success">Customers</a>
-            <a class="nav-link" href="/en/security">Security</a>
-            <a class="nav-link" href="/en/pricing">Pricing</a>
-            <a class="nav-link" href="http://apidocs.teammood.com/">API</a>
+            <div class="row">
+                <div class="col-md-6">
+                    <a class="nav-link" href="/en/product/easy-to-use">Easy and quick to use</a>
+                    <a class="nav-link" href="/en/product/mood-tracking">Mood tracking</a>
+                    <a class="nav-link" href="/en/product/anonymous-feedback">Anonymous feedback</a>
+                    <a class="nav-link" href="/en/product/analytics">Analytics</a>
+                </div>
+                <div class="col-md-6">
+                    <a class="nav-link" href="/en/pricing">Pricing</a>
+                    <a class="nav-link" href="/en/security">Security</a>
+                    <a class="nav-link" href="/en/integrations">Integrations</a>
+                    <a class="nav-link" href="http://apidocs.teammood.com/">API</a>
+                </div>
+            </div>
         </div>
-        <div class="flex-column col-md-4 mt-5 mt-md-0">
+        <div class="flex-column col-md-3 mt-5 mt-md-0">
             <h3>Company</h3>
             <a class="nav-link" href="/en/about">About</a>
             <a class="nav-link" href="mailto:hello@teammood.com">Contact us</a>
