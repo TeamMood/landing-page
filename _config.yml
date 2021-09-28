@@ -23,3 +23,11 @@ plugins:
 
 redirect_from:
   json: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - purgecss.config.js
+  - package.json
+  - package-lock.json
+  - node_modules
