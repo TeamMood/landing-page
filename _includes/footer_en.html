@@ -2,33 +2,32 @@
     <nav class="nav row justify-content-center align-items-baseline text-center my-5 mx-auto">
         <div class="flex-column col-md-3">
             <h3>TeamMood</h3>
-            <a class="nav-link" href="/en/terms-of-service/">Terms</a>
-            <a class="nav-link" href="/en/privacy-policy/">Privacy Policy</a>
-            <a class="nav-link" href="https://help.teammood.com/pricing-security-privacy-and-terms/legals/how-teammood-complies-with-gdpr">GDPR</a>
+            <a class="nav-link" href="/{{ page.lang }}/about">About</a>
+            <a class="nav-link" href="https://blog.teammood.com">Blog</a>
+            <a class="nav-link" href="https://blog.teammood.com">Help Center</a>
             <a class="nav-link" href="http://status.teammood.com" target="_blank"><i class="fa fa-signal"></i> System status</a>
         </div>
-        <div class="flex-column col-md-6 mt-5 mt-md-0">
-            <h3>Product</h3>
+        <div class="flex-column col-md-3 mt-5 mt-md-0">
+            <h3>Features</h3>
             <div class="row">
-                <div class="col-md-6">
-                    <a class="nav-link" href="/{{ page.lang }}/product/easy-to-use">Easy and quick to use</a>
-                    <a class="nav-link" href="/{{ page.lang }}/product/mood-tracking">Mood tracking</a>
-                    <a class="nav-link" href="/{{ page.lang }}/product/anonymous-feedback">Anonymous feedback</a>
-                    <a class="nav-link" href="/{{ page.lang }}/product/analytics">Analytics</a>
-                </div>
-                <div class="col-md-6">
-                    <a class="nav-link" href="/{{ page.lang }}/pricing">Pricing</a>
-                    <a class="nav-link" href="/{{ page.lang }}/security">Security</a>
-                    <a class="nav-link" href="/{{ page.lang }}/integrations">Integrations</a>
-                    <a class="nav-link" href="http://apidocs.teammood.com/">API</a>
-                </div>
+                <a class="nav-link" href="/{{ page.lang }}/product/easy-to-use">Easy and quick to use</a>
+                <a class="nav-link" href="/{{ page.lang }}/product/mood-tracking">Mood tracking</a>
+                <a class="nav-link" href="/{{ page.lang }}/product/anonymous-feedback">Anonymous feedback</a>
+                <a class="nav-link" href="/{{ page.lang }}/product/analytics">Analytics</a>
             </div>
         </div>
         <div class="flex-column col-md-3 mt-5 mt-md-0">
-            <h3>Company</h3>
-            <a class="nav-link" href="/{{ page.lang }}/about">About</a>
-            <a class="nav-link" href="mailto:hello@teammood.com">Contact us</a>
-            <a class="nav-link" href="https://blog.teammood.com">Blog</a>
+            <h3>Product</h3>
+            <a class="nav-link" href="/{{ page.lang }}/pricing">Pricing</a>
+            <a class="nav-link" href="/{{ page.lang }}/security">Security</a>
+            <a class="nav-link" href="/{{ page.lang }}/integrations">Integrations</a>
+            <a class="nav-link" href="http://apidocs.teammood.com/">API</a>
+        </div>
+        </div>
+        <div class="flex-column col-md-3 mt-5 mt-md-0">
+            <h3>Contact</h3>
+            <a class="nav-link" href="/en/contact/">Contact us</a>
+            <a class="nav-link" href="mailto:hello@teammood.com">hello@teammood.com</a>
             <a class="nav-link" href="https://twitter.com/teammood" target="_blank">
                 <i class="fab fa-twitter"></i> Twitter
             </a>
@@ -43,6 +42,15 @@
             <div class="text-center mt-3">
                 Copyright © {{ site.time | date: '%Y' }}
                 <i class="fa fa-smile-o"></i> TeamMood <span class="mx-1">•</span>
+                <a class="mx-1 link" href="/en/privacy-policy/">Privacy Policy</a>
+                <a class="mx-1 link" href="https://help.teammood.com/pricing-security-privacy-and-terms/legals/how-teammood-complies-with-gdpr">GDPR</a>
+                <a class="mx-1 link" href="/en/terms-of-service/">Terms</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="text-center">
                 Made with <i class="fas fa-heart"></i> in Toulouse, France
             </div>
         </div>

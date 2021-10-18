@@ -179,6 +179,26 @@ a:hover {
     text-decoration: none ;
 }
 
+#navbar-collapse-1{
+    width: initial;
+}
+
+.nav-list{
+    width: initial;
+}
+
+@media all and (min-width: 992px){
+    #navbar-collapse-1{
+        width: 100%;
+    }
+
+    .nav-list{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 footer {
     background-color: #3e3328;
     color: #ccc;
@@ -191,11 +211,11 @@ footer h3{
     font-size: 1.3em;
 }
 
-footer .nav-link{
+footer .nav-link, footer .link{
     color: #ccc;
 }
 
-footer .nav-link:hover{
+footer .nav-link:hover, footer .link:hover{
     color: #fff;
 }
 
