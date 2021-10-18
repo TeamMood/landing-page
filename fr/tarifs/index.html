@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="/css/purged/fontawesome.css?v1">
     <link rel="stylesheet" href="/css/purged/style-mini.css?v1">
 
+<!--    css link to work with in dev mode-->
+<!--    <link rel="stylesheet" href="/css/style.css">-->
+
     <link rel="canonical" href="https://www.teammood.com/fr/tarifs/">
 
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
@@ -34,7 +37,7 @@
 
 
         <header>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-md">
         <div class="container">
             <a class="navbar-brand p-3" href="/fr">
                 <img src="/images/logo.svg" width="80px">
@@ -44,22 +47,26 @@
             </button>
 
             <div class="collapse navbar-collapse " id="navbar-collapse-1">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/fr/fonctionnalites">Fonctionnalités</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/fr/tarifs">Tarifs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/fr/clients">Clients</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://app.teammood.com/app#/login">Se connecter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn green-btn" href="https://app.teammood.com/signup">Essayez gratuitement</a>
-                    </li>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center nav-list">
+                    <div class="d-md-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/fr/fonctionnalites">Fonctionnalités</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/fr/tarifs">Tarifs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/fr/clients">Clients</a>
+                        </li>
+                    </div>
+                    <div class="d-md-flex">
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" href="https://app.teammood.com/app#/login">Se connecter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn green-btn" href="https://app.teammood.com/signup">Essayez gratuitement</a>
+                        </li>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -170,7 +177,7 @@
                             </p>
                         </div>
                         <div class="text-center my-5">
-                            <p><a class="btn green-btn btn-lg" href="/fr/contact">CONTACTEZ NOUS</a></p>
+                            <p><a class="btn green-btn btn-lg" href="/fr/contact-tarifs">CONTACTEZ NOUS</a></p>
                             <p class="mb-0"><small>Nous reviendrons vers vous rapidement.</small></p>
                         </div>
                     </div>
@@ -251,7 +258,8 @@
         <div class="flex-column col-md-4 mt-5 mt-md-0">
             <h3>À propos</h3>
 <!--            <a class="nav-link" href="/fr/about">About</a>-->
-            <a class="nav-link" href="mailto:hello@teammood.com">Nous contacter</a>
+            <a class="nav-link" href="/fr/contact/">Nous contacter</a>
+            <a class="nav-link" href="mailto:hello@teammood.com">hello@teammood.com</a>
             <a class="nav-link" href="https://blog.teammood.com">Blog</a>
             <a class="nav-link" href="https://twitter.com/teammood" target="_blank">
                 <i class="fab fa-twitter"></i> Twitter
