@@ -187,7 +187,7 @@ a:hover {
     width: initial;
 }
 
-@media all and (min-width: 992px){
+@media all and (min-width: 768px){
     #navbar-collapse-1{
         width: 100%;
     }
