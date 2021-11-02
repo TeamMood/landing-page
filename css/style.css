@@ -513,6 +513,51 @@ body .documentation{
     margin-top: 40px;
 }
 
+.leadership_guide h1{
+    font-size: 3.5em;
+    letter-spacing: 2px;
+}
+
+.leadership_guide_bloc{
+    display: flex;
+    padding: 0 60px;
+}
+
+.leadership_guide_bloc aside{
+    flex: 1;
+    padding-right: 50px;
+}
+
+.leadership_guide_bloc aside ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.leadership_guide_bloc aside ul a{
+    color: initial;
+    font-weight: bold;
+}
+
+.leadership_guide_bloc .emailForSubscription input{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.leadership_guide_bloc .emailForSubscription button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.leadership_guide_bloc section{
+    flex: 2;
+}
+
+.leadership_guide_bloc section p, .leadership_guide_bloc section li{
+    font-size: 1.2em;
+}
+
 /* "/en/cookies-policy/" */
 .private-policy-table{
     width: 100%;
