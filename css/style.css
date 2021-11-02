@@ -535,7 +535,8 @@ body .documentation{
 
 .leadership_guide_bloc aside ul a{
     color: initial;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1em;
 }
 
 .leadership_guide_bloc .emailForSubscription input{
@@ -550,12 +551,69 @@ body .documentation{
     border-bottom-left-radius: 0;
 }
 
-.leadership_guide_bloc section{
+.leadership_guide_bloc article{
     flex: 2;
 }
 
+.leadership_guide_bloc section{
+    margin-bottom: 60px;
+}
+
+.leadership_guide_bloc h2{
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
 .leadership_guide_bloc section p, .leadership_guide_bloc section li{
-    font-size: 1.2em;
+    font-size: 1.1em;
+}
+
+.leadership_guide_bloc .feedback_into_action div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.leadership_guide_bloc .feedback_into_action div a{
+    display: block;
+    text-align: center;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    padding: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.leadership_guide_bloc .feedback_into_action div a p{
+    color: #333;
+}
+
+.leadership_guide_bloc .feedback_into_action div a:hover{
+    background-color: rgba(209, 250, 229, 1);
+    border-color: rgb(52, 211, 153);
+}
+
+.feedback_into_action img{
+    width: 50%;
+}
+
+.leadership_guide_link{
+    color: rgb(52, 211, 153);
+    text-decoration: underline;
+}
+
+.feedback_into_action p{
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+#leadership_guide_color{
+    color: rgb(52, 211, 153);
+    font-weight: bolder;
+}
+
+.leadership_guide_color{
+    background-color: rgb(52, 211, 153);
 }
 
 /* "/en/cookies-policy/" */
