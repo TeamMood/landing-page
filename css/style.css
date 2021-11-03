@@ -616,6 +616,21 @@ body .documentation{
     background-color: rgb(52, 211, 153);
 }
 
+.leadership_guide_bloc_flex{
+    display: flex;
+}
+
+.leadership_guide_bloc_flex > div{
+    flex: 1;
+}
+
+.leadership_guide_bloc_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 /* "/en/cookies-policy/" */
 .private-policy-table{
     width: 100%;
