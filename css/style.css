@@ -565,8 +565,7 @@ body .documentation{
     height: 34px;
 }
 
-
-.leadership_guide_bloc article{
+.leadership_guide_bloc > article{
     flex: 3;
     padding-left: 30px;
 }
