@@ -1033,6 +1033,10 @@ body .documentation{
         margin-bottom: 0;
     }
 
+    .navbar .navbar-item a{
+        margin-left: 0;
+    }
+
     .about-bg-image p{
         position: relative;
         right: 0;
@@ -1097,6 +1101,18 @@ body .documentation{
         object-position: left;
     }
 
+    .leadership_guide_bloc{
+        display: block;
+        padding: 0;
+    }
+
+    .leadership_guide_bloc aside{
+        padding-right: 0;
+    }
+
+    .leadership_guide_bloc > article{
+        padding-left: 0;
+    }
 
 }
 
