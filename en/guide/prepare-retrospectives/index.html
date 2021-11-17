@@ -26,10 +26,10 @@
 
     <link rel="stylesheet" href="/css/purged/bootstrap.min.css?v1">
     <link rel="stylesheet" href="/css/purged/fontawesome.css?v1">
-     <link rel="stylesheet" href="/css/purged/style-mini.css?v1">
+<!--     <link rel="stylesheet" href="/css/purged/style-mini.css?v1">-->
 
 <!--    css link to work with in dev mode-->
-<!--   <link rel="stylesheet" href="/css/style.css">-->
+   <link rel="stylesheet" href="/css/style.css">
 
     <link rel="canonical" href="https://www.teammood.com/en/guide/prepare-retrospectives/">
 
@@ -39,28 +39,77 @@
 
 
   <body>
-      <header class="text-end p-3">
-          <a class="leadership_guide_link" href="/en"><- Back to website </a>
-      </header>
 
-        <main data-cms-content-wrapper="/_layouts/guide_to_leadership.html">
+
+        <header class="version2021">
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <a class="navbar-brand pt-3" href="/en">
+                <img src="/images/logo.svg" width="80px" alt="TeamMood - Homepage">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="far fa-bars"></i>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 text-center nav-list">
+                    <div class="d-md-flex">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navbar-item" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Product
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/en/product/easy-to-use">Easy and quick to use</a></li>
+                                <li><a class="dropdown-item" href="/en/product/mood-tracking">Mood tracking</a></li>
+                                <li><a class="dropdown-item" href="/en/product/anonymous-feedback">Anonymous feedback</a></li>
+                                <li><a class="dropdown-item" href="/en/product/analytics">Analytics</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item navbar-item">
+                            <a class="nav-link" href="/en/integrations">Integrations</a>
+                        </li>
+                        <li class="nav-item navbar-item">
+                            <a class="nav-link" href="/en/pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item navbar-item">
+                            <a class="nav-link" href="/en/about">About</a>
+                        </li>
+                    </div>
+                    <div class="d-md-flex">
+                        <li class="nav-item navbar-item">
+                            <a class="nav-link" href="https://app.teammood.com/app#/login">Login</a>
+                        </li>
+                        <li class="nav-item navbar-item">
+                            <a class="btn green-btn" href="https://app.teammood.com/signup">Start Free Trial</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        <main data-cms-content-wrapper="/_layouts/default.html">
             <div class="container version2021 leadership_guide">
   <section class="front-header mt-5 mb-4 pb-4 pt-md-2">
     <h1>TeamMood's Guide to Leadership</h1>
   </section>
   <div class="leadership_guide_bloc">
     <aside>
-      <ul>
-        <li class="mb-2"><a href="/en/guide/introduction/">Introduction: Foster honest feedback</a></li>
-        <li class="mb-2"><a href="/en/guide/detect-and-solve-a-conflict/">How-to #1: Detect and solve a conflict</a></li>
-        <li class="mb-2"><a href="/en/guide/prepare-retrospectives/" id="leadership_guide_color">How-to #2: Prepare retrospectives</a></li>
-        <li class="mb-2"> <a href="/en/guide/onboarding-of-a-new-teammate/">How-to #3: Onboarding of a new teammate</a></li>
-      </ul>
-      <p>We will publish new how-tos in the future. Subscribe to get them directly in your inbox.</p>
-      <form class="d-flex emailForSubscription">
-        <input class="form-control" type="text" name="emailForSubscription" aria-label="Write your email to subscribe">
-        <button class="btn green-btn leadership_guide_color" type="submit">Subscribe</button>
-      </form>
+      <div class="leadership_guide_nav_wrapper">
+        <ul>
+          <li class="mb-2"><a href="/en/guide/introduction/">Introduction: Foster honest feedback</a></li>
+          <li class="mb-2"><a href="/en/guide/detect-and-solve-a-conflict/">How-to #1: Detect and solve a conflict</a></li>
+          <li class="mb-2"><a href="/en/guide/prepare-retrospectives/" id="leadership_guide_color">How-to #2: Prepare retrospectives</a></li>
+          <li class="mb-2"> <a href="/en/guide/onboarding-of-a-new-teammate/">How-to #3: Onboarding of a new teammate</a></li>
+        </ul>
+        <p>We will publish new how-tos in the future. Subscribe to get them directly in your inbox.</p>
+        <form class="d-flex emailForSubscription">
+          <input class="form-control" type="text" name="emailForSubscription" aria-label="Write your email to subscribe">
+          <button class="btn green-btn leadership_guide_color" type="submit">Subscribe</button>
+        </form>
+      </div>
     </aside>
     <article>
       <section>
@@ -72,38 +121,38 @@
       </section>
       <section>
         <h2>Step 1: Check the average mood for a defined period</h2>
-        <div class="leadership_guide_bloc_flex">
+        <div>
           <div>
             <p>Go to the analytics view and select a period.</p>
             <p>If you use sprints or cycles, just use the day of the beginning of the cycle and the day it stops. If not, take the period between the last retrospective and the new one. </p>
             <p>Write down the average and the days where it fluctuates more than usual.</p>
           </div>
-          <div>
+          <div class="leadership_guide_bloc_image">
             <img src="/images/analytics/segmentation-highlight.png" alt="">
           </div>
         </div>
       </section>
       <section>
         <h2>Step 2: Compare with the previous period</h2>
-        <div class="leadership_guide_bloc_flex">
+        <div>
           <div>
             <p>Just looking at the current period doesn't tell you if the mood got better or worse, so you need to compare it with the previous one. </p>
             <p>By comparing with the previous period, you will see if the current period has average mood changed and is more or less stable. </p>
             <p>Leverage tags to segment data even further.</p>
           </div>
-          <div>
+          <div class="leadership_guide_bloc_image">
             <img src="/images/homepage/mood_distribution.png" alt="">
           </div>
         </div>
       </section>
       <section>
         <h2>Step 3: Check the calendar view</h2>
-        <div class="leadership_guide_bloc_flex">
+        <div>
           <div>
             <p>Analytics tells you what the mood was but not why it was the way it was. Also, there could be a single abnormal mood in a sea of great moods the analytics didn't catch. </p>
             <p>So on the calendar view, select the current period and see if there is anything particular. Here too, you can use the previous period for comparison.</p>
           </div>
-          <div>
+          <div class="leadership_guide_bloc_image">
             <img src="/images/analytics/feedback-history.png" alt="">
           </div>
         </div>

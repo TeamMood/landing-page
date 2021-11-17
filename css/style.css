@@ -513,6 +513,10 @@ body .documentation{
     margin-top: 40px;
 }
 
+.leadership_guide{
+    position: relative;
+}
+
 .leadership_guide h1{
     font-size: 3.5em;
     letter-spacing: 1px;
@@ -529,8 +533,15 @@ body .documentation{
 }
 
 .leadership_guide_bloc aside{
+    position: relative;
     flex: 1.2;
     padding-right: 40px;
+}
+
+.leadership_guide_nav_wrapper{
+    position: sticky;
+    top: 80px;
+    margin-bottom: 100px;
 }
 
 .leadership_guide_bloc aside ul{
@@ -566,7 +577,7 @@ body .documentation{
 }
 
 .leadership_guide_bloc > article{
-    flex: 3;
+    flex: 3.5;
     padding-left: 30px;
 }
 
@@ -604,8 +615,8 @@ body .documentation{
 }
 
 .leadership_guide_bloc .feedback_into_action div a:hover{
-    background-color: rgba(209, 250, 229, 1);
-    border-color: rgb(52, 211, 153);
+    background-color: rgb(217, 255, 246);
+    border-color: #1abc9c;
 }
 
 .feedback_into_action img{
@@ -613,7 +624,6 @@ body .documentation{
 }
 
 .leadership_guide_link{
-    color: rgb(52, 211, 153);
     text-decoration: underline;
 }
 
@@ -623,11 +633,11 @@ body .documentation{
 }
 
 #leadership_guide_color{
-    color: rgb(52, 211, 153);
+    color: #1abc9c;
 }
 
 .leadership_guide_color{
-    background-color: rgb(52, 211, 153);
+    background-color: #1abc9c;
 }
 
 .leadership_guide_bloc_flex{
