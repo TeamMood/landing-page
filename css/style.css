@@ -447,6 +447,10 @@ footer .nav-link:hover, footer .link:hover{
     width: 100%;
 }
 
+.lp-pricing-title{
+    font-size: 2.6em;
+}
+
 .benefits-grey-block{
     background-color: #fafafa;
 }
