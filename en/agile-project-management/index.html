@@ -26,10 +26,12 @@
 
     <link rel="stylesheet" href="/css/purged/bootstrap.min.css?v1">
     <link rel="stylesheet" href="/css/purged/fontawesome.css?v1">
+<!--
     <link rel="stylesheet" href="/css/purged/style-mini.css?v1">
+-->
 
 <!--    css link to work with in dev mode-->
-<!--   <link rel="stylesheet" href="/css/style.css">-->
+   <link rel="stylesheet" href="/css/style.css">
 
     <link rel="canonical" href="https://www.teammood.com/en/agile-project-management/">
 
@@ -52,7 +54,7 @@
 <nav class="navbar navbar-expand-lg fixed-top bg-white">
     <div class="container">
         <a class="navbar-brand p-3" href="/en">
-            <img src="/images/logo-140px.png" width="80px">
+            <img src="/images/logo.svg" width="80px" alt="TeamMood - Homepage">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="far fa-bars"></i>
@@ -212,18 +214,18 @@
       <div class="container-fluid my-3">
     <div class="row justify-content-center">
         <div class="col-sm-2 px-3 py-1">
-            <img alt="SNCF" title="SNCF" class="img-thumbnail mx-auto d-block m-2" src="//logo.clearbit.com/sncf.com?greyscale=true" loading="lazy">
+            <img alt="TUI Group" title="TUI Group" class="img-thumbnail mx-auto d-block m-2 py-2 px-1" src="//logo.clearbit.com/tui.com?greyscale=true" loading="lazy">
         </div>
         <div class="col-sm-2 px-3 py-1">
-            <img alt="Decathlon" title="Decathlon" class="img-thumbnail mx-auto d-block m-2" src="//logo.clearbit.com/decathlon.fr?greyscale=true" loading="lazy">
+            <img alt="IPSEN" ttle="IPSEN" class="img-thumbnail mx-auto d-block m-2 px-1" src="//logo.clearbit.com/ipsen.com?greyscale=true" loading="lazy">
         </div>
     </div>
     <div class="row justify-content-center">
         <div class="col-sm-2 px-3 py-1">
-            <img alt="TUI Group" title="TUI Group" class="img-thumbnail mx-auto d-block m-2" src="//logo.clearbit.com/tui.com?greyscale=true" loading="lazy">
+            <img alt="SNCF" title="SNCF" class="img-thumbnail mx-auto d-block m-2" src="//logo.clearbit.com/sncf.com?greyscale=true" loading="lazy">
         </div>
         <div class="col-sm-2 px-3 py-1">
-            <img alt="IPSEN" ttle="IPSEN" class="img-thumbnail mx-auto d-block m-2" src="//logo.clearbit.com/ipsen.com?greyscale=true" loading="lazy">
+            <img alt="Decathlon" title="Decathlon" class="img-thumbnail mx-auto d-block m-2" src="//logo.clearbit.com/decathlon.fr?greyscale=true" loading="lazy">
         </div>
         <div class="col-sm-2 px-3 py-1">
             <img alt="RS Components" title="RS Components" class="img-thumbnail mx-auto d-block m-2" src="//logo.clearbit.com/rs-components.com?greyscale=true" loading="lazy">
@@ -233,133 +235,131 @@
 
     </div>
 
+    <a id="pricing" class="pt-5"></a>
+
     <div class="container my-5 text-center">
       <a class="green-btn btn-lg py-3 px-4" href="https://app.teammood.com/signup">Get Started In 3 Minutes</a>
     </div>
 
-    <a id="pricing" class="pt-5"></a>
     <div class="version2021">
-    <div class="front-header">
+      <div class="front-header">
         <div class="container mt-4">
-            <div class="row">
-                <div class="col-md-12 text-center mt-md-5">
-                    <h1>TeamMood is straightforward, both in experience and pricing.</h1>
-                </div>
-            </div>
+          <div class="col-md-12 text-center pt-md-5">
+            <h2 class="lp-pricing-title pt-md-3">TeamMood is straightforward, both in experience and pricing.</h2>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div ng-controller="PricingCtrl">
-        <div class="homepage-currency">
-            <div class="container mt-3">
-                <div class="row text-center">
-                    <div class="col-md-12">
-                        <div class="btn-group" role="group">
-                            <button type="button" class="btn btn-default" ng-class="{active: currency.active}" ng-click="update(currency)" ng-repeat="currency in currencies">[[currency.label]]</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="pricing">
-            <div class="container">
-                <div class="row justify-content-center my-5 pb-5">
-                    <div class="col-md-5 gx-O p-0">
-                        <div class="story standard-plan border mx-2">
-                            <div class="essential my-4 mx-5 border-bottom text-center">
-                                <h2>BUSINESS</h2>
-                                <h3>[[price]] / user / month</h3>
-                                <p>After a 30 days trial period.</p>
-                            </div>
-                            <div class="mt-3 px-5">
-                                <p>Core features:</p>
-                                <p class="pricing-feature">
-                                    <i class="fa fa-check"></i> Daily or Weekly Notifications <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Notifications Frequency" data-bs-content="Choose when notifications are sent: daily, several days a week or weekly."></i></small>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa fa-check"></i> Team Feedback <small><i class="fa fa-question-circle d-inline-block" tabindex="0" data-bs-toggle="popover" title="Your Team Voice" data-bs-content="Get feedback from your teammates, and take action from it."></i></small>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa fa-check"></i> Anonymous <small><i class="fa fa-question-circle d-inline-block" tabindex="0" data-bs-toggle="popover"  title="Strong Anonymity" data-bs-content="Avoid survey bias using anonymity." ></i></small>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa fa-check"></i> Multiple Teams <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Designed For Large Organizations" data-bs-content="From a small team of 10, to thousands of people."></i></small>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa fa-check"></i> Analytics <small><i class="fa fa-question-circle d-inline-block" tabindex="0" data-bs-toggle="popover" title="Advanced Analytics" data-bs-content="Deep dive into your data and draw actionable intelligence."></i></small>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa fa-check"></i> Export Center And API <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="You Own Your Data" data-bs-content="Explore your data with the tools you love."></i></small>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa fa-check"></i> Third Party Integrations <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Company Friendly" data-bs-content="Integrate with the tools you love, such as Slack or Tableau etc..."></i></small>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa fa-check"></i> Monthly or Yearly Billing <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Yearly Subscription Available" data-bs-content="We provide discounted yearly plans for larger teams."></i></small>
-                                </p>
-                            </div>
-                            <div class="text-center my-5">
-                                <p><a class="btn light-blue-btn btn-lg" href="https://app.teammood.com/signup">START FOR FREE</a></p>
-                                <p class="mb-0"><small>No credit card required</small></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 gx-O p-0">
-                        <div class="story enterprise-plan border mx-2">
-                            <div class="my-4 mx-5 p-3 border-bottom text-center">
-                                <h2>ENTERPRISE</h2>
-                                <h3>Custom</h3>
-                                <p>Seamless Integration With Your Whole Organisation.</p>
-                            </div>
-                            <div class="mt-3 px-5">
-                                <p>Everything in the Business plan, plus:</p>
-                                <p class="pricing-feature">
-                                    <i class="fa fa-plus"></i> Custom Branding <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Make It Yours" data-bs-content="Customize the mood email with your content and logo."></i></small>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa fa-plus"></i> Custom Reporting <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Advanced Reports" data-bs-content="Not satisfied with the provided reports? We'll build your own."></i></small>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa fa-plus"></i> Custom End User Policy <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Strong Policy" data-bs-content="Use your own policy or code of conduct."></i></small>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa fa-plus"></i> Customs ACLs <small><i class="fa fa-question-circle d-inline-block" tabindex="0" data-bs-toggle="popover" title="Fine Grained Access Control" data-bs-content="Set the right access-level to the right people."></i></small>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa fa-plus"></i> Single Sign On <small><i class="fa fa-question-circle d-inline-block" tabindex="0" data-bs-toggle="popover" title="Not Another Password" data-bs-content="SAML2 or Okta."></i></small>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa fa-plus"></i> Dedicated Hosting <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Strong Personal Data Policy" data-bs-content="Increase your security by getting your own TeamMood server instance, in the location of your choice."></i></small>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa fa-plus"></i> Premium Support <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Never Alone" data-bs-content="Blazing fast support."></i></small>
-                                </p>
-                                <p class="pricing-feature">
-                                    <i class="fa fa-plus"></i> Eased Procurement <small><i class="fa fa-question-circle d-inline-block" tabindex="0" data-bs-toggle="popover" title="Your Procurement Processes" data-bs-content="We adapt to your procurement process (legal compliance, technical and security review, purchase orders...)."></i></small>
-                                </p>
-                            </div>
-                            <div class="text-center my-5">
-                                <p><a class="btn green-btn btn-lg" href="/en/contact-sales/">CONTACT SALES</a></p>
-                                <p class="mb-0"><small>We'll get back to you quickly</small></p>
-                            </div>
-                        </div>
+      <div ng-controller="PricingCtrl">
+    <div class="homepage-currency">
+        <div class="container mt-3">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" ng-class="{active: currency.active}" ng-click="update(currency)" ng-repeat="currency in currencies">[[currency.label]]</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps=" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js" integrity="sha384-hXNI9Cb8OJC3+q10tEC7RUzaDEWKjIQiE1lg+tFIrttefIG+ScUCKqOlQVEqcmM0" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-cookies.min.js" integrity="sha384-nMAFFyQjqx6ZuimWksucaM2kfcen++Z8J/Jzh6cnFu/jIcLoSBVJUs+3cNZeTtco" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-sanitize.min.js" integrity="sha384-0uMUBvWaOPLMNHdfcqk0gr0iJr9LMqMqv0UGBCSnESv3ukuz1O1XZbcl+3ztzOub" crossorigin="anonymous"></script>
-
-
-    <script src="/js/app.js"></script>
-    <script src="/js/pricing.js"></script>
-
+    <div class="pricing">
+        <div class="container">
+            <div class="row justify-content-center my-5 pb-5">
+                <div class="col-md-5 gx-O p-0">
+                    <div class="story standard-plan border mx-2">
+                        <div class="essential my-4 mx-5 border-bottom text-center">
+                            <h2>BUSINESS</h2>
+                            <h3>[[price]] / user / month</h3>
+                            <p>After a 30 days trial period.</p>
+                        </div>
+                        <div class="mt-3 px-5">
+                            <p>Core features:</p>
+                            <p class="pricing-feature">
+                                <i class="fa fa-check"></i> Daily or Weekly Notifications <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Notifications Frequency" data-bs-content="Choose when notifications are sent: daily, several days a week or weekly."></i></small>
+                            </p>
+                            <p class="pricing-feature">
+                                <i class="fa fa-check"></i> Team Feedback <small><i class="fa fa-question-circle d-inline-block" tabindex="0" data-bs-toggle="popover" title="Your Team Voice" data-bs-content="Get feedback from your teammates, and take action from it."></i></small>
+                            </p>
+                            <p class="pricing-feature">
+                                <i class="fa fa-check"></i> Anonymous <small><i class="fa fa-question-circle d-inline-block" tabindex="0" data-bs-toggle="popover"  title="Strong Anonymity" data-bs-content="Avoid survey bias using anonymity." ></i></small>
+                            </p>
+                            <p class="pricing-feature">
+                                <i class="fa fa-check"></i> Multiple Teams <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Designed For Large Organizations" data-bs-content="From a small team of 10, to thousands of people."></i></small>
+                            </p>
+                            <p class="pricing-feature">
+                                <i class="fa fa-check"></i> Analytics <small><i class="fa fa-question-circle d-inline-block" tabindex="0" data-bs-toggle="popover" title="Advanced Analytics" data-bs-content="Deep dive into your data and draw actionable intelligence."></i></small>
+                            </p>
+                            <p class="pricing-feature">
+                                <i class="fa fa-check"></i> Export Center And API <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="You Own Your Data" data-bs-content="Explore your data with the tools you love."></i></small>
+                            </p>
+                            <p class="pricing-feature">
+                                <i class="fa fa-check"></i> Third Party Integrations <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Company Friendly" data-bs-content="Integrate with the tools you love, such as Slack or Tableau etc..."></i></small>
+                            </p>
+                            <p class="pricing-feature">
+                                <i class="fa fa-check"></i> Monthly or Yearly Billing <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Yearly Subscription Available" data-bs-content="We provide discounted yearly plans for larger teams."></i></small>
+                            </p>
+                        </div>
+                        <div class="text-center my-5">
+                            <p><a class="btn light-blue-btn btn-lg" href="https://app.teammood.com/signup">START FOR FREE</a></p>
+                            <p class="mb-0"><small>No credit card required</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 gx-O p-0">
+                    <div class="story enterprise-plan border mx-2">
+                        <div class="my-4 mx-5 p-3 border-bottom text-center">
+                            <h2>ENTERPRISE</h2>
+                            <h3>Custom</h3>
+                            <p>Seamless Integration With Your Whole Organisation.</p>
+                        </div>
+                        <div class="mt-3 px-5">
+                            <p>Everything in the Business plan, plus:</p>
+                            <p class="pricing-feature">
+                                <i class="fa fa-plus"></i> Custom Branding <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Make It Yours" data-bs-content="Customize the mood email with your content and logo."></i></small>
+                            </p>
+                            <p class="pricing-feature">
+                                <i class="fa fa-plus"></i> Custom Reporting <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Advanced Reports" data-bs-content="Not satisfied with the provided reports? We'll build your own."></i></small>
+                            </p>
+                            <p class="pricing-feature">
+                                <i class="fa fa-plus"></i> Custom End User Policy <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Strong Policy" data-bs-content="Use your own policy or code of conduct."></i></small>
+                            </p>
+                            <p class="pricing-feature">
+                                <i class="fa fa-plus"></i> Customs ACLs <small><i class="fa fa-question-circle d-inline-block" tabindex="0" data-bs-toggle="popover" title="Fine Grained Access Control" data-bs-content="Set the right access-level to the right people."></i></small>
+                            </p>
+                            <p class="pricing-feature">
+                                <i class="fa fa-plus"></i> Single Sign On <small><i class="fa fa-question-circle d-inline-block" tabindex="0" data-bs-toggle="popover" title="Not Another Password" data-bs-content="SAML2 or Okta."></i></small>
+                            </p>
+                            <p class="pricing-feature">
+                                <i class="fa fa-plus"></i> Dedicated Hosting <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Strong Personal Data Policy" data-bs-content="Increase your security by getting your own TeamMood server instance, in the location of your choice."></i></small>
+                            </p>
+                            <p class="pricing-feature">
+                                <i class="fa fa-plus"></i> Premium Support <small><i class="fa fa-question-circle d-inline-block" tabindex="0"   data-bs-toggle="popover" title="Never Alone" data-bs-content="Blazing fast support."></i></small>
+                            </p>
+                            <p class="pricing-feature">
+                                <i class="fa fa-plus"></i> Eased Procurement <small><i class="fa fa-question-circle d-inline-block" tabindex="0" data-bs-toggle="popover" title="Your Procurement Processes" data-bs-content="We adapt to your procurement process (legal compliance, technical and security review, purchase orders...)."></i></small>
+                            </p>
+                        </div>
+                        <div class="text-center my-5">
+                            <p><a class="btn green-btn btn-lg" href="/en/contact-sales/">CONTACT SALES</a></p>
+                            <p class="mb-0"><small>We'll get back to you quickly</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js" integrity="sha384-hXNI9Cb8OJC3+q10tEC7RUzaDEWKjIQiE1lg+tFIrttefIG+ScUCKqOlQVEqcmM0" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-cookies.min.js" integrity="sha384-nMAFFyQjqx6ZuimWksucaM2kfcen++Z8J/Jzh6cnFu/jIcLoSBVJUs+3cNZeTtco" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-sanitize.min.js" integrity="sha384-0uMUBvWaOPLMNHdfcqk0gr0iJr9LMqMqv0UGBCSnESv3ukuz1O1XZbcl+3ztzOub" crossorigin="anonymous"></script>
+
+
+<script src="/js/app.js"></script>
+<script src="/js/pricing.js"></script>
+    </div>
 
     <footer class="container-fluid py-5">
     <nav class="nav justify-content-center text-center mx-auto">
