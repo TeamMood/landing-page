@@ -940,6 +940,10 @@ body .documentation{
     justify-content: center;
 }
 
+.text-bg-light {
+    color: #959595!important;
+}  
+
 @media all and (max-width: 992px) {
     .benefits-grid-1 > div > div{
         height: min-content;
@@ -1144,4 +1148,4 @@ body .documentation{
     .navbar-nav .dropdown-menu.show {
         text-align: center;
     }
-}
+} 
