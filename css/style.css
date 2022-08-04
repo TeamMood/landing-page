@@ -886,7 +886,7 @@ body .documentation{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 380px;
+    width: 200px;
 }
 
 #success-logo > img{
