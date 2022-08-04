@@ -637,9 +637,6 @@ body .documentation{
 
 
 /* success stories */
-.sucess-main-text{
-    font-size: 18px;
-}
 
 .success-header{
     position: relative;
@@ -893,6 +890,10 @@ body .documentation{
     justify-content: center;
 }
 
+.text-bg-light {
+    color: #959595!important;
+}  
+
 @media all and (max-width: 992px) {
     .benefits-grid-1 > div > div{
         height: min-content;
@@ -911,9 +912,6 @@ body .documentation{
     }
 
     /* success stories */
-    .sucess-main-text{
-        font-size: 16px;
-    }
 
     .success-header h1{
         width: 90%;
@@ -1082,4 +1080,4 @@ body .documentation{
     .navbar-nav .dropdown-menu.show {
         text-align: center;
     }
-}
+} 
