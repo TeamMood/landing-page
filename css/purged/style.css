@@ -412,6 +412,15 @@ footer .nav-link:hover, footer .link:hover{
     font-size: 1.4em;
 }
 
+.integrations-title{
+    width: 97%;
+}
+
+.success-container h3{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
 #capterra{
     width: 180px;
     margin-top: 5px;
@@ -680,6 +689,14 @@ body .documentation{
     padding: 20px;
 }
 
+.tm-blockquote{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
 .img-fluid, .img-thumbnail{
     min-width: 85px;
 }
@@ -709,7 +726,8 @@ body .documentation{
 .homepage-start{
     background-color: #f3f4f6;
     border-radius: 10px;
-    padding: 50px 30px;
+    padding: 35px 30px;
+    margin-top: 30px;
 }
 
 .homepage-start h2{
@@ -728,7 +746,8 @@ body .documentation{
 }
 
 .text-bg-light {
-    color: #959595!important;
+    color: #5e5e5e !important;
+    background: #fdfdfd !important;
 }  
 
 @media all and (max-width: 992px) {

@@ -853,6 +853,14 @@ body .documentation{
     padding: 20px;
 }
 
+.tm-blockquote{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
 .success-headband{
     width: 100%;
     height: 400px;
@@ -931,7 +939,8 @@ body .documentation{
 .homepage-start{
     background-color: #f3f4f6;
     border-radius: 10px;
-    padding: 50px 30px;
+    padding: 35px 30px;
+    margin-top: 30px;
 }
 
 .homepage-start h2{
@@ -950,7 +959,8 @@ body .documentation{
 }
 
 .text-bg-light {
-    color: #959595!important;
+    color: #5e5e5e !important;
+    background: #fdfdfd !important;
 }  
 
 @media all and (max-width: 992px) {
