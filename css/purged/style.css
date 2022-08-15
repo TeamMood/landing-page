@@ -412,6 +412,15 @@ footer .nav-link:hover, footer .link:hover{
     font-size: 1.4em;
 }
 
+.integrations-title{
+    width: 97%;
+}
+
+.success-container h3{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
 #capterra{
     width: 180px;
     margin-top: 5px;
@@ -423,9 +432,9 @@ footer .nav-link:hover, footer .link:hover{
 }
 
 .front-header h1 {
-    font-weight: 100;
+    font-weight: 700 !important;
     letter-spacing: -1.5px;
-    font-size: 3em;
+    font-size: 2.8em;
 }
 
 .front-header .subtitle {
@@ -638,123 +647,13 @@ body .documentation{
 
 /* success stories */
 
-.success-header{
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 98.5px);
-    min-height: 700px;
-}
-
-.success-header > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
-}
-
-.success-header h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 1050px;
-    color: white;
-    font-size: 4.2em;
-    text-align: center;
-    z-index: 10;
-}
-
-.success-header h1.success-long-title{
-    font-size: 3.6em;
-}
-
-.success-header div.success-story-text{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 20px 30px 5px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    min-width: 400px;
-}
-
-.success-story-logo{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 300px;
-    height: 160px;
-    z-index: 9;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-}
-
-.success-story-logo > img{
-    width: 100%;
-}
-
-.success-text-blue{
-    color: #217d84;
-}
-
 .success-bg-blue{
     color: white;
     background-color: #217d84;
 }
 
-.success-text-purple{
-    color: #244fcf;
-}
-
-.success-bg-purple{
-    color: white;
-    background-color: #244fcf;
-}
-
-.success-story-btn.success-text-purple:hover{
-    color: #173693;
-}
-
-.success-text-yellow{
-    color: #f77000;
-}
-
-.success-bg-yellow{
-    color: white;
-    background-color: #f77000;
-}
-
-.success-story-btn.success-text-yellow:hover{
-    color: #cb5700;
-}
-
 .success-text-azur{
     color: #0080c6;
-}
-
-.success-bg-azur{
-    color: white;
-    background-color: #0080c6;
-}
-
-.success-story-btn.success-text-azur:hover{
-    color: #005f8e;
-}
-
-.success-text-cyan{
-    color: #00bcd4;
-}
-
-.success-bg-cyan{
-    color: white;
-    background-color: #00bcd4;
-}
-
-.success-story-btn.success-text-cyan:hover{
-    color: #00a8bd;
 }
 
 /*.success-text-red{
@@ -769,10 +668,6 @@ body .documentation{
 .success-story-btn.success-text-red:hover{
     color: #bd3735;
 }*/
-
-.success-testimonial-img{
-    max-width: 200px;
-}
 
 .success-number{
     display: inline-block;
@@ -794,53 +689,12 @@ body .documentation{
     padding: 20px;
 }
 
-.success-headband{
-    width: 100%;
-    height: 400px;
-}
-
-.success-headband img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.success-header div.success-header-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-size: 1.8em;
-    width: 60%;
-}
-
-.success-header div.success-header-text h2{
-    color: white;
-    font-size: 1.7em;
-}
-
-.success-header div.success-header-text .success-story-btn{
-    font-weight: 600;
-    background-color: white;
-    padding: 25px 40px;
-    border-radius: 20px;
-    margin: 60px auto;
-    display: block;
-    width: max-content;
-}
-
-#success-logo{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-}
-
-#success-logo > img{
-    width: 100%;
+.tm-blockquote{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    font-size: 1.25rem;
+    font-style: italic;
 }
 
 .img-fluid, .img-thumbnail{
@@ -872,7 +726,8 @@ body .documentation{
 .homepage-start{
     background-color: #f3f4f6;
     border-radius: 10px;
-    padding: 50px 30px;
+    padding: 35px 30px;
+    margin-top: 30px;
 }
 
 .homepage-start h2{
@@ -891,7 +746,8 @@ body .documentation{
 }
 
 .text-bg-light {
-    color: #959595!important;
+    color: #5e5e5e !important;
+    background: #fdfdfd !important;
 }  
 
 @media all and (max-width: 992px) {
@@ -913,34 +769,9 @@ body .documentation{
 
     /* success stories */
 
-    .success-header h1{
-        width: 90%;
-        font-size: 4em;
-    }
-
-    .success-header div.success-story-text{
-        padding: 25px 25px 0;
-    }
-
     .success-blocquote{
         width: 80%;
         font-size: 1.3em;
-    }
-
-    .success-testimonial-img{
-        margin-bottom: 30px;
-    }
-
-    .success-headband{
-        height: 300px;
-    }
-
-    .success-header div.success-header-text{
-        width: 90%;
-    }
-
-    .success-header div.success-header-text h2{
-        font-size: 1.7em;
     }
 
 }
@@ -995,45 +826,6 @@ body .documentation{
         margin-top: 0;
     }
 
-    .success-header h1, .success-header h1.success-long-title{
-        position: absolute;
-        top: 300px;
-        width: 90%;
-        font-size: 2.8em;
-    }
-
-    .success-header div.success-story-text{
-        width: 100%;
-        min-width: 100%;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-
-    .success-header div.success-story-text > p{
-        padding-left: 10px;
-    }
-
-    .success-story-logo{
-        position: absolute;
-        bottom: 210px;
-        height: 60px;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .success-story-logo > img{
-        width: 170px;
-    }
-
-    #success-logo{
-        width: 250px;
-    }
-
-    .success-story-btn{
-        font-size: 1em;
-    }
-
     .lp-bg-image img{
         width: 100%;
         height: 270px;
@@ -1069,13 +861,6 @@ body .documentation{
 }
 
 @media all and (max-width: 550px) {
-    .success-header h1, .success-header h1.success-long-title{
-        font-size: 2.5em;
-    }
-
-    .bpi-logo{
-        display: none;
-    }
 
     .navbar-nav .dropdown-menu.show {
         text-align: center;
