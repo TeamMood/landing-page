@@ -1168,3 +1168,51 @@ body .documentation{
         text-align: center;
     }
 } 
+
+/* lp-minimal */
+.footer-minimal{
+    background: transparent;
+    color: #333333;
+}
+.footer-minimal > p{
+    border-top: 1px solid #15997d;
+    width: 60%;
+    margin: auto;
+}
+
+.main-minimal{
+    color: #333333;
+    font-weight: 500;
+}
+
+.main-minimal h1{
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 52px;
+}
+
+.main-minimal h2{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+.main-minimal p{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.main-minimal .green-btn.btn-lg{
+    width: 100%;
+    font-size: 25px;
+    border-radius: 3px;
+    font-weight: 400;
+}
+
+.main-minimal .bg-lp-light{
+    background: #fafafa;
+}
+
+.footer-minimal.bg-lp-light{
+    background: #fafafa;
+}
