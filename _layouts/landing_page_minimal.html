@@ -4,13 +4,6 @@
 {% include head.html %}
 
     <body>
-    {% if page.facebook_tag %}
-    <script>
-        fbq('track', 'ViewContent', {
-            content_name: '{{ page.facebook_tag }}'
-        });
-    </script>
-    {% endif %}
 
     <header class="version2021">
         <nav class="navbar navbar-expand-md justify-content-center">
@@ -28,7 +21,7 @@
         <p class="pt-4 pb-5 fs-6">
             Copyright © {{ site.time | date: '%Y' }} ☺
             <i class="fa fa-smile-o"></i> TeamMood <span class="mx-1">•</span>
-            Made with <i class="fas fa-heart"></i> in Toulouse (France)
+            Made with <i class="fas fa-heart"></i> in Toulouse, France
         </p>
     </footer>
 
