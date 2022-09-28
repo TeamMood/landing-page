@@ -1174,7 +1174,7 @@ body .documentation{
     background: transparent;
     color: #333333;
 }
-.footer-minimal > p{
+.footer-minimal > div{
     border-top: 1px solid #15997d;
     width: 60%;
     margin: auto;
@@ -1215,4 +1215,41 @@ body .documentation{
 
 .footer-minimal.bg-lp-light{
     background: #fafafa;
+}
+
+.canvas-thanks{
+    min-height: calc(100vh - 400px);
+    width: 100%;
+    position: relative;
+}
+
+.canvas-thanks > img{
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    filter: brightness(45%);
+}
+
+.canvas-thanks header{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.canvas-thanks header img{
+    width: 100px;
+}
+
+.canvas-thanks .main-minimal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.canvas-thanks .main-minimal h1{
+    color: white;
+    font-size: 40px;
+    line-height: 70px;
 }
