@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+    <body>
+
+    <header class="version2021">
+        <nav class="navbar navbar-expand-md justify-content-center">
+            <a class="navbar-brand pt-4" href="/{{ page.lang }}">
+                <img src="/images/logo.svg" width="100px" alt="TeamMood - Homepage">
+            </a>
+        </nav>
+    </header>
+
+    <main class="main-minimal">
+        {{ content }}
+    </main>
+
+    <footer class="px-4 pb-4 text-center footer-minimal bg-lp-light">
+        <div class="pt-4 pb-5">
+            <p class="pt-4 fs-6">
+                Copyright © {{ site.time | date: '%Y' }} ☺
+                <i class="fa fa-smile-o"></i> TeamMood <span class="mx-1">•</span>
+                Made with <i class="fas fa-heart"></i> in Toulouse, France
+            </p>
+        </div>
+    </footer>
+
+    {% include foot.html %}
+
+    </body>
+</html>
