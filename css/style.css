@@ -139,6 +139,10 @@ a:hover {
     text-align: justify;
 }
 
+.flex-row-reverse{
+    flex-direction: row-reverse;
+}
+
 .popover{
     box-shadow: lightgrey 1px 1px 2px;
 }
