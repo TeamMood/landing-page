@@ -78,7 +78,7 @@ h3{
 .version2021{
     font-weight: 400 !important;
 }
-.version2021 p{
+.version2021 p, .version2021 ul{
     color: #5F6B77;
 }
 .version2021 h1{
@@ -189,6 +189,17 @@ a:hover {
 
 .nav-list{
     width: initial;
+}
+
+.use-cases-menu{
+    border-top: 1px solid #dddddd;
+}
+.use-cases-menu .dropdown-item-text{
+    font-size: 0.9em;
+    color: #777777;
+}
+.navbar .nav-item.dropdown a:hover{
+    text-decoration: none;
 }
 
 @media all and (min-width: 768px){
@@ -646,6 +657,17 @@ body .documentation{
 
 .security-img > img{
     max-width: 150px;
+}
+
+/* use cases */
+.use-cases-blocquote{
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto;
+    box-shadow: 3px 3px 10px lightgrey;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 20px 15px;
 }
 
 
