@@ -325,6 +325,19 @@ footer .nav-link:hover, footer .link:hover{
     color: white;
 }
 
+.story-link p{
+    color: initial;
+}
+
+.story-link .story-read{
+    color: #1abc9c;
+    font-weight: 600;
+}
+
+.story-link:hover .story-read{
+    color: #0F6F5C;
+}
+
 .story h2{
     font-weight: 500;
 }
