@@ -164,22 +164,22 @@ a:hover {
     box-shadow: 0 0 0 0;
 }
 
-.navbar .nav-item a{
+.navbar .nav-item > a{
     color: #595959;
     font-weight: 400;
     font-size: 17px;
 }
 
-.navbar .navbar-item a{
+.navbar .navbar-item > a{
     margin-left: 15px;
 }
 
-.navbar .nav-item a:hover{
+.navbar .nav-item > a:hover{
     text-decoration: underline dotted;
     text-underline-position: under;
 }
 
-.navbar .nav-item a.green-btn:hover{
+.navbar .nav-item > a.green-btn:hover{
     text-decoration: none ;
 }
 
@@ -323,6 +323,19 @@ footer .nav-link:hover, footer .link:hover{
 .homepage-currency .btn-default.active:hover {
     background: #1abc9c;
     color: white;
+}
+
+.story-link p{
+    color: initial;
+}
+
+.story-link .story-read{
+    color: #1abc9c;
+    font-weight: 600;
+}
+
+.story-link:hover .story-read{
+    color: #0F6F5C;
 }
 
 .story h2{

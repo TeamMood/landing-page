@@ -37,7 +37,7 @@
   <body>
 
 
-        <header>
+        <header class="version2021">
     <nav class="navbar navbar-expand-md">
         <div class="container">
             <a class="navbar-brand pt-3" href="/fr">
@@ -50,21 +50,30 @@
             <div class="collapse navbar-collapse " id="navbar-collapse-1">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center nav-list">
                     <div class="d-md-flex">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/fr/fonctionnalites">Fonctionnalités</a>
+                        <li class="nav-item navbar-item">
+                            <a class="nav-link" href="/fr/integrations">Intégrations</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item navbar-item">
                             <a class="nav-link" href="/fr/tarifs">Tarifs</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item navbar-item">
                             <a class="nav-link" href="/fr/clients">Clients</a>
+                        </li>
+                        <li class="nav-item dropdown navbar-item">
+                            <a class="nav-link dropdown-toggle navbar-item" href="" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                A propos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="/fr/a-propos/approche">Notre approche</a></li>
+                                <li><a class="dropdown-item" href="/fr/a-propos/identite">Qui sommes-nous ?</a></li>
+                            </ul>
                         </li>
                     </div>
                     <div class="d-md-flex">
-                        <li class="nav-item mx-1">
+                        <li class="nav-item navbar-item mx-1">
                             <a class="nav-link" href="https://app.teammood.com/app#/login">Se connecter</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item navbar-item">
                             <a class="btn green-btn" href="https://app.teammood.com/signup">Essayez gratuitement</a>
                         </li>
                     </div>
@@ -668,27 +677,32 @@
         
 <footer class="container-fluid px-4 pt-4 pb-5 mt-5">
     <nav class="nav row justify-content-center align-items-baseline text-center my-5 mx-auto">
-        <div class="flex-column col-md-4">
+        <div class="flex-column col-md-3">
             <h3>TeamMood</h3>
             <a class="nav-link" href="/fr/conditions-generales-dutilisation/">CGV</a>
             <a class="nav-link" href="/en/privacy-policy/">Vie Privée</a>
             <a class="nav-link" href="https://help.teammood.com/pricing-security-privacy-and-terms/legals/how-teammood-complies-with-gdpr">RGPD</a>
             <a class="nav-link" href="http://status.teammood.com" target="_blank"><i class="fa fa-signal"></i> Etat du système</a>
-        </div>
-        <div class="flex-column col-md-4 mt-5 mt-md-0">
-            <h3>Produit</h3>
-            <a class="nav-link" href="/fr/fonctionnalites">Fonctionnalités</a>
-            <a class="nav-link" href="/fr/clients">Clients</a>
-            <a class="nav-link" href="/fr/securite">Sécurité</a>
-            <a class="nav-link" href="/fr/tarifs">Tarifs</a>
             <a class="nav-link" href="http://apidocs.teammood.com/">API</a>
         </div>
-        <div class="flex-column col-md-4 mt-5 mt-md-0">
+        <div class="flex-column col-md-3 mt-5 mt-md-0">
+            <h3>Produit</h3>
+            <!--a class="nav-link" href="/fr/">Fonctionnalités</a-->
+            <a class="nav-link" href="/fr/tarifs">Tarifs</a>
+            <a class="nav-link" href="/fr/securite">Sécurité</a>
+            <a class="nav-link" href="/fr/integrations">Intégrations</a>
+            <a class="nav-link" href="/fr/clients">Clients</a>
+        </div>
+        <div class="flex-column col-md-3 mt-5 mt-md-0">
             <h3>À propos</h3>
-<!--            <a class="nav-link" href="/fr/about">About</a>-->
+            <a class="nav-link" href="/fr/a-propos/approche">Notre approche</a>
+            <a class="nav-link" href="/fr/a-propos/identite">Qui sommes-nous?</a>
+            <a class="nav-link" href="https://blog.teammood.com">Blog</a>
+        </div>
+        <div class="flex-column col-md-3 mt-5 mt-md-0">
+            <h3>Contact</h3>
             <a class="nav-link" href="/fr/contact/">Nous contacter</a>
             <a class="nav-link" href="mailto:hello@teammood.com">hello@teammood.com</a>
-            <a class="nav-link" href="https://blog.teammood.com">Blog</a>
             <a class="nav-link" href="https://twitter.com/teammood" target="_blank">
                 <i class="fab fa-twitter"></i> Twitter
             </a>
