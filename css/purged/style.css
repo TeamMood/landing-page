@@ -686,17 +686,17 @@ body .documentation{
     padding: 20px;
 }
 
-.case-study h1{
+.case-study h1, .mood-tracking-guide h1{
     font-size: 2.4em;
 }
-.case-study .leadership_guide_nav_wrapper{
+.case-study .leadership_guide_nav_wrapper, .mood-tracking-guide .leadership_guide_nav_wrapper{
     top: 40px;
 }
-.case-study .leadership_guide_bloc aside ul li{
+.case-study .leadership_guide_bloc aside ul li, .mood-tracking-guide .leadership_guide_bloc aside ul li{
     font-size: 0.93em;
 }
 
-.case-study blockquote{
+.case-study blockquote, .mood-tracking-guide blockquote{
     border-left: 3px solid #5F6B77;
     padding-left: 17px;
 }
