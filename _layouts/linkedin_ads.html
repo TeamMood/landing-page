@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+
+    <body>
+
+        {% include lk_ads_header.html %}
+
+        {{ content }}
+
+        <footer class="px-4 pb-4 text-center">
+            <div class="pt-4 pb-5">
+                <p class="pt-4 fs-6">
+                    Copyright © {{ site.time | date: '%Y' }} ☺
+                    <i class="fa fa-smile-o"></i> TeamMood <span class="mx-1">•</span>
+                    Made with <i class="fas fa-heart"></i> in Toulouse, France
+                </p>
+            </div>
+        </footer>
+
+        {% include foot.html %}
+
+    </body>
+</html>

@@ -515,11 +515,48 @@ body .documentation{
     margin-top: 40px;
 }
 
+.hub_bloc{
+    padding: 0 40px;
+}
+.hub_bloc h2{
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+.hub_bloc section p{
+    font-size: 1.1em;
+    color: #333333;
+}
+.hub_bloc section ul{
+    list-style-type: none;
+    padding: 0;
+}
+.hub_bloc section ul li a{
+    font-size: 1.1em;
+    color: #5F6B77;
+    border-bottom: 1px dotted #5F6B77;
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 10px;
+    line-height: 20px;
+    position: relative;
+}
+.hub_bloc section ul li a:hover{
+    border-bottom: 1px solid rgba(95, 107, 119, 0.58);
+}
+/*.hub_bloc section ul li a:hover:after{
+    content: '\f08e';
+    font-family: "Font Awesome 5 Pro";
+    position: absolute;
+    top: -1px;
+    right: -26px;
+    font-size: 15px;
+}*/
+
 .leadership_guide{
     position: relative;
 }
 
-.leadership_guide h1{
+.leadership_guide h1, .hub h1{
     font-size: 3.5em;
     letter-spacing: 1px;
     text-align: center;
@@ -647,6 +684,21 @@ body .documentation{
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+
+.case-study h1, .mood-tracking-guide h1{
+    font-size: 2.4em;
+}
+.case-study .leadership_guide_nav_wrapper, .mood-tracking-guide .leadership_guide_nav_wrapper{
+    top: 40px;
+}
+.case-study .leadership_guide_bloc aside ul li, .mood-tracking-guide .leadership_guide_bloc aside ul li{
+    font-size: 0.93em;
+}
+
+.case-study blockquote, .mood-tracking-guide blockquote{
+    border-left: 3px solid #5F6B77;
+    padding-left: 17px;
 }
 
 /* "/en/cookies-policy/" */
