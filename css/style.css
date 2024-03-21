@@ -139,6 +139,10 @@ a:hover {
     text-align: justify;
 }
 
+.d-inline{
+    display: inline;
+}
+
 .flex-row-reverse{
     flex-direction: row-reverse;
 }
@@ -490,6 +494,10 @@ footer .nav-link:hover, footer .link:hover{
 
 .benefits-grey-block{
     background-color: #fafafa;
+}
+
+.contact-submit-btn{
+    width: 100%;
 }
 
 /* PAGES */
