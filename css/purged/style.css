@@ -124,6 +124,21 @@ a:hover {
     color: #555
 }
 
+.green-outline-btn{
+    color: #1abc9c !important;
+    border: 1px solid #1abc9c;
+    text-decoration: none;
+}
+
+.green-outline-btn:hover, .green-outline-btn:focus, .green-outline-btn:active, .navbar .nav-item > a.green-outline-btn:hover, .navbar .nav-item > a.green-outline-btn:focus,.navbar .nav-item > a.green-outline-btn:active{
+    background: #0F6F5C;
+    color: #fff !important;
+    border: 1px solid #0F6F5C;
+    text-decoration: none;
+    outline: 0 !important;
+    cursor: pointer;
+}
+
 .light-blue-btn {
     background: #5c91df;
     color: #fff !important;
@@ -137,10 +152,6 @@ a:hover {
 
 .text-justify{
     text-align: justify;
-}
-
-.d-inline{
-    display: inline;
 }
 
 .flex-row-reverse{
@@ -496,10 +507,6 @@ footer .nav-link:hover, footer .link:hover{
     background-color: #fafafa;
 }
 
-.contact-submit-btn{
-    width: 100%;
-}
-
 /* PAGES */
 .homepage-header h1{
     font-size: 2.8em;
@@ -605,22 +612,6 @@ body .documentation{
 .leadership_guide_bloc aside p{
     font-size: 0.8em;
     margin-bottom: 15px;
-}
-
-.leadership_guide_bloc .emailForSubscription input{
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.leadership_guide_bloc .emailForSubscription button{
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.leadership_guide_bloc .emailForSubscription{
-    height: 34px;
 }
 
 .leadership_guide_bloc > article{

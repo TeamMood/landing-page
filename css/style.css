@@ -124,6 +124,21 @@ a:hover {
     color: #555
 }
 
+.green-outline-btn{
+    color: #1abc9c !important;
+    border: 1px solid #1abc9c;
+    text-decoration: none;
+}
+
+.green-outline-btn:hover, .green-outline-btn:focus, .green-outline-btn:active, .navbar .nav-item > a.green-outline-btn:hover, .navbar .nav-item > a.green-outline-btn:focus,.navbar .nav-item > a.green-outline-btn:active{
+    background: #0F6F5C;
+    color: #fff !important;
+    border: 1px solid #0F6F5C;
+    text-decoration: none;
+    outline: 0 !important;
+    cursor: pointer;
+}
+
 .light-blue-btn {
     background: #5c91df;
     color: #fff !important;
