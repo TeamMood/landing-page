@@ -4,14 +4,6 @@
   {% include head.html %}
 
   <body>
-    {% if page.facebook_tag %}
-      <script>
-          fbq('track', 'ViewContent', {
-              content_name: '{{ page.facebook_tag }}'
-          });
-      </script>
-    {% endif %}
-
 
     {% include lp_header.html %}
 
