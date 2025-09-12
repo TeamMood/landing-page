@@ -5,27 +5,27 @@ teammood.controller('PricingCtrl', function($scope) {
     var currencies = [
         {
             label: 'EUR',
-            value: '2€',
+            value: '3€',
             countries: ["AD", "AT", "AX", "BE", "BL", "CY", "DE", "EE", "ES", "FI", "FR", "GF", "GP", "GR", "IE", "IT", "LU", "MC", "ME", "MF", "MQ", "MT", "NL", "PM", "PT", "RE", "SI", "SK", "SM", "TF", "VA", "YT"]
         },
         {
             label: 'GBP',
-            value: '2£',
+            value: '3£',
             countries: ['GB','GG','GS','IM','JE']
         },
         {
             label: 'USD',
-            value: 'US$2',
+            value: 'US$4',
             countries: ["AS", "BQ", "EC", "FM", "GU", "IO", "MH", "MP", "PR", "PW", "TC", "TL", "UM", "US", "VG", "VI"]
         },
         {
             label: 'AUD',
-            value: 'AU$3',
+            value: 'AU$5',
             countries: ["AU", "CC", "CX", "HM", "KI", "NF", "NR", "TV"]
         },
         {
             label: 'CAD',
-            value: 'CA$3',
+            value: 'CA$5',
             countries: ['CA']
         }
     ];
