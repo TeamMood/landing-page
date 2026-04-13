@@ -124,21 +124,6 @@ a:hover {
     color: #555
 }
 
-.green-outline-btn{
-    color: #1abc9c !important;
-    border: 1px solid #1abc9c;
-    text-decoration: none;
-}
-
-.green-outline-btn:hover, .green-outline-btn:focus, .green-outline-btn:active, .navbar .nav-item > a.green-outline-btn:hover, .navbar .nav-item > a.green-outline-btn:focus,.navbar .nav-item > a.green-outline-btn:active{
-    background: #0F6F5C;
-    color: #fff !important;
-    border: 1px solid #0F6F5C;
-    text-decoration: none;
-    outline: 0 !important;
-    cursor: pointer;
-}
-
 .light-blue-btn {
     background: #5c91df;
     color: #fff !important;
@@ -637,6 +622,9 @@ body .documentation{
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
+.new-manager .leadership_guide_bloc .feedback_into_action div{
+    grid-template-columns: repeat(2, 1fr);
+}
 
 .leadership_guide_bloc .feedback_into_action div a{
     display: block;
@@ -660,6 +648,24 @@ body .documentation{
 .feedback_into_action img{
     width: 50%;
 }
+.new-manager .feedback_into_action img{
+    width: 25px;
+}
+.new-manager .feedback_into_action img.previous{
+    margin-right: 7px;
+}
+.new-manager .feedback_into_action img.next{
+    margin-left: 7px;
+}
+.new-manager .green-btn{
+    display: block;
+    max-width: 280px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    padding: 5px;
+}
 
 .leadership_guide_link{
     text-decoration: underline;
@@ -668,6 +674,9 @@ body .documentation{
 .feedback_into_action p{
     padding-top: 10px;
     margin-bottom: 0;
+}
+.new-manager .leadership_guide_bloc .feedback_into_action div a p{
+    padding-top: 0;
 }
 
 #leadership_guide_color{
