@@ -17,7 +17,7 @@ docker build -t jekyll-site-lp .
 
 ## Run the image with
 
-docker run -d -p 4000:4000 -v "$PWD":/usr/src/app jekyll-site-lp
+docker run --name teammood-lp -d -p 4000:4000 -v "$PWD":/usr/src/app jekyll-site-lp
 
 and go to localhost:4000
 
